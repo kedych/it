@@ -74,12 +74,13 @@ Surround computing概念為：運算裝置和資料中心將蒐集更多資料�
 
 會議的Sector 2為CloudCon2014之Frontier Technological Program，邀請雲端運算各領域學者專家齊聚一堂，CloudCon主題為：Chinese Dream in Cloud，依專業領域不同，共分六個子議程：
 
-Cloud 2-1: Global Cloud Computing Economy-Strategy to Business
-Cloud 2-3: Cloud Security and Privacy
-Cloud 2-5: Cloud Solutions & Energy Efficiency
-Cloud 2-2: Cloud Architectures and Applications
-Cloud 2-4: Big Data & New Services in Cloud
-Cloud 2-6: Global Cloud Computing Adoption
+* Cloud 2-1: Global Cloud Computing Economy-Strategy to Business
+* Cloud 2-2: Cloud Architectures and Applications
+* Cloud 2-3: Cloud Security and Privacy
+* Cloud 2-4: Big Data & New Services in Cloud
+* Cloud 2-5: Cloud Solutions & Energy Efficiency
+* Cloud 2-6: Global Cloud Computing Adoption
+
 
 ###3.1 報告簡介
 
