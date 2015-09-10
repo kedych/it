@@ -31,8 +31,8 @@ BIT’s 3rd  Annual World Congress of Cloud Computing 2014 (2014世界雲端大�
 
 Prof. Lee從光學的角度看大數據的應用，先回顧20世紀到21世紀的資訊科技發展，再講到乘載數據的介質，以前是銅纜雙絞線的天下，未來光的傳遞和用光纖取代銅纜線路則有可能成為趨勢，甚至「電路」板都會變成「光路」板。
 
-2.3 From Big Data to Big Business: How Big Data is Transforming Business and the Economy
-Prof. Viktor Mayer-Schonberger 
+###2.3 From Big Data to Big Business: How Big Data is Transforming Business and the Economy
+####Prof. Viktor Mayer-Schonberger 
 Professor of Internet Governance and Regulation at Oxford Internet Institute.
 
 ![](f101003201503_3.jpg)
@@ -95,7 +95,7 @@ Surround computing概念為：運算裝置和資料中心將蒐集更多資料�
 本公司張凱迪發表IoT專案的案例分享
 
 ###3.2 Cloud, Big Data and the “Next Big Thing”
-Ms. Jacqueline Vanacek／Vice President, Cloud Evangelist and U.S. Cloud commissioner, SAP, USA
+####Ms. Jacqueline Vanacek／Vice President, Cloud Evangelist and U.S. Cloud commissioner, SAP, USA
 
 ![](f101003201503_7.jpg)
 
@@ -117,7 +117,8 @@ HSCloud
 雲OSS/BSS
 測試雲
 IT服務雲
-4.1.2 服務流程外包
+
+####4.1.2 服務流程外包
 
 業務包含技術支援、數據操作、事務處理、知識流程外包、客戶服務與呼叫中心等，著重以下市場：
 
