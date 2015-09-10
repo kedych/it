@@ -17,60 +17,17 @@
 
 表1.行動通訊演進簡表
 
-世代
 
-主流技術
 
-摘要介紹
-
-1G
-
-AMPS
-
-類比式行動電話系統，屬於第一代行動電話系統。約1980年在美國發展，為蜂巢式系統(Cellular)，將所涵蓋的區域劃分為細胞群，使用800MHz頻段。類比訊號電波容易被干擾及竊聽，因此，2000年後逐漸被第二代全球行動通訊系統(GSM)取代。
-
-2G
-
-GSM
-
-全球行動通訊系統(Global System for Mobile Communications, GSM)為目前應用最為廣泛的行動電話標準，多個國家電信營運商已有漫遊協議，可提供跨國的電信漫遊服務。
-
-2.5G
-
-GPRS
-
-EDGE
-
-泛用封包無線服務(General Packet Radio Service, GPRS)是最早期且最速率最低的行動上網技術。目前各大運營商(除CDMA系運營商外)都支援此業務，通常在訊號品質不夠好的時候，行動裝置會切換到此種服務，偶而看到手機的資料傳輸顯示G或者E的時候，就是這個情況，GPRS一般傳輸速率為不會高於128Kbps。
-
-3G
-
-UMTS
-
-WCDMA
-
-CDMA2000
-
-通用行動通訊系統(Universal
-Mobile Telecommunications System, UMTS)，主要由歐洲3GPP組織推出的標準，美國則是CDMA技術為主。3G由2.5G GSM的GPRS和EDGE演進而來。WCDMA，包括HSPA皆為UMTS子集合，台灣代表營運商是中華電信、遠傳電信、台灣大哥大與威寶電信。CDMA2000則是美系3G標準，台灣代表營運商是亞太電信
-
-3.5G
-
-HSPA
-
-高速資料連結(High Speed Packet Access, HSPA)，提供比3G更快的資料傳輸協定，理論速度最高達7.2Mbps，HSPA主要分為HSDPA(高速下載資料連結)和HSUPA(高速上傳資料連結)，其中HSUPA又被稱做3.75G，因提供了更佳的上傳速率。
-
-3.9G
-
-LTE
-
-長期演進技術(Long Term Evolution, LTE)，被視為邁向4G網路的標準，希望藉由與現有3G系統相容並且進行長期演進，在行動或者靜止的狀態下，都要能夠提供比目前3G、3.5G來得更高的傳輸速率。
-
-4G
-
-LTE Advanced
-
-LTE-Advanced是3GPP標準組織發展的LTE演進版本，目標要達到或超越國際電信聯盟(ITU Telecommunication Standardization Sector , ITU-T)制訂的IMT-Advanced規範，完成一套真正屬於4G的通訊標準。
+|世代|主流技術|摘要介紹
+|--|--|--|
+|1G|AMPS|類比式行動電話系統，屬於第一代行動電話系統。約1980年在美國發展，為蜂巢式系統(Cellular)，將所涵蓋的區域劃分為細胞群，使用800MHz頻段。類比訊號電波容易被干擾及竊聽，因此，2000年後逐漸被第二代全球行動通訊系統(GSM)取代。|
+|2G|GSM|全球行動通訊系統(Global System for Mobile Communications, GSM)為目前應用最為廣泛的行動電話標準，多個國家電信營運商已有漫遊協議，可提供跨國的電信漫遊服務。|
+|2.5G|GPRS、EDGE|泛用封包無線服務(General Packet Radio Service, GPRS)是最早期且最速率最低的行動上網技術。目前各大運營商(除CDMA系運營商外)都支援此業務，通常在訊號品質不夠好的時候，行動裝置會切換到此種服務，偶而看到手機的資料傳輸顯示G或者E的時候，就是這個情況，GPRS一般傳輸速率為不會高於128Kbps。|
+|3G|UMTS、WCDMA、CDMA2000|通用行動通訊系統(Universal Mobile Telecommunications System, UMTS)，主要由歐洲3GPP組織推出的標準，美國則是CDMA技術為主。3G由2.5G GSM的GPRS和EDGE演進而來。WCDMA，包括HSPA皆為UMTS子集合，台灣代表營運商是中華電信、遠傳電信、台灣大哥大與威寶電信。CDMA2000則是美系3G標準，台灣代表營運商是亞太電信|
+|3.5G|HSPA|高速資料連結(High Speed Packet Access, HSPA)，提供比3G更快的資料傳輸協定，理論速度最高達7.2Mbps，HSPA主要分為HSDPA(高速下載資料連結)和HSUPA(高速上傳資料連結)，其中HSUPA又被稱做3.75G，因提供了更佳的上傳速率。|
+|3.9G|LTE|長期演進技術(Long Term Evolution, LTE)，被視為邁向4G網路的標準，希望藉由與現有3G系統相容並且進行長期演進，在行動或者靜止的狀態下，都要能夠提供比目前3G、3.5G來得更高的傳輸速率。|
+|4G|LTE Advanced|LTE-Advanced是3GPP標準組織發展的LTE演進版本，目標要達到或超越國際電信聯盟(ITU Telecommunication Standardization Sector , ITU-T)制訂的IMT-Advanced規範，完成一套真正屬於4G的通訊標準。|
 
 ##4G技術標準簡述
 
@@ -98,6 +55,7 @@ LTE-Advanced是3GPP標準組織發展的LTE演進版本，目標要達到或超�
 
 ##參考資料
 
-財團法人工業技術研究院-經濟部標準檢驗局 101年度委辦計畫-第四代行動通訊重點技術與先期標準分析研究報告
-DIGITIMES中文網 - 台灣LTE發展概況
-NCC開始受理業者申請競標4G LTE頻段，蘇文彬，2013/05/05
+* 財團法人工業技術研究院-經濟部標準檢驗局 
+* 101年度委辦計畫-第四代行動通訊重點技術與先期標準分析研究報告
+* DIGITIMES中文網 - 台灣LTE發展概況
+* NCC開始受理業者申請競標4G LTE頻段，蘇文彬，2013/05/05
