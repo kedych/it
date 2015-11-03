@@ -44,3 +44,9 @@ tar -zxvf elasticsearch-2.0.0.tar.gz
 切目錄
 
 cd elasticsearch-2.0.0/bin/
+
+啟動elasticsearch (單節點)
+./elasticsearch
+
+但我們要有Cluster 所以改用以下命令
+
