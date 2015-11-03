@@ -34,5 +34,6 @@ export JAVA_HOME="/usr/java/latest"
 
 ###取得ElasticSearch
 使用以下命令
+
 wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
 
