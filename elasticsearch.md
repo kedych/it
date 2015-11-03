@@ -19,7 +19,7 @@ Sharding理由：
 
 Replicas理由：
 * 在shard/node失效的時候，提供高可用。
-* 可以scale out搜尋的量語吞吐量。
+* 可以scale out搜尋效能與吞吐量，特別是可以在所有的replicas進行平行搜尋的時候。
 
 ## Reference
 * [Basic Concept](https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html)
