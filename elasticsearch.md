@@ -10,12 +10,16 @@
 |Type|一個index可以定義一個以上的Type。Type是index易識別語意的邏輯分類、分割。|
 |Document|可以被index的最小資訊單位，以JSON格式存在。|
 |Shards |大型index可以被切割成很多塊，稱為Shards。建立index的時候，可以定義想要的shards數量，每個shard可以被想成叢集任一節點的獨立index。|
-|Replicas|雲端環境中，節點失效是可預期的事情，所以把Shards製作一份或多份的複製就是replicas|
+|Replicas|雲端環境中，節點失效是可預期的事情，所以把Shards製作一份或多份的複製就是replicas。|
 
 
-Sharding的理由：
+Sharding理由：
 * 可以依照內容的量進行平行分割/擴展。
 * 可以分散與平行化處理，增加效能與吞吐量。
+
+Replicas理由：
+* 在shard/node失效的時候，提供高可用。
+* 可以scale out搜尋的量語吞吐量。
 
 ## Reference
 * [Basic Concept](https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html)
