@@ -30,4 +30,5 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
 
 export JAVA_HOME="/usr/java/latest"
 
+存檔離開
 ##
