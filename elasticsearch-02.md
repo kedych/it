@@ -37,3 +37,10 @@ export JAVA_HOME="/usr/java/latest"
 
 wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
 
+解壓縮
+
+tar -zxvf elasticsearch-2.0.0.tar.gz
+
+切目錄
+
+cd elasticsearch-2.0.0/bin/
