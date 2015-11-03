@@ -1,6 +1,8 @@
 # 搜尋引擎與日誌分析
 
-##名詞與注意
+##基本概念 Basic Concept
+
+###名詞與注意
 
 |Term|說明|
 |-|-|
@@ -12,7 +14,6 @@
 |Shards |大型index可以被切割成很多塊，稱為Shards。建立index的時候，可以定義想要的shards數量，每個shard可以被想成叢集任一節點的獨立index。|
 |Replicas|雲端環境中，節點失效是可預期的事情，所以把Shards製作一份或多份的複製就是replicas。|
 
-
 Sharding理由：
 * 可以依照內容的量進行平行分割/擴展。
 * 可以分散與平行化處理，增加效能與吞吐量。
@@ -21,6 +22,8 @@ Replicas理由：
 * 在shard/node失效的時候，提供高可用。
 * 可以scale out搜尋效能與吞吐量，特別是可以在所有的replicas進行平行搜尋的時候。
 
-## Reference
+總結，index可以被切分成多個shards，index也可以被複製0份或多份。一但使用replica，每個index都會有primary shards(原始replicat來源shard)。
+
+### Reference
 * [Basic Concept](https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html)
 
