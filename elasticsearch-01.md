@@ -1,8 +1,6 @@
-# 搜尋引擎與日誌分析
+# 搜尋引擎與日誌分析 - 基本概念 Basic Concept
 
-##基本概念 Basic Concept
-
-###名詞與注意
+##名詞與注意
 
 |Term|說明|
 |-|-|
@@ -28,6 +26,6 @@ Replicas理由：
 
 每個shard是Lucene index，最大文件數量就是單一Lucene index，換言之，依照[LUCENE-5843](https://issues.apache.org/jira/browse/LUCENE-5843)來看，最大值就是2,147,483,519。整體shard大小可以用 _cat/shards api來觀察。
 
-### Reference
+## Reference
 * [Basic Concept](https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html)
 
