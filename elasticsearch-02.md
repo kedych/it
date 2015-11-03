@@ -5,13 +5,14 @@
 
 http://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html#BJFJHFDD
 
-移除舊的JDK
+###移除舊的JDK
 rpm -qa | grep jdk
 yum remove openjdk....
 
 
-下載jdk-8u60-linux-x64.rpm
-安裝
+###下載jdk-8u60-linux-x64.rpm
+
+###安裝
 rpm -ivh jdk-8u60-linux-x64.rpm
 
 確認安裝成功
@@ -22,6 +23,7 @@ java version "1.8.0_60"
 Java(TM) SE Runtime Environment (build 1.8.0_60-b27)
 Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
 
+###輸入JAVA_HOME變數
 export JAVA_HOME JDK/JRE
 編輯/etc/profile & $home/.bash_profile
 export JAVA_HOME="/usr/java/latest"
