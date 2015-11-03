@@ -52,3 +52,5 @@ cd elasticsearch-2.0.0/bin/
 
 ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 
+./elasticsearch --cluster.name [我的叢集名稱] --node.name [我的節點名稱]
+
