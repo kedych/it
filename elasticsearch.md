@@ -24,6 +24,10 @@ Replicas理由：
 
 總結，index可以被切分成多個shards，index也可以被複製0份或多份。一但使用replica，每個index都會有primary shards(原始replicat來源shard)與replica shards(被複製的primary shard)。當index建立以後，replica的數量可以動態調整，但是shard數量無法變動。
 
+預設的情況下，每個Elasticsearch中的index會分配5個primary shards跟1個replica，換言之，如果叢集有兩個node，每個node的index就會有5個primary shards跟5replica shards。
+
+每個shard是Lucene index，最大文件數量就是單一Lucene index，換言之，
+
 ### Reference
 * [Basic Concept](https://www.elastic.co/guide/en/elasticsearch/reference/current/_basic_concepts.html)
 
