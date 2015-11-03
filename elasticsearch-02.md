@@ -31,4 +31,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
 export JAVA_HOME="/usr/java/latest"
 
 存檔離開
-##
+
+###取得ElasticSearch
+使用以下命令
+wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
+
