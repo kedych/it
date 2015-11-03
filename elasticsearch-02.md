@@ -63,5 +63,11 @@ cd elasticsearch-2.0.0/bin/
 
 ./elasticsearch --cluster.name es_cluster --node.name node3
 
+第一次跑失敗 因為elasticsearch不建議使用root執行
 
+所以移動elasticsearch目錄到/opt/下面
+再換一般使用者身分執行
 
+還有權限問題 建議一開始下載elasticsearch使用一般使用者
+
+應該就可以正常執行了
