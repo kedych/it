@@ -50,3 +50,5 @@ cd elasticsearch-2.0.0/bin/
 
 但我們要有Cluster 所以改用以下命令
 
+./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
+
