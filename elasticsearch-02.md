@@ -231,6 +231,12 @@ curl 'localhost:9200/_cat/health?v'
 刪除customer　index
 
     curl -XDELETE 'localhost:9200/customer'
+    
+最後歸納出來，簡單的操作模式為：
+
+    curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
+
+
 
 
 
