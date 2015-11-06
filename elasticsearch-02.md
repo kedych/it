@@ -103,3 +103,14 @@ curl 'localhost:9200/_cat/nodes?v'
 host      ip        heap.percent ram.percent load node.role master name
 
 127.0.0.1 127.0.0.1            2          77 0.00 d         *      node1
+
+##列出所有索引(List All Indices)
+命令：
+
+curl 'localhost:9200/_cat/indices?v'
+
+回應：
+
+health status index pri rep docs.count docs.deleted store.size pri.store.size
+
+因為我們剛建立，所以目前沒有任何索引。
