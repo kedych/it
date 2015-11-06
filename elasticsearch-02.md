@@ -19,40 +19,40 @@ rpm -ivh jdk-8u60-linux-x64.rpm
 java -version
 應該要看到
 
-java version "1.8.0_60"
-Java(TM) SE Runtime Environment (build 1.8.0_60-b27)
-Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
+    java version "1.8.0_60"
+    Java(TM) SE Runtime Environment (build 1.8.0_60-b27)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
 
 ###export $JAVA_HOME with JDK/JRE
 編輯/etc/profile & $home/.bash_profile
 
 加入以下
 
-export JAVA_HOME="/usr/java/latest"
+    export JAVA_HOME="/usr/java/latest"
 
 存檔離開
 
 ###取得ElasticSearch
 使用以下命令
 
-wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
+    wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
 
 解壓縮
 
-tar -zxvf elasticsearch-2.0.0.tar.gz
+    tar -zxvf elasticsearch-2.0.0.tar.gz
 
 切目錄
 
-cd elasticsearch-2.0.0/bin/
+    cd elasticsearch-2.0.0/bin/
 
 啟動elasticsearch (單節點)
-./elasticsearch
+    ./elasticsearch
 
 但我們要有Cluster 所以改用以下命令
 
-./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
+    ./elasticsearch --cluster.name my_cluster_name --node.name my_node_name
 
-./elasticsearch --cluster.name [我的叢集名稱] --node.name [我的節點名稱]
+    ./elasticsearch --cluster.name [我的叢集名稱] --node.name [我的節點名稱]
 
 本環境設定叢集名稱為 es_cluster (elasticsearch cluster)
 節點分別為node1, node2, node3, 在三台機器分別的啟動命令為
@@ -82,36 +82,31 @@ curl 'localhost:9200/_cat/health?v'
 
 應該會得到類似的回應：
 
-[kedy@es1 ~]$ curl 'localhost:9200/_cat/health?v'
-
-
-epoch      timestamp cluster   status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shar ds_percent
-
-
-1446545469 18:11:09  escluster green           1         1      0   0    0    0        0             0                  -                 100.0%
+    [kedy@es1 ~]$ curl 'localhost:9200/_cat/health?v'
+    epoch      timestamp cluster   status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shar ds_percent
+    1446545469 18:11:09  escluster green           1         1      0   0    0    0        0             0                  -                 100.0%
 
 ##cluster狀態
 命令：
 
-curl 'localhost:9200/_cat/nodes?v'
+    curl 'localhost:9200/_cat/nodes?v'
 
 
 回應：
 
-[kedy@es1 ~]$ curl 'localhost:9200/_cat/nodes?v'
+    [kedy@es1 ~]$ curl 'localhost:9200/_cat/nodes?v'
 
-host      ip        heap.percent ram.percent load node.role master name
-
-127.0.0.1 127.0.0.1            2          77 0.00 d         *      node1
+    host      ip        heap.percent ram.percent load node.role master name
+    127.0.0.1 127.0.0.1            2          77 0.00 d         *      node1
 
 ##列出所有索引(List All Indices)
 命令：
 
-curl 'localhost:9200/_cat/indices?v'
+    curl 'localhost:9200/_cat/indices?v'
 
 回應：
 
-health status index pri rep docs.count docs.deleted store.size pri.store.size
+    health status index pri rep docs.count docs.deleted store.size pri.store.size
 
 因為我們剛建立，所以目前沒有任何索引。
 
@@ -119,20 +114,22 @@ health status index pri rep docs.count docs.deleted store.size pri.store.size
 先來建立第一個index, 叫消費者"customer", 然後再試試看列出index會是什麼樣子.
 
 命令：
-curl -XPUT 'localhost:9200/customer?pretty'
-curl 'localhost:9200/_cat/indices?v'
+
+    curl -XPUT 'localhost:9200/customer?pretty'
+    curl 'localhost:9200/_cat/indices?v'
 
 結果：
-[kedy@es1 ~]$ curl -XPUT 'localhost:9200/customer?pretty'
-{
-  "acknowledged" : true
-}
 
-[kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
+    [kedy@es1 ~]$ curl -XPUT 'localhost:9200/customer?pretty'
+    {
+        "acknowledged" : true
+    }
 
-health status index    pri rep docs.count docs.deleted store.size pri.store.size
+123    
 
-yellow open   customer   5   1          0            0       254b           254b
+    [kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
+    health status index    pri rep docs.count docs.deleted store.size pri.store.size
+    yellow open   customer   5   1          0            0       254b           254b
 
 從第二個命令的回應畫面, 可以看到目前有哪些index存在, 還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面.
 
@@ -147,35 +144,24 @@ yellow open   customer   5   1          0            0       254b           254b
 範例中的JSON document: {"name":"kedy chang"}
 
 命令為：
-curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
-{
-    "name": "kedy chang"
-}'
+
+    curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '{ "name": "kedy chang"     }'
+    
 
 回應為：
->{
 
->  "_index" : "customer",
-
->  "_type" : "external",
-
->  "_id" : "1",
-
->  "_version" : 1,
-
->  "_shards" : {
-
->    "total" : 2,
-
->    "successful" : 1,
-
->    "failed" : 0
-
->  },
-
->  "created" : true
-
->}
+    {
+        "_index" : "customer",
+        "_type" : "external"
+        "_id" : "1",
+        "_version" : 1,
+        "_shards" : {
+          "total" : 2,
+          "successful" : 1,
+          "failed" : 0
+        },
+        "created" : true
+    }
 
 從Elasticsearch的回應可以知道, 一個新的 customer document已經被成功建立在 customer index 而且型態為 external.　這個document也會有一個內部的id (此回應之範例為1), 這個內部id也是我們在建立index的時候指定的.
 
@@ -189,21 +175,14 @@ curl -XGET 'localhost:9200/customer/external/1?pretty'
 
 回應為：
 
->{
->
->"_index" : "customer",
->  
->  "_type" : "external",
->  
->  "_id" : "1",
->  
->  "_version" : 1,
->  
->  "found" : true,
->  
->  "_source":{ "name": "kedy chang"}
->  
->}
+    {
+        "_index" : "customer",
+        "_type" : "external",
+        "_id" : "1",
+        "_version" : 1,
+        "found" : true,
+        "_source":{ "name": "kedy chang"}
+    }
 
 
 
