@@ -240,3 +240,18 @@ curl 'localhost:9200/_cat/health?v'
 
 #修改你的資料(Modifying Your Data)
 
+##索引與取代documents
+
+以下命令是插入一個document
+
+    curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
+    {
+        "name": "kedy chang"
+    }'
+
+接著我們指定相同的id, 再插入一次
+
+    curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
+    {
+        "name": "joe chen"
+    }'
