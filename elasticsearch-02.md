@@ -269,3 +269,6 @@ curl 'localhost:9200/_cat/health?v'
         "_source":{ "name": "joe chen"}
     }
 
+
+Reference data:
+https://www.elastic.co/guide/en/elasticsearch/reference/2.0/_modifying_your_data.html
