@@ -191,5 +191,21 @@ curl 'localhost:9200/_cat/health?v'
 
 測試看看怎麼砍掉剛剛建立的index
 
+命令：
+
     curl -XDELETE 'localhost:9200/customer?pretty'
     curl 'localhost:9200/_cat/indices?v'
+    
+回應：
+
+
+    {
+    "acknowledged" : true
+    }
+
+    [kedy@es1 ~]$ curl -XGET 'localhost:9200/_cat/indices?v'
+    health status index    pri rep docs.count docs.deleted store.size pri.store.size
+    yellow open   kedytest   5   1          0            0       780b           780b
+
+就只剩下剛剛另外建立的kedytest index, 在前述命令指定刪除的customer index已經不見了
+
