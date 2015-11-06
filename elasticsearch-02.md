@@ -166,6 +166,33 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
   "created" : true
 }
 
-從Elasticsearch的回應可以知道, 一個新的 customer document已經被成功建立在 customer index 而且型態為 external.　這個document也會有一個內部的id (此回應之範例為1), 這個內不id也是我們在建立index的時候指定的.
+從Elasticsearch的回應可以知道, 一個新的 customer document已經被成功建立在 customer index 而且型態為 external.　這個document也會有一個內部的id (此回應之範例為1), 這個內部id也是我們在建立index的時候指定的.
+
+有一點很重要的是ElasticSearch並不要求說在所引文件之前一定要先建立index. 如果之前沒有index存在的話, Elasticsearch會自動建立一個消費者index.
+
+
+剛剛已經完成建立document, 現在我們來探索剛才建立的document, 一樣使用curl, 使用XGET存取elasticresearch的REST API.
+
+命令：
+curl -XGET 'localhost:9200/customer/external/1?pretty'
+
+回應為：
+
+{
+
+  "_index" : "customer",
+  
+  "_type" : "external",
+  
+  "_id" : "1",
+  
+  "_version" : 1,
+  
+  "found" : true,
+  
+  "_source":{ "name": "kedy chang"}
+  
+}
+
 
 
