@@ -114,3 +114,24 @@ curl 'localhost:9200/_cat/indices?v'
 health status index pri rep docs.count docs.deleted store.size pri.store.size
 
 因為我們剛建立，所以目前沒有任何索引。
+
+##建立index
+先來建立第一個index, 叫消費者"customer", 然後再試試看列出index會是什麼樣子.
+
+命令：
+curl -XPUT 'localhost:9200/customer?pretty'
+curl 'localhost:9200/_cat/indices?v'
+
+結果：
+[kedy@es1 ~]$ curl -XPUT 'localhost:9200/customer?pretty'
+{
+  "acknowledged" : true
+}
+
+[kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
+
+health status index    pri rep docs.count docs.deleted store.size pri.store.size
+
+yellow open   customer   5   1          0            0       254b           254b
+
+從第二個命令的回應畫面, 可以看到目前有哪些index存在, 還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面.
