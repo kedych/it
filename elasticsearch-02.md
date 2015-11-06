@@ -165,3 +165,7 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
   },
   "created" : true
 }
+
+從Elasticsearch的回應可以知道, 一個新的 customer document已經被成功建立在 customer index 而且型態為 external.　這個document也會有一個內部的id (此回應之範例為1), 這個內不id也是我們在建立index的時候指定的.
+
+
