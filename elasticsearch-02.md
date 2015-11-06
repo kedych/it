@@ -151,3 +151,17 @@ curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
 {
     "name": "kedy chang"
 }'
+
+回應為：
+{
+  "_index" : "customer",
+  "_type" : "external",
+  "_id" : "1",
+  "_version" : 1,
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "created" : true
+}
