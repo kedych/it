@@ -186,3 +186,10 @@ curl 'localhost:9200/_cat/health?v'
 
 
 沒有什麼特別的欄位，"found"，從這邊可以看到一個要求的"id"欄位1跟一個"_source"，也就是我們之前建索引的完整JSON document。
+
+#刪除一個索引(Delete an index)
+
+測試看看怎麼砍掉剛剛建立的index
+
+    curl -XDELETE 'localhost:9200/customer?pretty'
+    curl 'localhost:9200/_cat/indices?v'
