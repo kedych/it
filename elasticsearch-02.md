@@ -71,3 +71,35 @@ cd elasticsearch-2.0.0/bin/
 還有權限問題 建議一開始下載elasticsearch使用一般使用者
 
 應該就可以正常執行了
+
+#叢集健康狀態
+
+Elasticsearch使用REST API，可以得之叢集狀態與進行管理
+
+預設通訊埠是9200 使用curl對本機9200發request即可
+命令：
+curl 'localhost:9200/_cat/health?v'
+
+應該會得到類似的回應：
+
+[kedy@es1 ~]$ curl 'localhost:9200/_cat/health?v'
+
+
+epoch      timestamp cluster   status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shar ds_percent
+
+
+1446545469 18:11:09  escluster green           1         1      0   0    0    0        0             0                  -                 100.0%
+
+##cluster狀態
+命令：
+
+curl 'localhost:9200/_cat/nodes?v'
+
+
+回應：
+
+[kedy@es1 ~]$ curl 'localhost:9200/_cat/nodes?v'
+
+host      ip        heap.percent ram.percent load node.role master name
+
+127.0.0.1 127.0.0.1            2          77 0.00 d         *      node1
