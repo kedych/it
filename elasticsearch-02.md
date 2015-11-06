@@ -254,4 +254,6 @@ curl 'localhost:9200/_cat/health?v'
     curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
     {
         "name": "joe chen"
-    }'
+
+
+這時候指定id之document裡面的name欄位, 就會從"kedy chang"被替換成"joe chen"
