@@ -185,4 +185,4 @@ curl 'localhost:9200/_cat/health?v'
     }
 
 
-
+沒有什麼異常的欄位，"found"，從這邊可以看到一個要求的"id"欄位1跟一個"source"，也就是我們之前建索引的完整JSON document。
