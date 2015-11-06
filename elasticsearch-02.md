@@ -138,4 +138,16 @@ yellow open   customer   5   1          0            0       254b           254b
 
 在列出index的時候, 可以發現狀態的指示是yellow而非green, 這是因為replicas還沒被分配. 發生的原因是因為Elasticsearch預設只幫indexr建立一個replica, 所以這時候就只有一個replica, 除非有叢集有其它node加入, 　只要有新的node加入, 然後replica被分配到第二個節點的時候, index的健康狀態就會是green.
 
-#索引跟查詢文件(Index and Query a Document)
+#索引與查詢文件(Index and Query a Document)
+
+階下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
+
+索引一個簡單的消費者文件到到消費者索引中, 型態為"external", ID是1:
+
+範例中的JSON document: {"name":"kedy chang"}
+
+命令為：
+curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
+{
+    "name": "kedy chang"
+}'
