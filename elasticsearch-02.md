@@ -229,6 +229,7 @@ curl 'localhost:9200/_cat/health?v'
     curl 'localhost:9200/customer/external/1'
     
 刪除customer　index
+
     curl -XDELETE 'localhost:9200/customer'
 
 
