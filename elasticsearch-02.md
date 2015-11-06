@@ -209,3 +209,27 @@ curl 'localhost:9200/_cat/health?v'
 
 就只剩下剛剛另外建立的kedytest index, 在前述命令指定刪除的customer index已經不見了
 
+
+這時候我們複習剛剛的建立index跟document還有刪除的命令，使用的命令如下：
+
+建立"customer" index
+
+    curl -XPUT 'localhost:9200/customer'
+
+
+建立id 1的document, 欄位為name: kedy chang, type為external
+
+    curl -XPUT 'localhost:9200/customer/external/1' -d '
+    {
+    "name": "kedy chang"
+    }'
+    
+瀏覽index為customer, type為external, id為1的document
+    
+    curl 'localhost:9200/customer/external/1'
+    
+刪除customer　index
+    curl -XDELETE 'localhost:9200/customer'
+
+
+
