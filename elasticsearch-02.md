@@ -181,8 +181,7 @@ curl 'localhost:9200/_cat/health?v'
         "_type" : "external",
         "_id" : "1",
         "_version" : 1,
-        "found" : true,
-        "_source":{ "name": "kedy chang"}
+        "found" : true, "_source":{ "name": "kedy chang"}
     }
 
 
