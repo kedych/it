@@ -171,7 +171,8 @@ curl 'localhost:9200/_cat/health?v'
 剛剛已經完成建立document, 現在我們來探索剛才建立的document, 一樣使用curl, 使用XGET存取elasticresearch的REST API.
 
 命令：
-curl -XGET 'localhost:9200/customer/external/1?pretty'
+
+    curl -XGET 'localhost:9200/customer/external/1?pretty'
 
 回應為：
 
