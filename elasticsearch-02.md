@@ -254,6 +254,7 @@ curl 'localhost:9200/_cat/health?v'
     curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '
     {
         "name": "joe chen"
+    }'
 
 
 這時候指定id之document裡面的name欄位, 就會從"kedy chang"被替換成"joe chen"
@@ -269,6 +270,24 @@ curl 'localhost:9200/_cat/health?v'
         "_source":{ "name": "joe chen"}
     }
 
+
+上面是我們更新同樣id的document, 如果我們更改了id, 
+
+        curl -XPUT 'localhost:9200/customer/external/2?pretty' -d '
+    {
+        "name": "joe chen"
+    }
+    
+Elasticsearch就會新建立一個document
+
+上面的例子我們都有指定id, 如果不指定的話, 要改用 -XPOST, 如此一來, Elasticsearch就會隨機產生一個ID.
+
+例如:
+
+    curl -XPOST 'localhost:9200/customer/external?pretty' -d '
+    {
+        "name": "Fish Chang"
+    }'
 
 Reference data:
 https://www.elastic.co/guide/en/elasticsearch/reference/2.0/_modifying_your_data.html
