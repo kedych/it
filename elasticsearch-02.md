@@ -294,10 +294,16 @@ Elasticsearch就會新建立一個document
 #更新Documents
 為了要能夠索引跟取代documdents, 我們必須要能能夠更新documents 記得, 在Elasticsearch之中, 取代不是真的直接更新, 而是刪除舊的documents, 再重新索引新document進去.
 
-以下範例顯示如何更新id為1的document之中的姓名欄位, 改成"Joe Chen"
+以下範例顯示如何更新已存在且id為1的document之中的姓名欄位, 改成"Joe Chen"
 
     curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
     {
         "doc": { "name": "Joe Chen" }
     }'
 
+以下範例顯示如何更新已存在且id為1的document之中的姓名欄位為"Joe Chen", 同時也增加年紀欄位
+
+    curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
+    {
+        "doc": { "name": "Joe Chen", "age": 30 }
+    }'
