@@ -315,4 +315,4 @@ Update也可以使用簡單的script執行. 注意, 動態的script(如下範例
         "script" : "ctx._source.age += 5"
     }'
     
-上述範例中, ctx._source 參考文件還在等待Elastic官方更新.
+上述範例中, ctx._source 參考文件還在等待Elastic官方更新. 在此文件撰寫的同時,  Elasticsearch的更新功能一次只能針對一個document進行, 未來Elasticsearch也許會提供針對多document的query condition的能力, 類似SQL的UPDATE-WHERE敘述一樣.
