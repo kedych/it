@@ -289,4 +289,4 @@ Elasticsearch就會新建立一個document
         "name": "Fish Chang"
     }'
 
-記得這種情況要使用的方法是 -XPOST 而不是 -XPUT喔
+記得這種情況要使用的方法是 -XPOST 而不是 -XPUT
