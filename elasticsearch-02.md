@@ -292,3 +292,4 @@ Elasticsearch就會新建立一個document
 記得這種情況要使用的方法是 -XPOST 而不是 -XPUT
 
 #更新Documents
+為了要能夠索引跟取代documdents, 我們必須要能能夠更新documents
