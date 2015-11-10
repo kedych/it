@@ -289,5 +289,4 @@ Elasticsearch就會新建立一個document
         "name": "Fish Chang"
     }'
 
-Reference data:
-https://www.elastic.co/guide/en/elasticsearch/reference/2.0/_modifying_your_data.html
+記得這種情況要使用的方法是 -XPOST 而不是 -XPUT喔
