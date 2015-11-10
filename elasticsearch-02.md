@@ -307,3 +307,5 @@ Elasticsearch就會新建立一個document
     {
         "doc": { "name": "Joe Chen", "age": 30 }
     }'
+
+Update也可以使用簡單的script執行. 注意, 動態的script(如下範例)預設是將script的支援關閉的. 詳系可以參考 [scripting docs](https://www.elastic.co/guide/en/elasticsearch/reference/2.0/modules-scripting.html) 
