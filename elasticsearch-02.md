@@ -238,7 +238,7 @@ curl 'localhost:9200/_cat/health?v'
 
 
 
-#修改你的資料(Modifying Your Data)
+#修改資料(Modifying Your Data)
 
 ##索引與取代documents
 
