@@ -314,3 +314,5 @@ Update也可以使用簡單的script執行. 注意, 動態的script(如下範例
     {
         "script" : "ctx._source.age += 5"
     }'
+    
+上述範例中, ctx._source 參考文件還在等待Elastic官方更新.
