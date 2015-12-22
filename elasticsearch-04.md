@@ -1,6 +1,5 @@
 # ElasticSearch - 叢集組態
 
-
 雖然文件寫得很神, 只要在啟動的時候給予叢集名稱(cluster.name)與結點名稱(node.name),,在AWS上, ElasticSearch搜尋節點的時候, multicast也無法使用, 自己實測環境也沒有看到有封包出來,還是手動設定組態比較妥當...
 
 如果要強制JAVA使用IPv4環境:
@@ -52,3 +51,6 @@ data node:
     [2015-12-22 16:23:22,299][INFO ][gateway                  ] [node1] recovered [0] indices into cluster_state
     [2015-12-22 16:23:25,060][INFO ][cluster.service          ] [node1] added {{node2}{fyXz_OPURPeyatd6AI5qUA}{203.145.207.214}{203.145.207.214:9300}{data=false, master=false},}, reason: zen-disco-join(join from node[{node2}{fyXz_OPURPeyatd6AI5qUA}{203.145.207.214}{203.145.207.214:9300}{data=false, master=false}])
     [2015-12-22 16:23:27,266][INFO ][cluster.service          ] [node1] added {{node3}{PC8jRy67SXu_P2zWezRUEQ}{203.145.207.215}{203.145.207.215:9300}{data=false, master=false},}, reason: zen-disco-join(join from node[{node3}{PC8jRy67SXu_P2zWezRUEQ}{203.145.207.215}{203.145.207.215:9300}{data=false, master=false}])
+    
+##ElasticSearch Header Plugin
+另外可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
