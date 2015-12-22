@@ -54,3 +54,13 @@ data node:
     
 #ElasticSearch Header Plugin
 另外可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
+
+
+    $bin/plugin --install mobz/elasticsearch-head
+
+裝好之後透過
+
+    http://hostname:9200/_plugin/head/
+
+就可以看到叢集資訊畫面
+    
