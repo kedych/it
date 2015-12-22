@@ -22,7 +22,7 @@ master node:
     discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
     network.host: _ens32_
 
-date node:
+data node:
 
     cluster.name: "es_c"
     node.name: "node2"
@@ -33,4 +33,6 @@ date node:
     discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
     network.host: _ens32_
     
-如此, 啟動
+如此, 啟動之後可以看到順利加入cluster的訊息
+
+
