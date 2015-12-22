@@ -8,21 +8,23 @@ export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
 
 
 master node:
-cluster.name: "es_c"
-node.name: "node1"
-node.master: true
-node.data: false
-discovery.zen.ping.timeout: 10s
-discovery.zen.ping.multicast.enabled: false
-discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
-network.host: _ens32_
+
+    cluster.name: "es_c"
+    node.name: "node1"
+    node.master: true
+    node.data: false
+    discovery.zen.ping.timeout: 10s
+    discovery.zen.ping.multicast.enabled: false
+    discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
+    network.host: _ens32_
 
 date node:
-cluster.name: "es_c"
-node.name: "node2"
-node.master: true
-node.data: false
-discovery.zen.ping.timeout: 10s
-discovery.zen.ping.multicast.enabled: false
-discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
-network.host: _ens32_
+
+    cluster.name: "es_c"
+    node.name: "node2"
+    node.master: true
+    node.data: false
+    discovery.zen.ping.timeout: 10s
+    discovery.zen.ping.multicast.enabled: false
+    discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
+    network.host: _ens32_
