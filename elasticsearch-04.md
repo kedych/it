@@ -6,6 +6,9 @@
 如果要強制JAVA使用IPv4環境:
 export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
 
+編輯組態檔案
+    
+    vim /opt/elasticsearch-2.1.1/config/elasticsearch.yml
 
 master node:
 
@@ -28,3 +31,5 @@ date node:
     discovery.zen.ping.multicast.enabled: false
     discovery.zen.ping.unicast.hosts: ["masternode.niucloud.niu.edu.tw"]
     network.host: _ens32_
+    
+如此, 啟動
