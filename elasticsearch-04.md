@@ -10,6 +10,7 @@ export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
     
     vim /opt/elasticsearch-2.1.1/config/elasticsearch.yml
 
+
 master node:
 
     cluster.name: "es_c"
