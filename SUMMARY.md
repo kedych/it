@@ -10,5 +10,4 @@
 * [ElasticSearch - Installation](elasticsearch-02.md)
 * [ElasticSearch - 使用初探](elasticsearch-03.md)
 * [ElasticSearch - 叢集組態](elasticsearch-04.md)
-* ElasticSearch - 叢集組態
 
