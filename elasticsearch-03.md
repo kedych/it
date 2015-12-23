@@ -1,9 +1,7 @@
 #使用初探
 #索引與查詢文件(Index and Query a Document)
 
-所有存放在ElasticSearch中的紀錄，都是JSON物件。
-
-接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
+所有存放在ElasticSearch中的紀錄都是JSON物件。接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
 
 索引一個簡單的消費者文件到到消費者索引中, 型態為"external", ID是1:
 
