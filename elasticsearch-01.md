@@ -22,6 +22,8 @@ Replicas理由：
 * 在shard/node失效的時候，提供高可用。
 * 可以scale out搜尋效能與吞吐量，特別是可以在所有的replicas進行平行搜尋的時候。
 
+Cluster理由：
+
 總結，index可以被切分成多個shards，index也可以被複製0份或多份。一但使用replica，每個index都會有primary shards(原始replicat來源shard)與replica shards(被複製的primary shard)。當index建立以後，replica的數量可以動態調整，但是shard數量無法變動。
 
 預設的情況下，每個Elasticsearch中的index會分配5個primary shards跟1個replica，換言之，如果叢集有兩個node，每個node的index就會有5個primary shards跟5replica shards。
