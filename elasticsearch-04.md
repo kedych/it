@@ -5,7 +5,7 @@
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
 
 1. Cluster/index operations: 所有的叢集/索引 的主動寫入預設是被鎖住的，首先會先套用在master node，之後才會套用到其他的secondary nodes。
-1. Document operations: 所有的寫入
+1. Document operations: 所有的寫入動作也是鎖住的，除了在single hit shard之外。讀取運算會在所有的shard replicas之間平衡。
 
 ## 組態
 
