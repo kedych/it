@@ -6,6 +6,8 @@
 |-|-|
 |Cluster|整體儲存運算架構 用名稱來識別 預設名稱為elasticsearch|
 |Node|叢集中的節點|
+|Master Node|叢集中的主要節點|
+|Secondary Nodes|叢集中的次要節點|
 |Index| 文件蒐集的集合，名稱全部要小寫，在叢集架構中，index要定義多少就定義多少。|
 |Type|一個index可以定義一個以上的Type。Type是index易識別語意的邏輯分類、分割。|
 |Document|可以被index的最小資訊單位，以JSON格式存在。|
