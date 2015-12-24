@@ -1,4 +1,10 @@
 #使用初探
+
+#資料進入流程
+當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
+1. record ID 如果沒有指定ID，就會自動產生一個
+1. 如有定義 routing 或 parent 參數，
+
 #索引與查詢文件(Index and Query a Document)
 
 所有存放在ElasticSearch中的紀錄都是JSON物件。接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
