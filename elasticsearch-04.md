@@ -23,6 +23,11 @@
 
 ## Linux下的參數設定
 
+1. /etc/security/limits.conf
+增加檔案參數
+
+    elasticsearch - nofile 299999
+    elasticsearch - memlock unlimited
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
