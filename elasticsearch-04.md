@@ -31,6 +31,7 @@
 
 
 2. 控制記憶體swapping
+3. 
 
     vim elasticsearch.yml:
     bootstrap.mlockall: true
