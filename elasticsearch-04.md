@@ -24,7 +24,7 @@
 ## Linux下的參數設定
 
 1. /etc/security/limits.conf
-增加檔案參數
+增加限制參數
 
     elasticsearch - nofile 299999
     elasticsearch - memlock unlimited
