@@ -38,7 +38,7 @@
 
 3.固定記憶體使用量
 
-ES_MIN_MEM and ES_MAX_MEM
+    ES_MIN_MEM and ES_MAX_MEM
 
 
 ## 運算行為
