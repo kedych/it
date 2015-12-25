@@ -10,7 +10,8 @@
 
 小提示：為了避免每次ElasticSearch版本升級都要重新設定組態檔，把檔案放在ElasticSearch目錄之外是不錯的選擇。
 
-在主要的設定檔elasticsearch.yml
+在主要的設定檔elasticsearch.yml之中，有一些重要的參數
+
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
