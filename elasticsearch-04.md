@@ -38,6 +38,8 @@
 
 3.固定記憶體使用量
 
+ES_MIN_MEM and ES_MAX_MEM
+
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
