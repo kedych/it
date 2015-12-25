@@ -11,7 +11,15 @@
 小提示：為了避免每次ElasticSearch版本升級都要重新設定組態檔，把檔案放在ElasticSearch目錄之外是不錯的選擇。
 
 在主要的設定檔elasticsearch.yml之中，有一些重要的參數：
-* path.work 指定路徑 ElasticSearch puts temporary files
+* path.work 指定路徑 ElasticSearch 存放暫存檔。
+* path.log 指定日誌放置路徑，整體日誌配置是由logging.yml處理
+* path.plugins讓你配置外掛路徑。 
+
+用來控制索引shard數量的參數是：
+* index.number_of_shards
+
+而控制複本(replica)數量的參數是:
+* index.number_of_replicas
 
 
 ## 運算行為
