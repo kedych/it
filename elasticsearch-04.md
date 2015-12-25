@@ -10,7 +10,8 @@
 
 小提示：為了避免每次ElasticSearch版本升級都要重新設定組態檔，把檔案放在ElasticSearch目錄之外是不錯的選擇。
 
-在主要的設定檔elasticsearch.yml之中，有一些重要的參數
+在主要的設定檔elasticsearch.yml之中，有一些重要的參數：
+* path.work 指定路徑 ElasticSearch puts temporary files
 
 
 ## 運算行為
