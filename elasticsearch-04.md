@@ -176,11 +176,8 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 * Supporting new protocols (Thrift, memcache, and so on)
 * Supporting new storages (Hadoop)
 
-
-
-   
 ###ElasticSearch Header Plugin
-另外可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
+上面提到的外掛有很多種，剛好建立了叢急，可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
 
 
     $bin/plugin --install mobz/elasticsearch-head
