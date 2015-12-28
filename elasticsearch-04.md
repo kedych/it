@@ -161,6 +161,8 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 * Site plugins
 * Native plugins
+
+
    
 ###ElasticSearch Header Plugin
 另外可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
