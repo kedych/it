@@ -4,3 +4,4 @@
 
 如果我們需要自行除錯Elasticsearch或者改變日誌層級，就需要改變config/logging.yml之中的參數。
 
+在Elasticsearch安裝目錄下的config目錄，有一個logging.yml，此檔案包含所有的工作日誌設定。
