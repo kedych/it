@@ -215,4 +215,9 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 ##移除plugin
 為了安全的移除plugin，必須先停止ElasticSearch服務，避免產生一外的中斷情況，而無法順利移除plugin。
 
-要移除的方法也很簡單，主要命令使用ElasticSearch的Plugin管理員，其實就是 bin/plugin 這支script。
+要移除的方法也很簡單，主要命令使用ElasticSearch的Plugin管理員，其實就是 bin/plugin 這支script wrapper。
+
+要移除plugin的步驟為：
+
+1. 停止ElasticSearch服務
+2. 使用
