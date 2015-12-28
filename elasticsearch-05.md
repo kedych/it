@@ -36,3 +36,6 @@
     [2015-12-28 18:01:50,564][DEBUG][cluster.service          ] [node1] set local cluster state to version 2
     [2015-12-28 18:01:50,585][INFO ][gateway                  ] [node1] recovered [0] indices into cluster_state
     [2015-12-28 18:01:50,585][DEBUG][cluster.service          ] [node1] processing [local-gateway-elected-state]: took 21ms done applying updated cluster_state (version: 2, uuid: j0qgVGxNQZ-3oIw53f17bg)
+
+
+##小結
