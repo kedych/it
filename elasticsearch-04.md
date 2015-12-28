@@ -88,9 +88,9 @@ node.data決定是否要讓節點儲存資料，本參數預設值也是true，�
 
 |node.master|node.data|節點描述|
 |-|-|-|
-|true|true|This is the default node. It can be a master node and can contain data.|
-|false|true|This node never becomes a master node, it only holds data. It can be defined as the workhorse of your cluster.|
-|true|false|This node only serves as a master node, that is, it does not store any data and has free resources. This will be the coordinator of your cluster.|
+|true|true|此為預設值，一個結點可以擔任master node也可以儲存資料。|
+|false|true|本節點永遠不做為master node，可以當作叢集中工作的一部分，類似workhouse|
+|true|false|本節點只擔任master node而不儲存資料，擔任叢集中協調者、仲裁者的角色。|
 |false|false|This node acts as a search load balancer (fetches data from nodes, aggregates results, and so on).|
 
 ## 運算行為
