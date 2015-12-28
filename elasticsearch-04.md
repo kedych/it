@@ -74,7 +74,7 @@ ElasticSearch讓管理者能彈性配置不同類型的節點，一樣使用
 
 有一個建議的master node數量，就是整個叢集節點數量除以二再加一
 
-Number of Master node = (Number of nodes)/2 + 1
+    Number of Master node = (Number of nodes)/2 + 1
     
 2.是否要讓節點儲存資料
 
