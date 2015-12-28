@@ -22,5 +22,17 @@
 2. 接著透過命令列執行ElasticSearch，就可以看到很多垃圾文字(詳細的訊息)，大概長這樣：
 
 
-    […][INFO ][node1] [ES_cluster] version[2.1.1],pid[12343], build[1c22558/2015-12-28T14:58:15Z]
-    […][INFO ][node1] [ES_cluster] initializing …
+
+    [2015-12-28 18:01:50,543][DEBUG][cluster.service          ] [node1] processing [gateway_initial_state_recovery]: execute
+    [2015-12-28 18:01:50,545][DEBUG][cluster.service          ] [node1] processing [gateway_initial_state_recovery]: took 1ms no change in cluster_state
+    [2015-12-28 18:01:50,554][DEBUG][http.netty               ] [node1] Bound http to address {203.145.207.213:9200}
+    [2015-12-28 18:01:50,555][DEBUG][http.netty               ] [node1] Bound http to address {[2001:e10:1440:ffff:20c:29ff:fe67:db53]:9200}
+    [2015-12-28 18:01:50,559][DEBUG][http.netty               ] [node1] Bound http to address {[fe80::20c:29ff:fe67:db53]:9200}
+    [2015-12-28 18:01:50,560][INFO ][http                     ] [node1] publish_address {203.145.207.213:9200}, bound_addresses {203.145.207.213:9200}, {[2001:e10:1440:ffff:20c:29ff:fe67:db53]:9200}, {[fe80::20c:29ff:fe67:db53]:9200}
+    [2015-12-28 18:01:50,560][INFO ][node                     ] [node1] started
+    [2015-12-28 18:01:50,563][DEBUG][cluster.service          ] [node1] processing [local-gateway-elected-state]: execute
+    [2015-12-28 18:01:50,564][DEBUG][cluster.service          ] [node1] cluster state updated, version [2], source [local-gateway-elected-state]
+    [2015-12-28 18:01:50,564][DEBUG][cluster.service          ] [node1] publishing cluster state version 2
+    [2015-12-28 18:01:50,564][DEBUG][cluster.service          ] [node1] set local cluster state to version 2
+    [2015-12-28 18:01:50,585][INFO ][gateway                  ] [node1] recovered [0] indices into cluster_state
+    [2015-12-28 18:01:50,585][DEBUG][cluster.service          ] [node1] processing [local-gateway-elected-state]: took 21ms done applying updated cluster_state (version: 2, uuid: j0qgVGxNQZ-3oIw53f17bg)
