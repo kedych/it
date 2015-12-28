@@ -11,4 +11,4 @@
 * [ElasticSearch - 使用初探](elasticsearch-03.md)
 * [ElasticSearch - 叢集組態](elasticsearch-04.md)
 * [ElasticSearch - 改變日誌層級](elasticsearch-05.md)
-
+* [ElasticSearch - 管理對應](elasticsearch-06.md)
