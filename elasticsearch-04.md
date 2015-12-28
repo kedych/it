@@ -73,6 +73,8 @@ ElasticSearch讓管理者能彈性配置不同類型的節點，一樣使用
 在雲端環境中master node就是仲裁者，會負責shard管理，確認叢集情況、以及做為每個索引行為的主要控制者，本參數預設值是true。
 
 有一個建議的master node數量，就是整個叢集節點數量除以二再加一
+
+Number of Master node = (Number of nodes)/2 + 1
     
 2.是否要讓節點儲存資料
 
