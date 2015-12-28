@@ -59,7 +59,20 @@ the memory itself, providing a huge performance boost.
 
 
 ##設定不同類別的節點
-因為ElasticSearch原本就設計在雲端環境，可以在大量的紀錄(record)中進行快速的搜尋和資料處理，當環境具有大量紀錄時，我們會需要整體ElasticSearch具備高可用與良好的效能，此時，就需要加入更多的節點。
+因為ElasticSearch原本就設計在雲端環境，可以在大量的紀錄(record)中進行快速的搜尋和資料處理，當環境具有大量紀錄時，我們會需要整體ElasticSearch具備高可用與良好的效能，此時，就需要在叢集中加入更多的節點。
+
+ElasticSearch讓管理者能彈性配置不同類型的節點，一樣使用
+
+    config/elasticsearch.yml
+    
+進行節點的設置，例如：
+1.是否要讓節點能擔任master node
+    
+    node.master: true
+        
+2.是否要讓節點儲存資料
+
+    node.data: true
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
