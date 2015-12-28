@@ -18,7 +18,6 @@
 
     es.logger.level: DEBUG
 
-
     
 2. 接著透過命令列執行ElasticSearch，就可以看到很多垃圾文字(詳細的訊息)，大概長這樣：
 
