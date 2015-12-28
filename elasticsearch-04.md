@@ -195,3 +195,12 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 就可以看到叢集資訊畫面
     
 安裝外掛以後，需要重開ElasticSearch，但一個site plugin，重開就不是必要的。
+
+##手動安裝plugin
+有時候plugin不見得能在線上取得並安裝，就會需要手動進行。
+步驟如下：
+
+1. 複製plugin的壓縮檔(zip)到ElasticSearch主目錄
+1. 如果ElasticSearch目錄之下沒有plugins資料夾，就建一個
+1. 解壓所該plugin的檔案，放到 plugins資料夾
+1. 移除該plugin原本的zip檔，清除用不到的檔案
