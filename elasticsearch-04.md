@@ -204,3 +204,5 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 1. 如果ElasticSearch目錄之下沒有plugins資料夾，就建一個
 1. 解壓所該plugin的檔案，放到 plugins資料夾
 1. 移除該plugin原本的zip檔，清除用不到的檔案
+
+每個ElasticSearch Plugin，都會包含在一個目錄之中(該目錄名字通常就是plugin的名稱)，
