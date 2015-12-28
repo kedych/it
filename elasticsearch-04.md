@@ -164,7 +164,7 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 * ElasticSearch head (http://mobz.github.io/elasticsearch-head/)
 * Elastic HQ (http://www.elastichq.org/)
-*Bigdesk (http://bigdesk.org
+* Bigdesk (http://bigdesk.org
 
 ### Native plugins
 
