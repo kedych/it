@@ -66,13 +66,15 @@ ElasticSearch讓管理者能彈性配置不同類型的節點，一樣使用
     config/elasticsearch.yml
     
 進行節點的設置，例如：
-1.是否要讓節點能擔任master node
+1.是否要讓節點能擔任master node，在雲端環境中master node就是仲裁者，會負責shard管理，確認叢集情況、以及做為每個索引行為的主要控制者，本參數預設值是true。
     
     node.master: true
         
 2.是否要讓節點儲存資料
 
     node.data: true
+    
+
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
