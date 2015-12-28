@@ -36,6 +36,23 @@
     vim elasticsearch.yml:
     bootstrap.mlockall: true
 
+The standard limit of file descriptors (the maximum number of open files for a user) is typically
+1,024. When you store a lot of records in several indices, you run out of file descriptors very
+quickly, so your ElasticSearch server becomes unresponsive and your indices might become
+corrupted, leading to a loss of data. If you change the limit to a very high number, your
+ElasticSearch server doesn't hit the maximum number of open files.
+The other settings for memory restriction in ElasticSearch prevent memory swapping and
+give a performance boost in a production environment. This is required because during
+indexing and searching ElasticSearch creates and destroys a lot of objects in the memory.
+This large number of create/destroy actions fragments the memory, reducing performance:
+the memory becomes full of holes, and when the system needs to allocate more memory,
+it suffers an overhead to find compacted memory. If you don't set bootstrap.mlockall:
+true, then ElasticSearch dumps the memory onto a disk and defragments it back in the
+memory, which freezes the system. With this setting, the defragmentation step is done in
+the memory itself, providing a huge performance boost.
+
+如果沒設定這個參數， ElasticSearch在dump記憶體資訊到硬碟的時候，可能會造成系統凍結(freeze)，而影響效能。   
+
 3.固定記憶體使用量
 
     ES_MIN_MEM and ES_MAX_MEM
