@@ -220,4 +220,8 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 要移除plugin的步驟為：
 
 1. 停止ElasticSearch服務
-2. 使用
+2. 使用bin/plugin命令，參數為-remove，後接plugin名稱
+
+    plugin -remove mobz/elasticsearch-head
+    
+3. 重開服務
