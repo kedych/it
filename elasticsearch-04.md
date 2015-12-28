@@ -81,7 +81,7 @@ ElasticSearch讓管理者能彈性配置不同類型的節點，一樣使用
 
     node.data: true
     
-
+node.data決定是否要讓節點儲存資料，本參數預設值也是true，這個節點就會在所引與搜尋資料的時候，加入與分擔工作。
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
