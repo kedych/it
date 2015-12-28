@@ -93,7 +93,7 @@ node.data決定是否要讓節點儲存資料，本參數預設值也是true，�
 |true|false|本節點只擔任master node而不儲存資料，擔任叢集中協調者、仲裁者的角色。|
 |false|false|不存資料也不當master node，只當做搜尋的負載平衡節點， 例如從其他結點截取資料、聚合結果(aggregate result)之類的工作。|
 
-最常使用的參數node.master=true與node.data=true，
+最常使用的節點類型參數是node.master=true與node.data=true，但如果有非常大規模的叢集或特殊需求，就可以自行決定節點類型進行差異化配置，來達到比較好的搜尋與聚合結果。
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
