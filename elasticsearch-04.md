@@ -167,6 +167,14 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 * Bigdesk (http://bigdesk.org
 
 ### Native plugins
+這些是包含應用程式碼的 .jar 檔案，內容有：
+
+* Rivers (plugins that allow you to import data from DBMS or other sources)
+* Scripting Language Engines (JavaScript, Python, Scala, and Ruby)
+* Custom analyzers, tokenizers, and scoring
+* REST entry points
+* Supporting new protocols (Thrift, memcache, and so on)
+* Supporting new storages (Hadoop)
 
 
 
