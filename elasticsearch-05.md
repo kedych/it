@@ -8,9 +8,12 @@
 
 調整日誌設定步驟如下：
 
-1. 忽略所有ElasticSearch有的日誌種類，例如想要採取root level的日誌方式，找到原本的logging.yml：
+1. 忽略所有ElasticSearch有的日誌種類，例如想要採取root level的日誌方式，打開logging.yml找到原本的：
 
 
     rootLogger: INFO, console, file
     
 要改成root level的話，要改成：
+
+    
+    rootLogger: DEBUG, console, file
