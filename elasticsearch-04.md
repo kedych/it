@@ -192,3 +192,4 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 就可以看到叢集資訊畫面
     
+安裝外掛以後，需要重開ElasticSearch，但一個site plugin，重開就不是必要的。
