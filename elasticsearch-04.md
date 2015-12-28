@@ -206,3 +206,5 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 1. 移除該plugin原本的zip檔，清除用不到的檔案
 
 每個ElasticSearch Plugin，都會包含在一個目錄之中(該目錄名字通常就是plugin的名稱)，如果該外掛是屬於site plugin，在外掛目錄中應該要包含一個目錄，銘稱是 _site，本目錄就包含一些伺服器需要的靜態檔案。如果該plugin是二進位檔案(binary)，該plugin目錄就會包含一個或多個.jar檔案。
+
+當ElasticSearch主程式(bin/elasticsearch)啟動的時候，就會先掃描plugins目錄，並且載入plugins。
