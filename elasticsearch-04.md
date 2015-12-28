@@ -88,10 +88,23 @@ node.data決定是否要讓節點儲存資料，本參數預設值也是true，�
 
 |node.master|node.data|節點描述|
 |-|-|-|
-|true|true||
-|false|true||
-|true|false||
-|false|false||
+|true|true|This is the default node.
+It can be a master node
+and can contain data.|
+|false|true|This node never becomes
+a master node, it only holds
+data. It can be defined as the
+workhorse of your cluster.|
+|true|false|This node only serves as a
+master node, that is, it does
+not store any data and has
+free resources. This will
+be the coordinator of your
+cluster.|
+|false|false|This node acts as a search
+load balancer (fetches data
+from nodes, aggregates
+results, and so on).|
 
 ## 運算行為
 ElasticSearch為了確保各種運作(包含 在index/mapping/object行為)的安全性，內部有一些規則，定義好如何執行運算，運算大致有：
