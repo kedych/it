@@ -156,7 +156,11 @@ data node:
     [2015-12-22 16:23:27,266][INFO ][cluster.service          ] [node1] added {{node3}{PC8jRy67SXu_P2zWezRUEQ}{203.145.207.215}{203.145.207.215:9300}{data=false, master=false},}, reason: zen-disco-join(join from node[{node3}{PC8jRy67SXu_P2zWezRUEQ}{203.145.207.215}{203.145.207.215:9300}{data=false, master=false}])
  
 
-##安裝plugin 
+##安裝plugin
+ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外掛能透過不同的方法延伸ElasticSearch的特色和功能。在ElasticSearch之中，大致分成兩類不同的外掛：
+
+* Site plugins
+* Native plugins
    
 ###ElasticSearch Header Plugin
 另外可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
