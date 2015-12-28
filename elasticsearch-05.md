@@ -39,3 +39,4 @@
 
 
 ##小結
+ElasticSearch的日誌系統基於Log4j函式庫進行日誌操作，
