@@ -7,3 +7,10 @@
 在Elasticsearch安裝目錄下的config目錄，有一個logging.yml，此檔案包含所有的工作日誌設定。
 
 調整日誌設定步驟如下：
+
+1. 忽略所有ElasticSearch有的日誌種類，例如想要採取root level的日誌方式，找到原本的logging.yml：
+
+
+    rootLogger: INFO, console, file
+    
+要改成root level的話，要改成：
