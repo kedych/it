@@ -21,5 +21,5 @@
 2. 接著透過命令列執行ElasticSearch，就可以看到很多垃圾文字(詳細的訊息)，大概長這樣：
 
 
-    […][INFO ][node1] [ES_cluster] version[2.1.1],pid[12343], build[1c22558/2015-12-2814:58:15Z]
+    […][INFO ][node1] [ES_cluster] version[2.1.1],pid[12343], build[1c22558/2015-12-28T14:58:15Z]
     […][INFO ][node1] [ES_cluster] initializing …
