@@ -178,6 +178,8 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 ##如何安裝plugin
 
+在bin/目錄下有plugin的執行檔，用來管理ElasticSearch的叢急
+
 ###ElasticSearch Header Plugin
 上面提到的外掛有很多種，剛好建立了叢急，可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
 
