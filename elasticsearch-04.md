@@ -230,3 +230,4 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 1. 進入plugins目錄
 2. 刪除與要移除plugin同名的目錄
+
