@@ -213,4 +213,4 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 
 ##移除plugin
-為了安全的移除plugin，必須先停止ElasticSearch服務，避免產生一外的中斷情況，而無法順利移除plugin
+為了安全的移除plugin，必須先停止ElasticSearch服務，避免產生一外的中斷情況，而無法順利移除plugin。
