@@ -6,4 +6,4 @@
 
 在Elasticsearch安裝目錄下的config目錄，有一個logging.yml，此檔案包含所有的工作日誌設定。
 
-改調整日誌設定
+調整日誌設定步驟如下：
