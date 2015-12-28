@@ -159,8 +159,15 @@ data node:
 ##安裝plugin
 ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外掛能透過不同的方法延伸ElasticSearch的特色和功能。在ElasticSearch之中，大致分成兩類不同的外掛：
 
-* Site plugins - 
-* Native plugins - 
+### Site plugins
+在進入點(entry points)進行靜態內容服務的外掛。主要用途為建立管理應用程式，用來進行叢集的監控和管理。常見的site plugin有
+
+* ElasticSearch head (http://mobz.github.io/elasticsearch-head/)
+* Elastic HQ (http://www.elastichq.org/)
+*Bigdesk (http://bigdesk.org
+
+### Native plugins
+
 
 
    
