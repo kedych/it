@@ -178,7 +178,9 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
 
 ##如何安裝plugin
 
-在bin/目錄下有plugin的執行檔，用來管理ElasticSearch的外掛，先以ElasticSearch header為範例：
+在bin/目錄下有plugin的執行檔，用來管理ElasticSearch的外掛，本執行檔是在ElasticSearch具有對外掛的控制權(wrapper)
+
+先以ElasticSearch header為範例：
 
 ###ElasticSearch Header Plugin
 上面提到的外掛有很多種，剛好建立了叢集，可以安裝ElasticSearch的外掛, 透過web介面直接觀看叢集狀態
