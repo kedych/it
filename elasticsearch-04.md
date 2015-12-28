@@ -226,4 +226,4 @@ ElasticSearch有一個特色是可以安裝各式各樣的plugin，不同的外�
     
 3. 重開服務
 
-正常的步驟下，plugin這支script wrapper會偵測要移除的plugin名稱與目錄，進而進行plugin移除，如果有一些沒偵測到的檔案
+正常的步驟下，plugin這支script wrapper會偵測要移除的plugin名稱與目錄，進而進行plugin移除，如果有一些沒偵測到的檔案，或有一些奇怪的異常事件，
