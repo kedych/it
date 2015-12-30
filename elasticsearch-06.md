@@ -1,6 +1,6 @@
 # ElasticSearch - 管理映射
 
-* Using explicit mapping creation 使用詳盡對應
+* Using explicit mapping creation 使用明確映射
 * Mapping base types 對應基礎形態
 * Mapping arrays 對應陣列
 * Mapping an object 對應物件
