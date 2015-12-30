@@ -15,4 +15,4 @@
 * Mapping an attachment field 對應附件欄位
 * Adding metadata to a mapping 加入對應的metadata
 * Specifying a different analyzer 特定差異化分析
-* Mapping a completion suggester 對應完成建議(?)
+* Mapping a completion suggester 對應完成建議(有點怪, 再想想)
