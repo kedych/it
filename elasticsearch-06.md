@@ -37,3 +37,5 @@ ElasticSearch在索引/類別層級，有一個詳盡明確的對應，在索引
 
 ## Using explicit mapping creation 使用詳盡對應
 如果把索引當做SQL的資料庫，那麼對應(mapping)就像是資料庫中的表格定義或資料表架構(schema)。
+
+ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建立對應定義。
