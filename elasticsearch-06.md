@@ -188,7 +188,7 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |boost|This is used to change the importance of a field (the default value is 1.0).|
 |index_analyzer|This defines an analyzer to be used in order to process a field. If it is not defined, the analyzer of the parent object is used (the default value is null).|
 |search_analyzer|This defines an analyzer to be used during the search. If it is not defined, the analyzer of the parent object is used (the default value is null).|
-|analyzer||
+|analyzer|This sets both the index_analyzer and search_analyzer field to the defined value (the default value is null).|
 |include_in_all||
 |index_name||
 |norms||
