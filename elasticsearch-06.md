@@ -107,5 +107,5 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
     {"test":{"mappings":{"mytype":{"properties":{"age":{"type":"string"},"name":{"type":"string"}}}}}}
   
     
-##test
+##小結
 前面執行了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，
