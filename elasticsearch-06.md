@@ -19,7 +19,7 @@
 
 
 ##簡介
-對應(mapping)在ElasticSearch中是很重要的觀念，它定義了搜尋引擎如何處理文件(document)。
+映射(mapping)在ElasticSearch中是很重要的觀念，它定義了搜尋引擎如何處理文件(document)。
 
 在搜尋引擎中，有兩個主要的運作：
 
@@ -28,17 +28,17 @@
 
 上述兩種運作非常緊集的結合，也就是說，在所引發生的錯誤的話，可能連帶會影響搜尋的結果，導致結果不是預期的或是有錯過什麼重要的內容。
 
-ElasticSearch在索引/類別層級，有一個詳盡明確的對應，在索引的時候，如果沒有提供預設的對應(mapping)，一個預設的對應就會從文件組成欄位的結構來猜測並建立。接著，新的對應(mapping)就會自動傳遞到所有的叢集節點。
+ElasticSearch在索引/類別層級，有一個詳盡明確的映射，在索引的時候，如果沒有提供預設的映射(mapping)，一個預設的映射就會從文件組成欄位的結構來猜測並建立。接著，新的映射(mapping)就會自動傳遞到所有的叢集節點。
 
-預設對應種類(default type mapping)都有一個自動感測(sensible)的預設值，如果需要改變mapping狀態或客製化各種其他不同觀念的索引(儲存、忽略、結束等)，就需要提供一個新的對應定義。
+預設映射種類(default type mapping)都有一個自動感測(sensible)的預設值，如果需要改變mapping狀態或客製化各種其他不同觀念的索引(儲存、忽略、結束等)，就需要提供一個新的映射定義。
 
-接著學習如何操作各種不同類型的對應(mapping)方式。
+接著學習如何操作各種不同類型的映射(mapping)方式。
 
 
-## Using explicit mapping creation 使用詳盡對應
-如果把索引當做SQL的資料庫，那麼對應(mapping)就像是資料庫中的表格定義或資料表架構(schema)。
+## Using explicit mapping creation 使用詳盡映射
+如果把索引當做SQL的資料庫，那麼映射(mapping)就像是資料庫中的表格定義或資料表架構(schema)。
 
-ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建立詳盡的對應定義(explicit mapping creation)。
+ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建立詳盡的映射定義(explicit mapping creation)。
 
 學習explicit mapping時，要準備一個可用的ElasticSearch叢集，還有基礎的JSON知識，接著就可以繼續做囉！
 
@@ -77,7 +77,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 結果顯示操作的的index、type、id、_version、shard等，可以判斷操作是否成功，最後一個created則說明這筆document是否被建立(true)或更新(false)。
 
 
-###顯示對應
+###顯示映射
 
 為了知道一個type內的各項mapping，能夠過cURL得知，使用命令如下，因前面我們沒有特別指定mapping，因此欄位類型就是ElasticSearch自動mapping的結果：
 
@@ -108,21 +108,21 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
   
     
 ###小結
-前面執行了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，在文件索引的階段中，ElasticSearch會檢查該type是否存在，如果不存在，就會依照該欄位的type動態建立適當的類別。
+前面執行了建立索引(create an index)、放入文件(put a document)、顯示映射等工作，在文件索引的階段中，ElasticSearch會檢查該type是否存在，如果不存在，就會依照該欄位的type動態建立適當的類別。
 
-ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始處理：
-* 如果欄位已經存在對應中，然後欄位值也是有效的(就是有符合正確的type)，那ElasticSearch就不會改變目前的mapping。
-* 如果欄位已經存在對應中，但是欄位值跟型態對應不符、是不同型態，那麼type inference enging就會更改或升級欄位type，例如從int改成long的形態。而如果type根本不相容，就會造成例外(exception)接著索引程序就會失敗囉。
-* 最後是如果欄位不存在的話，就會自動偵測欄位形態，接著就會更新到一個新欄位的對應中。
+ElasticSearch會讀取所有映射欄位的預設特徵(properties)並且開始處理：
+* 如果欄位已經存在映射中，然後欄位值也是有效的(就是有符合正確的type)，那ElasticSearch就不會改變目前的mapping。
+* 如果欄位已經存在映射中，但是欄位值跟型態映射不符、是不同型態，那麼type inference enging就會更改或升級欄位type，例如從int改成long的形態。而如果type根本不相容，就會造成例外(exception)接著索引程序就會失敗囉。
+* 最後是如果欄位不存在的話，就會自動偵測欄位形態，接著就會更新到一個新欄位的映射中。
 * 
 
 每個文件(document)的索引都會使用UID作為唯一的識別，會儲存在該document一個特別的欄位，名稱為 _uid，這個值會自動使用 _id計算得知。而 _id這個值則是在索引的時候被提供，如果 _id不存在的話，ElasticSearch就會自動指派一個數值。
 
-當建立或修改一個對應形態(mapping type)的時候，ElasticSearch會自動傳輸相關對應或改變到所有的叢集節點中，接著所有包含該特定型態的shard都會處理到相對應的更改。
+當建立或修改一個映射形態(mapping type)的時候，ElasticSearch會自動傳輸相關映射或改變到所有的叢集節點中，接著所有包含該特定型態的shard都會處理到相映射的更改。
 
 
-##Mapping base types 對應基礎類別
-使用詳盡對應(explicit mapping)可以讓我們很快速地在沒有資料庫結構或沒有特定schema的狀況下建立資料，並且不用擔心怎麼選擇或給予適合的欄位型態。因此，為了在索引之後能得到比較好的搜尋結果與效能，手動定義型態就是必要的囉！
+##Mapping base types 映射基礎類別
+使用詳盡映射(explicit mapping)可以讓我們很快速地在沒有資料庫結構或沒有特定schema的狀況下建立資料，並且不用擔心怎麼選擇或給予適合的欄位型態。因此，為了在索引之後能得到比較好的搜尋結果與效能，手動定義型態就是必要的囉！
 
-經過詳細效調與設計的對應(mapping)會有以下優點：
+經過詳細效調與設計的映射(mapping)會有以下優點：
 
