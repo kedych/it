@@ -139,11 +139,11 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 
 |名稱|類型|描述|
 |-|-|-|
-|id|||
-|date|||
-|customer_id|||
-|name|||
-|quantity|||
-|vat|||
-|sent|||
+|id|Identifier|訂單唯一識別|
+|date|Data (time)|訂單日期|
+|customer_id|Id reference|消費者ID|
+|name|String|商品名稱|
+|quantity|Integer|商品數量|
+|vat|Double|商品稅金|
+|sent|Boolean|訂單是否出貨|
 
