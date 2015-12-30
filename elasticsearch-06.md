@@ -182,7 +182,7 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 
 |選項|說明|
 |-|-|
-|store|標記這個欄位會不會儲存在分開的索引區段中，用來作快速的搜尋取回，此欄位消耗磁碟空間，但如果需要從document中萃取欄位可以減少運算亮(也就是說, in scripting and aggregations). 此選項可能的值有yes跟no(預設是 no). Stored fields are faster than others at faceting.|
+|store|標記這個欄位是否儲存在分開的索引區段中，用來作快速的搜尋取回，此欄位消耗磁碟空間，但如果需要從document中萃取欄位可以減少運算亮(也就是說, in scripting and aggregations). 此選項可能的值有yes跟no(預設是 no). Stored fields are faster than others at faceting.|
 |index|This configures the field to be indexed (the default value is analyzed).The following are the possible values for this parameter:no, analyzed, not_analyzed|
 |null_value|This defines a default value if the field is missing|
 |boost|This is used to change the importance of a field (the default value is 1.0).|
