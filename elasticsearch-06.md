@@ -108,4 +108,4 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
   
     
 ##小結
-前面執行了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，
+前面執行了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，在文件索引的階段中，ElasticSearch會檢查該type是否存在，如果不存在，就會依照該欄位的type動態建立適當的類別。
