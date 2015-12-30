@@ -164,3 +164,16 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
     }
 
 這樣子映射就可以準備放到索引裡面，接著就來看各的描述內容代表的定義。
+
+程式設計領域我們需要知道一個變數的資料型態，各型態都可以對應到ElasticSearch的型態之中，簡單如下表：
+
+|Type|ElasticSearch Type|描述|
+|-|-|-|
+|String, VarChar, Text|string|字串、文字欄位，例如：kedy, abc123, UDN1234|
+|Integer|integer|32bit的整數|
+|Long|long|64bit的常數|
+|Float|float|32bit的浮點數|
+|Double|double|64bit的浮點數|
+|Boolean|||
+||||
+||||
