@@ -11,11 +11,11 @@
 * Adding a field with multiple mappings 增加具多映射的欄位
 * Mapping a geo point field 映射地理資訊點的欄位
 * Mapping a geo shape field 映射地理資訊區塊欄位
-* Mapping an IP field 對應網路位址(IP)欄位
-* Mapping an attachment field 對應附件欄位
-* Adding metadata to a mapping 加入對應的metadata
+* Mapping an IP field 映射網路位址(IP)欄位
+* Mapping an attachment field 映射附件欄位
+* Adding metadata to a mapping 加入映射的metadata
 * Specifying a different analyzer 特定差異化分析
-* Mapping a completion suggester 對應完成建議(有點怪, 再想想)
+* Mapping a completion suggester 映射完成建議(有點怪, 再想想)
 
 
 ##簡介
