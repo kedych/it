@@ -133,3 +133,17 @@ ElasticSearch會讀取所有映射欄位的預設特徵(properties)並且開始�
 
 ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 
+###映射欄位範例
+
+在這邊使用一個商店的範例，來建立欄位的映射
+
+|名稱|類型|描述|
+|-|-|-|
+|id|||
+|date|||
+|customer_id|||
+|name|||
+|quantity|||
+|vat|||
+|sent|||
+
