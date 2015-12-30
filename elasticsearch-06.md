@@ -186,4 +186,7 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 * boost
 * index_analyzer
 * search_analyzer
-* 
+* analyzer
+* include_in_all
+* index_name
+* norms
