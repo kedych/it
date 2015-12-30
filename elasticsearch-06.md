@@ -1,4 +1,4 @@
-# ElasticSearch - 管理對應
+# ElasticSearch - 管理映射
 
 * Using explicit mapping creation 使用詳盡對應
 * Mapping base types 對應基礎形態
