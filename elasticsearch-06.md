@@ -174,6 +174,6 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |Long|long|64bit的常數|
 |Float|float|32bit的浮點數|
 |Double|double|64bit的浮點數|
-|Boolean|||
-||||
-||||
+|Boolean|boolean|布林值(True, False)|
+|Date/Datetime|date|日期或日期時間，例如：2015-12-30或2015-12-30T21:24:00|
+|Bytes/Binary|binary|用來承接二近位檔案或字元串流的資料型態|
