@@ -58,7 +58,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
 ###放入一份文件(put a document)
 
-使用cURL直接對叢集操作：
+使用cURL直接對叢集操作，放入一個document，內含兩個欄位，分別是姓名(name)和年紀(age)，採用JSON格式進行資料填寫：
 
 
     [kedy@es1 ~]$ curl -XPUT http://es1:9200/test/mytype/1 -d '{"name":"kedy", "age":"31"}'
