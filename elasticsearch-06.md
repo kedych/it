@@ -120,4 +120,5 @@ ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始�
 
 當建立或修改一個對應形態(mapping type)的時候，ElasticSearch會自動傳輸相關對應或改變到所有的叢集節點中，接著所有包含該特定型態的shard都會處理到相對應的更改。
 
-##對應基礎形態
+
+##Mapping base types 對應基礎類別
