@@ -54,7 +54,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
 
 ###碰到索引建立，但shard沒有分配
-在操作過程中，碰到建立index後，shard沒有分配的問題，導致叢集錯誤，狀態變成red，此時可以把index刪除，先判斷刪除後的叢急狀態是否為green，再重建index，接著看是否有正確分配shard和replica，。
+在操作過程中，碰到建立index後，shard沒有分配的問題，導致叢集錯誤，狀態變成red，此時可以把index刪除，先判斷刪除後的叢急狀態是否為green，再重建index，接著看是否有正確分配shard和replica，以及叢集狀態是否一樣為正常(green)狀態。
 
 ###放入一份文件(put a document)
 
