@@ -109,3 +109,8 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
     
 ##小結
 前面執行了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，在文件索引的階段中，ElasticSearch會檢查該type是否存在，如果不存在，就會依照該欄位的type動態建立適當的類別。
+
+ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始處理：
+* 如果欄位已經存在對應中，然後欄位值也是有效的(就是有符合正確的type)，那ElasticSearch就不會改變目前的mapping。
+* 如果欄位已經存在對應中，但是欄位值跟型態對應不符、是不同型態，那麼type inference enging就會更改或升級欄位type，例如從int改成long的形態。而如果type根本不相容，就會造成例外(exception)接著索引程序就會失敗囉。
+* 最後是如果欄位不存在的話，就會自動偵測欄位形態，接著就會更新到一個新欄位的對應中。
