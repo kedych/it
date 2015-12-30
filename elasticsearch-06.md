@@ -184,8 +184,8 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |-|-|
 |store|This marks the field to be stored in a separate index fragment for fast retrieval. Storing a field consumes disk space, but it reduces computation if you need to extract the field from a document (that is, in scripting and aggregations). The possible values for this option are no and yes (the default value is no). Stored fields are faster than others at faceting.|
 |index|This configures the field to be indexed (the default value is analyzed).The following are the possible values for this parameter:no, analyzed, not_analyzed|
-|null_value||
-|boost||
+|null_value|This defines a default value if the field is missing|
+|boost|This is used to change the importance of a field (the default value is 1.0).|
 |index_analyzer||
 |search_analyzer||
 |analyzer||
