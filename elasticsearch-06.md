@@ -102,3 +102,5 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
     }
 
 如果不下pretty=true或將pretty=false顯示結果如下：
+
+    {"test":{"mappings":{"mytype":{"properties":{"age":{"type":"string"},"name":{"type":"string"}}}}}}
