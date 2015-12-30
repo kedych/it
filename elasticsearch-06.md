@@ -190,5 +190,6 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |search_analyzer|This defines an analyzer to be used during the search. If it is not defined, the analyzer of the parent object is used (the default value is null).|
 |analyzer|This sets both the index_analyzer and search_analyzer field to the defined value (the default value is null).|
 |include_in_all|This marks the current field to be indexed in the special _all field (a field that contains the concatenated text of all the fields). The default value is true.|
-|index_name||
-|norms||
+|index_name|This is the name of the field to be stored in the Index. This property allows you to rename the field at the time of indexing. It can be used to manage data migration in time without breaking the application layer due to changes|
+|norms|This controls the Lucene norms. This parameter is used to better score
+queries, if the field is used only for filtering. Its best practice to disable it in order to reduce the resource usage (the default value is true for analyzed fields and false for the not_analyzed ones).|
