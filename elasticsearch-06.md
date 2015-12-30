@@ -42,7 +42,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
 學習explicit mapping時，要準備一個可用的ElasticSearch叢集，還有基礎的JSON知識，接著就可以繼續做囉！
 
-###建立索引
+###建立索引(create an index)
 
 如同前面使用初探介紹，使用cURL直接對叢集操作：
 
@@ -51,3 +51,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 接著從提示字元可以看到結果：
 
     {"acknowledged":true}
+
+###放入一份文件(put a document)
+
+使用cURL直接對叢集操作：
