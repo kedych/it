@@ -66,3 +66,5 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 接著從提示字元可以看到結果：
     
     {"_index":"test","_type":"mytype","_id":"1","_version":2,"_shards":{"total":2,"successful":2,"failed":0},"created":false}
+
+結果顯示
