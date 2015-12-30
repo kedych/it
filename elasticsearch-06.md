@@ -1,14 +1,14 @@
 # ElasticSearch - 管理映射
 
 * Using explicit mapping creation 使用明確映射
-* Mapping base types 對應基礎形態
-* Mapping arrays 對應陣列
-* Mapping an object 對應物件
-* Mapping a document 對應文件
-* Using dynamic templates in document mapping 對應文件的動態範本
-* Managing nested objects 對應巢狀物件
-* Managing a child document 對應子文件
-* Adding a field with multiple mappings 增加具多對應的欄位
+* Mapping base types 映射基礎形態
+* Mapping arrays 映射陣列
+* Mapping an object 映射物件
+* Mapping a document 映射文件
+* Using dynamic templates in document mapping 映射文件的動態範本
+* Managing nested objects 映射巢狀物件
+* Managing a child document 映射子文件
+* Adding a field with multiple mappings 增加具多映射的欄位
 * Mapping a geo point field 對應地理資訊點的欄位
 * Mapping a geo shape field 對應地理資訊區塊欄位
 * Mapping an IP field 對應網路位址(IP)欄位
