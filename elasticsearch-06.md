@@ -82,4 +82,21 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
     curl -XGET http://es1:9200/test/mytype/_mapping?pretty=true
     
-直接在 主機URL/index/url/type 後面加上 _mapping即可顯示結果，而pretty參數是為了讓人們方便閱讀，使用pretty參數得到的結果如下：
+直接在 主機URL/index/url/type 後面加上 _mapping即可顯示結果，而pretty參數是為了讓人們方便閱讀，使用pretty參數得到的結果如下，會是巢狀的JSON：
+
+    {
+        "test" : {
+            "mappings" : {
+                "mytype" : {
+                    "properties" : {
+                        "age" : {
+                            "type" : "string"
+                        },
+                        "name" : {
+                            "type" : "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
