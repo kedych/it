@@ -180,7 +180,7 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 
 依據不同的資料型態，在ElasticSearch之中可以選擇明確適合的型態映射，在處理欄位時有較好的管理方向。這些常用的選項，也就是在每個映射欄位後設定的項目如下：
 
-* store
+* store - This marks the field to be stored in a separate index fragment for fast retrieval. Storing a field consumes disk space, but it reduces computation if you need to extract the field from a document (that is, in scripting and aggregations). The possible values for this option are no and yes (the default value is no).
 * index
 * null_value
 * boost
