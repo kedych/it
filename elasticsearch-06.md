@@ -62,5 +62,6 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
 
     [kedy@es1 ~]$ curl -XPUT http://es1:9200/test/mytype/1 -d '{"name":"kedy", "age":"31"}'
-
+    
+接著從提示字元可以看到結果：
 {"_index":"test","_type":"mytype","_id":"1","_version":2,"_shards":{"total":2,"successful":2,"failed":0},"created":false}
