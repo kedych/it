@@ -9,8 +9,8 @@
 * Managing nested objects 映射巢狀物件
 * Managing a child document 映射子文件
 * Adding a field with multiple mappings 增加具多映射的欄位
-* Mapping a geo point field 對應地理資訊點的欄位
-* Mapping a geo shape field 對應地理資訊區塊欄位
+* Mapping a geo point field 映射地理資訊點的欄位
+* Mapping a geo shape field 映射地理資訊區塊欄位
 * Mapping an IP field 對應網路位址(IP)欄位
 * Mapping an attachment field 對應附件欄位
 * Adding metadata to a mapping 加入對應的metadata
