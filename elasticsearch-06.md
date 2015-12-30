@@ -131,3 +131,5 @@ ElasticSearch會讀取所有映射欄位的預設特徵(properties)並且開始�
 * 預先準備(precook)需快速搜尋或即時分析的資料(就像聚合)
 * 正確定義欄位一定要在多token情況下分析或者只要考慮單一token的情況分析
 
+ElasticSearch也讓使用者使用各種組態在基礎欄位上。
+
