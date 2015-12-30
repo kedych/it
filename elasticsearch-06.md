@@ -114,3 +114,6 @@ ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始�
 * 如果欄位已經存在對應中，然後欄位值也是有效的(就是有符合正確的type)，那ElasticSearch就不會改變目前的mapping。
 * 如果欄位已經存在對應中，但是欄位值跟型態對應不符、是不同型態，那麼type inference enging就會更改或升級欄位type，例如從int改成long的形態。而如果type根本不相容，就會造成例外(exception)接著索引程序就會失敗囉。
 * 最後是如果欄位不存在的話，就會自動偵測欄位形態，接著就會更新到一個新欄位的對應中。
+* 
+
+每個文件(document)的索引都會使用UID作為唯一的識別，
