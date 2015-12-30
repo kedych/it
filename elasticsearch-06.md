@@ -189,6 +189,6 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |index_analyzer|This defines an analyzer to be used in order to process a field. If it is not defined, the analyzer of the parent object is used (the default value is null).|
 |search_analyzer|This defines an analyzer to be used during the search. If it is not defined, the analyzer of the parent object is used (the default value is null).|
 |analyzer|This sets both the index_analyzer and search_analyzer field to the defined value (the default value is null).|
-|include_in_all||
+|include_in_all|This marks the current field to be indexed in the special _all field (a field that contains the concatenated text of all the fields). The default value is true.|
 |index_name||
 |norms||
