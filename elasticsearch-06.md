@@ -35,4 +35,4 @@ ElasticSearch在索引/類別層級，有一個詳盡明確的對應，在索引
 接著學習如何操作各種不同類型的對應(mapping)方式。
 
 
-##* Using explicit mapping creation 使用詳盡對應
+## Using explicit mapping creation 使用詳盡對應
