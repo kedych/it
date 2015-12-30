@@ -147,3 +147,13 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |vat|Double|商品稅金|
 |sent|Boolean|訂單是否出貨|
 
+每一筆訂單紀錄，都需要轉成ElasticSearch的映射定義，長這樣子：
+
+    {
+        "order" : {
+            "properties" : {
+                "id" : {"type" : "string", "store" : "yes" , "index":"not_analyzed"},
+                "data" : {"type" : "date", "store" : "no", "index":"not_analyzed"},
+            }
+        }
+    }
