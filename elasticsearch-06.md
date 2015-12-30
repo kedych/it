@@ -1,7 +1,7 @@
 # ElasticSearch - 管理對應
 
 * Using explicit mapping creation 使用詳盡對應
-* Mapping base types 對應基礎類別
+* Mapping base types 對應基礎形態
 * Mapping arrays 對應陣列
 * Mapping an object 對應物件
 * Mapping a document 對應文件
