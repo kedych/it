@@ -78,4 +78,6 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
 ###顯示對應
 
-為了知道一個type內的各項mapping
+為了知道一個type內的各項mapping，能夠過cURL得知，使用命令如下：
+
+    curl -XGET http://es1:9200/test/mytype/_mapping?pretty=true
