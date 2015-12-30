@@ -52,9 +52,11 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 
     {"acknowledged":true}
 
+
+###碰到索引建立，但shard沒有分配
+在操作過程中，碰到建立index後，shard沒有分配的問題，導致叢集錯誤，狀態變成red，此時可以把index刪除重建，再看是否有
+
 ###放入一份文件(put a document)
 
 使用cURL直接對叢集操作：
 
-###碰到索引建立，但shard沒有分配
-在操作過程中，碰到建立index後，shard沒有分配的問題，導致叢集錯誤，
