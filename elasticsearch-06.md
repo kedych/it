@@ -75,3 +75,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
     {"_index":"test","_type":"mytype","_id":"1","_version":2,"_shards":{"total":2,"successful":2,"failed":0},"created":false}
 
 結果顯示操作的的index、type、id、_version、shard等，可以判斷操作是否成功。
+
+###顯示對應
+
+為了知道一個type內的各項mapping
