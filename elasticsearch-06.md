@@ -154,6 +154,11 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
             "properties" : {
                 "id" : {"type" : "string", "store" : "yes" , "index":"not_analyzed"},
                 "data" : {"type" : "date", "store" : "no", "index":"not_analyzed"},
+                "customer_id" : {"type" : "string", "store" : "yes", "index":"not_analyzed"},
+                "sent" : {"type" : "boolean", "index":"not_analyzed"},
+                "name" : {"type" : "integer", "index":"not_analyzed"},
+                "quantity" : {"type" : "integer", "index":"not_analyzed"},
+                "vat" : {"type" : "double", "index":"no"}
             }
         }
     }
