@@ -56,7 +56,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 ###碰到索引建立，但shard沒有分配
 在操作過程中，碰到建立index後，shard沒有分配的問題，導致叢集錯誤，狀態變成red，此時可以把index刪除，先判斷刪除後的叢急狀態是否為green，再重建index，接著看是否有正確分配shard和replica，以及叢集狀態是否一樣為正常(green)狀態。
 
-###放入一份文件(put a document)
+###放入文件(put a document)
 
 使用cURL直接對叢集操作，放入一個document，內含兩個欄位，分別是姓名(name)和年紀(age)，採用JSON格式進行資料填寫：
 
@@ -105,3 +105,7 @@ ElasticSearch能夠瞭解我們想要索引文件的結構，並且能自動建�
 如果不下pretty=true或將pretty=false顯示結果如下：
 
     {"test":{"mappings":{"mytype":{"properties":{"age":{"type":"string"},"name":{"type":"string"}}}}}}
+  
+    
+##test
+前面做了建立索引(create an index)、放入文件(put a document)、顯示對應等工作，
