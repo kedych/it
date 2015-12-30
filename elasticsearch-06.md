@@ -122,4 +122,4 @@ ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始�
 
 
 ##Mapping base types 對應基礎類別
-使用詳盡對應(explicit mapping)可以讓我們很快速地在沒有資料庫結構或沒有特定schema的狀況下建立資料，並且不用擔心怎麼選擇或給予適合的欄位型態。
+使用詳盡對應(explicit mapping)可以讓我們很快速地在沒有資料庫結構或沒有特定schema的狀況下建立資料，並且不用擔心怎麼選擇或給予適合的欄位型態。因此，為了比較好的搜尋結果與效能，
