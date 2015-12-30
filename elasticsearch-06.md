@@ -117,3 +117,5 @@ ElasticSearch會讀取所有對應欄位的預設特徵(properties)並且開始�
 * 
 
 每個文件(document)的索引都會使用UID作為唯一的識別，會儲存在該document一個特別的欄位，名稱為 _uid，這個值會自動使用 _id計算得知。而 _id這個值則是在索引的時候被提供，如果 _id不存在的話，ElasticSearch就會自動指派一個數值。
+
+當建立或修改一個對應形態(mapping type)的時候，ElasticSearch會自動傳輸相關對應或改變到所有的從集節點中，
