@@ -16,3 +16,11 @@
 * Adding metadata to a mapping 加入對應的metadata
 * Specifying a different analyzer 特定差異化分析
 * Mapping a completion suggester 對應完成建議(有點怪, 再想想)
+
+
+##簡介
+對應(mapping)在ElasticSearch中是很重要的觀念，它定義了搜尋引擎如何處理文件(document)。
+
+在搜尋引擎中，有兩個主要的運作：
+
+* 索引(Indexing) - 接受文件(document)後儲存/索引/處理
