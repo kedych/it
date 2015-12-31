@@ -40,7 +40,7 @@
     }
 
     output {
-        elasticsearch { host => localhost }
+        elasticsearch { hosts => ["es1:9200"] }
         stdout { codec => rubydebug }
     }
     
