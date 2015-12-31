@@ -67,4 +67,7 @@
     Settings: Default filter workers: 2
     Logstash startup 
     
-並使用netstat -atunlp看port 5000是否有被Listen
+使用netstat -atunlp看port 5000是否有被Listen
+
+    [kedy@es1 ~]$ sudo netstat -atunlp | grep 5000
+    tcp6       0      0 :::5000                 :::*                    LISTEN      32118/java
