@@ -183,7 +183,8 @@ ElasticSearch也讓使用者在基礎欄位中使用各種組態。
 |選項|說明|
 |-|-|
 |store|標記這個欄位是否儲存在分開的索引區段中，用來進行快速的搜尋取回，此欄位消耗磁碟空間，但如果需要從document中萃取欄位可以減少運算亮(也就是說, in scripting and aggregations). 此選項可能的值有yes跟no(預設是 no). 標記Stored的欄位在分面搜索(faceting search)上的速度會比較快|
-|index|This configures the field to be indexed (the default value is analyzed).The following are the possible values for this parameter:no, analyzed, not_analyzed|
+|index|決定此映射欄位是否需要建立索引(index)，預設是會被分析。此選項有三種參數，分別是: no - 表示不需要建立索引，如果確定此映射
+在搜尋中用不到，設定成no即可；analyzed - 此欄位會定義成會被預設的分析器進行分析，通常是lowercased和tokenzied，會使用預設的ElasticSeach分析器組態； not_analyzed - 這個欄位會建立索引，但是不會被分析器處理，預設的ElasticSearch使用KeyworkAnalyzer欄位，會把欄位當作單一token處理|
 |null_value|This defines a default value if the field is missing|
 |boost|This is used to change the importance of a field (the default value is 1.0).|
 |index_analyzer|This defines an analyzer to be used in order to process a field. If it is not defined, the analyzer of the parent object is used (the default value is null).|
