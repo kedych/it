@@ -33,13 +33,13 @@
                     add_field => [ "received_from", "%{host}" ]
                 }
             syslog_pri { }
-        date {
-            match => [ "syslog_timestamp", "MMM  d HH:mm:ss", "MMM dd HH:mm:ss" ]
+            date {
+                match => [ "syslog_timestamp", "MMM  d HH:mm:ss", "MMM dd HH:mm:ss" ]
+            }
         }
     }
-}
 
-output {
-  elasticsearch { host => localhost }
-  stdout { codec => rubydebug }
-}
+    output {
+        elasticsearch { host => localhost }
+        stdout { codec => rubydebug }
+    }
