@@ -46,4 +46,11 @@
     
 ##測試組態檔案
 
-因為組態落落長，我們可以先檢查組態是否正確
+因為組態落落長，我們可以先檢查組態是否正確：
+
+    [kedy@es1 opt]$ logstash-2.1.1/bin/logstash --configtest -f logstash-2.1.1/01-logstash-initial.conf
+
+如果出現
+
+    Configuration OK
+就表示組態檔案沒有問題。
