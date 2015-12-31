@@ -69,5 +69,8 @@ systemctl restart httpd.service
 
 開個瀏覽器看看吧! 搞定:)
 
-參考來源
+
+##參考來源
+https://letsencrypt.readthedocs.org/en/latest/
+
 https://www.sslshopper.com/apache-redirect-http-to-https.html
