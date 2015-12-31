@@ -65,4 +65,6 @@
 正確啟動會看到類似訊息
 
     Settings: Default filter workers: 2
-    Logstash startup completed
+    Logstash startup 
+    
+並使用netstat -atunlp看port 5000是否有東西
