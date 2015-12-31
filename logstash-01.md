@@ -53,4 +53,11 @@
 如果出現
 
     Configuration OK
+    
 就表示組態檔案沒有問題。
+
+##啟動Logstash
+
+使用剛才建立的組態檔案，啟動Logstash
+
+    logstash-2.1.1/bin/logstash -f logstash-2.1.1/01-logstash-initial.conf
