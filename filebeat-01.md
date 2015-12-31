@@ -14,3 +14,7 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
 * filebeat.yml
 * install-service-filebeat.ps1
 * uninstall-service-filebeat.ps1
+* 
+
+接著編輯 filebeat.yml
+
