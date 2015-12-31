@@ -67,4 +67,4 @@
     Settings: Default filter workers: 2
     Logstash startup 
     
-並使用netstat -atunlp看port 5000是否有東西
+並使用netstat -atunlp看port 5000是否有被Listen
