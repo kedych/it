@@ -60,4 +60,4 @@
 
 使用剛才建立的組態檔案，啟動Logstash
 
-    logstash-2.1.1/bin/logstash -f logstash-2.1.1/01-logstash-initial.conf
+    [kedy@es1 opt]$ logstash-2.1.1/bin/logstash -f logstash-2.1.1/01-logstash-initial.conf
