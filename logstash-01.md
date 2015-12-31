@@ -71,3 +71,13 @@
 
     [kedy@es1 ~]$ sudo netstat -atunlp | grep 5000
     tcp6       0      0 :::5000                 :::*                    LISTEN      32118/java
+
+
+#安裝logstash plugin
+因後續要配合beat使用，所以需要安裝plugin，讓logstash的資料接收端可以接收beats的資料
+
+    [kedy@es1 opt]$ sudo /opt/logstash-2.1.1/bin/plugin install logstash-input-beats
+    Validating logstash-input-beats
+    Installing logstash-input-beats
+    Installation successful
+
