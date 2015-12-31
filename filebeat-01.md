@@ -8,3 +8,9 @@ Windows版本可以從這裡下載:
 https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
 
 解壓縮以後可以看到好幾個檔案，就先放到C:
+
+* filebeat.exe
+* filebeat.template.json
+* filebeat.yml
+* install-service-filebeat.ps1
+* uninstall-service-filebeat.ps1
