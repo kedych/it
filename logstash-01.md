@@ -61,3 +61,8 @@
 使用剛才建立的組態檔案，啟動Logstash
 
     [kedy@es1 opt]$ logstash-2.1.1/bin/logstash -f logstash-2.1.1/01-logstash-initial.conf
+    
+正確啟動會看到類似訊息
+
+    Settings: Default filter workers: 2
+Logstash startup completed
