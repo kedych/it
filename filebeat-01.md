@@ -30,6 +30,7 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
 
     PS > cd 'C:\Program Files\Filebeat'
     PS C:\Program Files\Filebeat> .\install-service-filebeat.ps1
+    [R]
 
 接著編輯 filebeat.yml
 
