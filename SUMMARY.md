@@ -12,5 +12,5 @@
 * [ElasticSearch - 叢集組態](elasticsearch-04.md)
 * [ElasticSearch - 改變日誌層級](elasticsearch-05.md)
 * [ElasticSearch - 管理對應](elasticsearch-06.md)
-* Logstash - Installation
+* [Logstash - Installation](logstash-01.md)
 
