@@ -5,19 +5,24 @@
 首先確定域名是可以被連接的，不然沒辦法產生憑證。
 
 確定系統套件都更新
-sudo yum update -y
+    
+    sudo yum update -y
 
 確定git有安裝
-sudo yum install git -y 
+    
+    sudo yum install git -y 
 
 使用git下載let's encrypt client
-sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+    
+    sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 
 接著進入目錄
-/opt/letsencrypt
+    
+    cd /opt/letsencrypt
 
 因為我們要手動設定，取得let encrypt憑證的時候，選擇standalone模式就可以。
-sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
+
+    sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
 
 成功就會看到以下訊息, 並有提示存放路徑與有效日期
 IMPORTANT NOTES:
@@ -32,7 +37,8 @@ IMPORTANT NOTES:
 
 
 每三個月就要更新，可以透過crontab排程
-sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
+
+    sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
 就可以定期更新憑證
 
 #設定Apache SSL憑證組態
