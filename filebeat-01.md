@@ -45,5 +45,5 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
 
 ![Win7 filebeat](win7-filebeat.png)
 
-接著編輯 filebeat.yml
+接著編輯 filebeat.yml 設定日誌如何轉送到logstash或ElasticSearch
 
