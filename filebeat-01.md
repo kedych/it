@@ -32,6 +32,11 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
     PS C:\Program Files\Filebeat> .\install-service-filebeat.ps1
     [R]
 
+為了安全，可以再把未簽章執行限制放回去
+
+    Set-ExecutionPolicy Restricted
+    [Y]
+
 安裝完成可以看到PowerShell顯示的歷程
 
 ![win7 powershell](install-filbeats-win7.png)
