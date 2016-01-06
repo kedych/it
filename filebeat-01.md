@@ -43,5 +43,7 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
 
 以及透過服務(services.msc)可以看到filebeat服務已順利安裝。
 
+![Win7 filebeat](win7-filebeat.png)
+
 接著編輯 filebeat.yml
 
