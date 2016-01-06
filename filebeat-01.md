@@ -32,5 +32,9 @@ https://download.elastic.co/beats/filebeat/filebeat-1.0.1-windows.zip
     PS C:\Program Files\Filebeat> .\install-service-filebeat.ps1
     [R]
 
+安裝完成可以看到PowerShell顯示的歷程
+
+![win7 powershell](install-filbeats-win7.png)
+
 接著編輯 filebeat.yml
 
