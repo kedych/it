@@ -2,7 +2,8 @@
 
 以前要傳送日誌到logstash是使用logstash forwarder，現在都已經改用新的Filebeat。
 
-Filebeat is a log data shipper initially based on the Logstash-Forwarder source code. Installed as an agent on your servers, Filebeat monitors the log directories or specific log files, tails the files, and forwards them either to Logstash for parsing or directly to Elasticsearch for indexing.
+
+Filebeat是基於Logstash-Forwarder原始碼開發的下一代即時日誌資料轉送代裡程式，會以服務/代裡(Agent)的方式安裝在監控標的(伺服器/電腦). 安裝完成以後會監控特定目錄下的日誌檔案，追蹤檔案之後可以轉傳到Losstash進行解析或直接傳到ElasticSearch建立索引。
 
 ## Filebeat on Windows
 
