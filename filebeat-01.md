@@ -5,7 +5,7 @@
 
 Filebeat是基於Logstash-Forwarder原始碼開發的下一代即時日誌資料轉送代裡程式，會以服務/代裡(Agent)的方式安裝在監控標的(伺服器/電腦). 安裝完成以後會監控特定目錄下的日誌檔案，追蹤檔案之後可以轉傳到Losstash進行解析或直接傳到ElasticSearch建立索引。
 
-Filebeat主要適合Linux下的log監控，如需要Windows Event Log則須另外安裝Winlogbeat
+Filebeat主要適合Linux下的log監控，如需要Windows Event Log則須另外安裝Winlogbeat。
 
 ## Filebeat on Windows
 
