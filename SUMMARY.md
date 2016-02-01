@@ -15,4 +15,5 @@
 * [Logstash - Installation](logstash-01.md)
 * [Filebeat - Installation](filebeat-01.md)
 * [Let's Encrypt](lets_encrypt.md)
+* 更換Windows 7 MAK為KMS版本
 
