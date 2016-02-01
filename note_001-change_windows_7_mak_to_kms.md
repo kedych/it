@@ -13,4 +13,4 @@ slmgr.vbs -ipk  FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 slmgr.vbs -ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 slmgr.vbs -ato
 
-完成後，請重新開機後依據操作步驟重新認證.
+完成後，請重新開機進行KMS認證.
