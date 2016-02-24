@@ -34,5 +34,7 @@ Filter之中，先使用
 
     nohup command &> /dev/null
 
+可以自己查詢 nohup 跟 & 的意義。
+
 ## Logstash範例 - IIS5蒐集日誌
 
