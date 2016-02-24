@@ -34,7 +34,9 @@ Filter之中，先使用
 
     nohup command &> /dev/null
 
-可以自己查詢 nohup 跟 & 的意義。
+nohup是由兩個字組成的命令：no-hup，hup的意思是SIGHUP（hangup)，因此，nohup就是忽略SIGHUP。當我們使用ssh登入主機後所下達的命令，在連線登出時，在此登入shell所執行的程序(process)都會收到掛斷的SIGHUP信號，沒有用nohup下達command執行的process就會中斷，而有透過nohup下達的command就不受影響會持續執行。
+
+& 就是把 command 放到被警執行，不受到前景的干擾。
 
 ## Logstash範例 - IIS5蒐集日誌
 
