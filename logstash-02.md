@@ -40,7 +40,7 @@ nohup是由兩個字組成的命令：no-hup，hup的意思是SIGHUP（hangup)�
 & 就是把 command 放到被警執行，不受到前景的干擾。
 
 ### screen
-這屬於比較進階的技巧，待有時間再來摸索。
+這屬進階技巧，待有時間再來摸索。
 
 ## Logstash範例 - IIS5蒐集日誌
 
