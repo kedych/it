@@ -28,5 +28,11 @@ Filter之中，先使用
 情境就直接送到Elasticsearch，先不做太大的著墨， 未來應可嘗試轉向自己的配置。
 
 
+## 啟動Logstash
+
+我們建立的服務需要長期執行，透過以下的方式進行:
+
+    nohup command &> /dev/null
+
 ## Logstash範例 - IIS5蒐集日誌
 
