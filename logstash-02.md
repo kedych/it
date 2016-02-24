@@ -10,7 +10,7 @@
 
 整個Logstash具有相當的歷史和多種變化方式，在此先以主要使用的內容進行說明。
 
-先設定Logstash組態檔, 配置在
+設定Logstash組態檔, 配置在
 
     /etc/logstash.conf
 
