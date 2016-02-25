@@ -104,7 +104,7 @@ Elasticsearch使用REST API，可以得之叢集狀態與進行管理
     host      ip        heap.percent ram.percent load node.role master name
     127.0.0.1 127.0.0.1            2          77 0.00 d         *      node1
 
-##列出所有索引(List All Indices)
+##列出索引(List All Indices)
 命令：
 
     curl 'localhost:9200/_cat/indices?v'
