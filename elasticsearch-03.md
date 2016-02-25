@@ -56,16 +56,16 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 接下來開始放點東西到Elasticsearch裡面吧！參考官方文件對消費者(customer)的索引(index)進行操作，要索引一個文件，必須告訴Elasticsearch要對index中的哪個型態(type)進行操作。
 
-索引一個簡單的消費者文件到到消費者索引中, 型態(Type)為"external", ID是1:
+索引一個簡單的消費者文件到名為消費者的索引中，要操作的型態(Type)為"external", ID是1:
 
-範例中的JSON document: {"name":"kedy chang"}
+範例的JSON document: {"name":"kedy chang"}
 
 命令為：
 
     curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '{ "name": "kedy chang" }'
     
 
-回應為：
+執行後可以看到回應為：
 
     {
         "_index" : "customer",
