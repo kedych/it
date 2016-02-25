@@ -16,7 +16,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 1. 如有定義 routing 或 parent 參數，就會依照這些參數的hash值來選擇正確的shard。
 
 ##建立index
-先來建立第一個index, 叫消費者"customer", 然後再試試看列出index會是什麼樣子.
+參考官方文件的範例，先建立第一個index，叫消費者(customer)，接著試著列出index的結果：
 
 命令1：
 
