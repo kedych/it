@@ -47,9 +47,10 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 要注意的是，就算叢集狀態在Red，有些功能可能還是可以運作的，只是會影響最終的執行結果，因此要盡快排除此狀態。
 
+
 #索引與查詢文件(Index and Query a Document)
 
-所有存放在ElasticSearch中的紀錄都是JSON物件。接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
+要跟ElasticSearch溝通的方法，都是透過REST API將語法或文件JSON物件進行交換。接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
 
 索引一個簡單的消費者文件到到消費者索引中, 型態為"external", ID是1:
 
