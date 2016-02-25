@@ -14,6 +14,7 @@
 
 使用git下載let's encrypt client
     
+    
     sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 
 接著進入目錄
@@ -39,6 +40,7 @@ IMPORTANT NOTES:
 每三個月就要更新，可以透過crontab排程
 
     sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
+    
 就可以定期更新憑證
 
 #設定Apache SSL憑證組態
