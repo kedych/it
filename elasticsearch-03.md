@@ -6,7 +6,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 * 確認叢集、節點、索引的狀態與取得統計資料。
 * 管理叢集、節點、索引與Metadata。
-* 對索引執行資料的建立、讀取、更新、刪除，以及在索引間直行搜尋。
+* 對索引執行資料的建立、讀取、更新、刪除，以及在索引之間執行搜尋運算。
 * Execute advanced search operations such as paging, sorting, filtering, scripting, aggregations, and many others
 
 #資料進入流程
