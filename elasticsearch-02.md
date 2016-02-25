@@ -92,7 +92,9 @@ Elasticsearch使用REST API，可以得之叢集狀態與進行管理
     1446545469 18:11:09  escluster green           1         1      0   0    0    0        0             0                  -                 100.0%
 
 狀態為Green代表所有功能都是正常運作的。Yellow代表所有資料都有，但可能有些replica並沒有正常配置，但此時叢集功能還是正常，包含資料的新增修改刪除與搜尋等都可以。如果狀態為Red，表示有些資料不知道怎麼了，可能有問題，此時也會影響搜尋與運算結果。
-Green means everything is good (cluster is fully functional), yellow means all data is available but some replicas are not yet allocated (cluster is fully functional), and red means some data is not available for whatever reason. Note that even if a cluster is red, it still is partially functional (i.e. it will continue to serve search requests from the available shards) but you will likely need to fix it ASAP since you have missing data.
+
+要注意的是，就算叢集狀態在Red，有些功能可能還是可以運作的，只是會影響最終的執行結果，因此要盡快排除此狀態。
+
 
 
 ## 叢集節點狀態
