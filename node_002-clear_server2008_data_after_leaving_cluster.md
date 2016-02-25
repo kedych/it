@@ -12,10 +12,12 @@
 
 在您要強制收回的節點上開啟 [命令提示字元] 視窗。
 執行下列命令，停止叢集服務：
-net stop clussvc
+
+    net stop clussvc
 
 叢集服務停止後，執行下列命令以強制收回該節點：
-Cluster <ClusterName> node <NodeName> /force
+
+    Cluster <ClusterName> node <NodeName> /force
 
 接著就是一串把iscsi配置跟虛擬硬碟還原回去的工作...
 
