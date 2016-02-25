@@ -2,6 +2,7 @@
 
 #資料進入流程
 當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
+
 1. record ID 如果沒有指定ID，就會自動產生一個
 1. 如有定義 routing 或 parent 參數，就會依照這些參數的hash值來選擇正確的shard。
 
