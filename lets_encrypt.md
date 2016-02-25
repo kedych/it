@@ -44,30 +44,36 @@ IMPORTANT NOTES:
 就可以定期更新憑證(待確認)
 
 #設定Apache SSL憑證組態
-vim /etc/httpd/conf.d/ssl.conf
-SSLCertificateFile /etc/letsencrypt/live/[your domain here]/cert.pem
-SSLCertificateKeyFile /etc/letsencrypt/live/[your domain here]/privkey.pem
-SSLCertificateChainFile /etc/letsencrypt/live/[your domain here]/chain.pem
-SSLCACertificateFile /etc/letsencrypt/live/[your domain here]/fullchain.pem
+
+    vim /etc/httpd/conf.d/ssl.conf
+    
+    SSLCertificateFile /etc/letsencrypt/live/[your domain here]/cert.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/[your domain here]/privkey.pem
+    SSLCertificateChainFile /etc/letsencrypt/live/[your domain here]/chain.pem
+    SSLCACertificateFile /etc/letsencrypt/live/[your domain here]/fullchain.pem
 
 #強制走443
 先確定rewrite_module有載入
-grep mod_rewrite.so /etc/httpd/conf.modules.d/00-base.conf
+
+    grep mod_rewrite.so /etc/httpd/conf.modules.d/00-base.conf
+
 要看到
-LoadModule rewrite_module modules/mod_rewrite.so
+
+    LoadModule rewrite_module modules/mod_rewrite.so
 
 接著編輯httpd.conf，加入IfModule有關rewrite_module的組態
 vim /etc/httpd/conf/httpd.conf
 
 #Enforce https connection
-<IfModule rewrite_module>
+    <IfModule rewrite_module>
         RewriteEngine On
         RewriteCond %{HTTPS} off
         RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-</IfModule>
+    </IfModule>
 
 #重開httpd服務
-systemctl restart httpd.service
+
+    systemctl restart httpd.service
 
 開個瀏覽器看看吧! 搞定:)
 
