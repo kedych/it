@@ -5,6 +5,33 @@
 1. record ID 如果沒有指定ID，就會自動產生一個
 1. 如有定義 routing 或 parent 參數，就會依照這些參數的hash值來選擇正確的shard。
 
+##建立index
+先來建立第一個index, 叫消費者"customer", 然後再試試看列出index會是什麼樣子.
+
+命令：
+
+    curl -XPUT 'localhost:9200/customer?pretty'
+    curl 'localhost:9200/_cat/indices?v'
+
+結果：
+
+    [kedy@es1 ~]$ curl -XPUT 'localhost:9200/customer?pretty'
+    {
+        "acknowledged" : true
+    }
+
+123    
+
+    [kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
+    health status index    pri rep docs.count docs.deleted store.size pri.store.size
+    yellow open   customer   5   1          0            0       254b           254b
+
+從第二個命令的回應畫面, 可以看到目前有哪些index存在, 還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面.
+
+在列出index的時候, 可以發現狀態的指示是yellow而非green, 這是因為replicas還沒被分配. 發生的原因是因為Elasticsearch預設只幫indexr建立一個replica, 所以這時候就只有一個replica, 除非有叢集有其它node加入, 　只要有新的node加入, 然後replica被分配到第二個節點的時候, index的健康狀態就會是green.
+
+
+
 #索引與查詢文件(Index and Query a Document)
 
 所有存放在ElasticSearch中的紀錄都是JSON物件。接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
