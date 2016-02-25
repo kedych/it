@@ -24,6 +24,14 @@
 中間的處理是最需要花時間規劃的地方，正確的欄位與資料識別有注於後續使用Elasticsearch和Kibana進行分析。
 Filter之中，先使用
 
+### 欄位截取的資料型態
+
+grok
+{NUMBER:num:int} 
+
+:int
+:float
+
 ## Output
 情境就直接送到Elasticsearch，先不做太大的著墨， 未來應可嘗試轉向自己的配置。
 
