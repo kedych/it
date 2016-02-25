@@ -57,11 +57,11 @@ java -version
 本環境設定叢集名稱為 es_cluster (elasticsearch cluster)
 節點分別為node1, node2, node3, 在三台機器分別的啟動命令為
 
-./elasticsearch --cluster.name es_cluster --node.name node1
+    ./elasticsearch --cluster.name es_cluster --node.name node1
 
-./elasticsearch --cluster.name es_cluster --node.name node2
+    ./elasticsearch --cluster.name es_cluster --node.name node2
 
-./elasticsearch --cluster.name es_cluster --node.name node3
+    ./elasticsearch --cluster.name es_cluster --node.name node3
 
 第一次跑失敗 因為elasticsearch不建議使用root執行
 
