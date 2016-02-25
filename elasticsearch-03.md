@@ -10,7 +10,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 * 執行進階搜尋運算，例如分頁、排序、過濾、程式化、聚合甚至更多其他不同的運算。
 
 ##資料進入流程
-當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
+當一筆record進入ElasticSearch的時候，目的shard會基於以下兩種方式選擇:
 
 1. record ID 如果沒有指定ID，就會自動產生一個
 1. 如有定義 routing 或 parent 參數，就會依照這些參數的hash值來選擇正確的shard。
