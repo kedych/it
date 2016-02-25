@@ -35,15 +35,15 @@ java -version
 ###取得ElasticSearch
 使用以下命令
 
-    wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.0.0.tar.gz
+    wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.0.0/elasticsearch-2.1.1.tar.gz
 
 解壓縮
 
-    tar -zxvf elasticsearch-2.0.0.tar.gz
+    tar -zxvf elasticsearch-2.1.1.tar.gz
 
 切目錄
 
-    cd elasticsearch-2.0.0/bin/
+    cd elasticsearch-2.1.1/bin/
 
 啟動elasticsearch (單節點)
     ./elasticsearch
