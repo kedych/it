@@ -80,7 +80,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
         "created" : true
     }
 
-從Elasticsearch的回應可以知道, 一個新的 customer document已經被成功建立在 customer index 而且型態為 external.　這個document也會有一個內部的id (此回應之範例為1), 這個內部id也是我們在建立index的時候指定的.
+從Elasticsearch回應可以得知一個型態(type)為external的document已經成功建立在消費者(customer)索引(index)中。這個document也會有一個內部的id (此回應之範例為1), 這個內部id也是我們在建立index的時候指定的.
 
 有一點很重要的是ElasticSearch並不要求說在所引文件之前一定要先建立index. 如果之前沒有index存在的話, Elasticsearch會自動建立一個消費者index.
 
