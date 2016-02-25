@@ -41,7 +41,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 結果會以JSON回傳，為便於視覺讀取，在命令1結尾多增加 ?pretty 參數，讓結果在呈現上會是具有程式排版風格的呈現。而命令2則是在命令結尾增加 ?v 讓結果呈現標題列。
 
-從第二個命令的回應畫面, 可以看到目前有哪些index存在, 還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面。
+從第二個命令的回應畫面， 可以看到目前有哪些index存在，還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面。
 
 在列出index的時候, 可以發現狀態的指示是yellow而非green, 這是因為replicas還沒被分配。 發生的原因是因為Elasticsearch預設只幫indexr建立一個replica, 所以這時候就只有一個replica, 除非有叢集有其它node加入, 　只要有新的node加入, 然後replica被分配到第二個節點的時候, index的健康狀態就會是green。
 
