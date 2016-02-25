@@ -1,5 +1,7 @@
 #使用初探
 
+#基於REST API的操作
+
 #資料進入流程
 當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
 
