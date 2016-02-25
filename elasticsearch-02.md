@@ -76,7 +76,7 @@ java -version
 
 
 
-#叢集健康狀態
+# 叢集健康狀態
 
 Elasticsearch使用REST API，可以得之叢集狀態與進行管理
 
