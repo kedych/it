@@ -2,7 +2,12 @@
 
 ##基於REST API的操作
 
-Elasticsearch安裝好以後，要知道如何跟叢集溝通。
+Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法為REST API，透過API可以完成以下操作：
+
+* 確認叢集、節點、索引的狀態與取得統計資料。
+* 管理叢集、節點、索引與Metadata。
+* 對索引執行資料的建立、讀取、更新、刪除，以及在索引間直行搜尋。
+* Execute advanced search operations such as paging, sorting, filtering, scripting, aggregations, and many others
 
 #資料進入流程
 當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
