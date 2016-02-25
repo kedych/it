@@ -19,7 +19,7 @@ Cluster <ClusterName> node <NodeName> /force
 
 接著就是一串把iscsi配置跟虛擬硬碟還原回去的工作...
 
-##延伸狀況
+##延伸
 
 然後，叢集節點cloud2退出後 無法重加回叢集中，碰到的錯誤訊息
 
