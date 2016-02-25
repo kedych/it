@@ -39,7 +39,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     health status index    pri rep docs.count docs.deleted store.size pri.store.size
     yellow open   customer   5   1          0            0       254b           254b
 
-結果會以JSON回傳，為便於視覺讀取，在命令結尾多增加 ?pretty 參數，讓結果在呈現上會是具有程式排版風格的呈現。
+結果會以JSON回傳，為便於視覺讀取，在命令1結尾多增加 ?pretty 參數，讓結果在呈現上會是具有程式排版風格的呈現。而命令2則是在命令結尾增加 ?v 讓結果呈現標題列。
 
 從第二個命令的回應畫面, 可以看到目前有哪些index存在, 還有相關資訊, 例如多少個primary shards跟幾份replica, 還有包含多少document在理面.
 
