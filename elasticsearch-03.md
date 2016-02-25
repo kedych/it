@@ -43,7 +43,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 從第二個命令的回應畫面，可以看到目前有哪些index存在，還有相關資訊, 例如多少個primary shards跟幾份replica，還有包含多少document在理面。
 
-列出index的時候，可以發現叢集健康狀態的指示是Yellow而非Green, 這是因為replicas還沒被分配。 發生的原因是因為Elasticsearch預設只幫indexr建立一個replica, 所以這時候就只有一個replica，除非有叢集有其它node加入， 　只要有新的node加入，然後replica被分配到第二個節點的時候， index的健康狀態就會是green。
+列出index的時候，可以發現叢集健康狀態的指示是Yellow而非Green, 這是因為replicas還沒被分配。發生的原因是因為Elasticsearch預設只幫indexr建立一個replica，所以這時候叢集之中就只有一個replica存在，除非有叢集有其它node加入，只要有新的node加入，然後replica被分配到第二個節點的時候，index的健康狀態就會是green。
 
 狀態為Green代表所有功能都是正常運作的。Yellow代表所有資料都有，但可能有些replica並沒有正常配置，但此時叢集功能還是正常，包含資料的新增修改刪除與搜尋等都可以。如果狀態為Red，表示有些資料不知道怎麼了，可能有問題，此時也會影響搜尋與運算結果。
 
