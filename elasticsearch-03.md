@@ -2,6 +2,7 @@
 
 ##基於REST API的操作
 
+Elasticsearch安裝好以後，要知道如何跟叢集溝通。
 
 #資料進入流程
 當一筆record進入ElasticSearch的時候，目的shard會基於已下兩種方式選擇:
