@@ -41,7 +41,7 @@ IMPORTANT NOTES:
 
     sudo ./letsencrypt-auto certonly --standalone --email kedy@niu.edu.tw -d [your domain here]
     
-就可以定期更新憑證
+就可以定期更新憑證(待確認)
 
 #設定Apache SSL憑證組態
 vim /etc/httpd/conf.d/ssl.conf
