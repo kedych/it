@@ -11,7 +11,6 @@
 命令：
 
     curl -XPUT 'localhost:9200/customer?pretty'
-    curl 'localhost:9200/_cat/indices?v'
 
 結果：
 
@@ -19,8 +18,12 @@
     {
         "acknowledged" : true
     }
+    
+命令
 
-123    
+    curl 'localhost:9200/_cat/indices?v'
+
+接著看
 
     [kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
     health status index    pri rep docs.count docs.deleted store.size pri.store.size
