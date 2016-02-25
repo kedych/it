@@ -65,7 +65,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '{ "name": "kedy chang" }'
     
 
-執行後可以看到回應為：
+正確執行後，可以看到回應為：
 
     {
         "_index" : "customer",
