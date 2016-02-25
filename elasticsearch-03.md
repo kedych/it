@@ -62,7 +62,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 命令為：
 
-    curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '{ "name": "kedy chang"     }'
+    curl -XPUT 'localhost:9200/customer/external/1?pretty' -d '{ "name": "kedy chang" }'
     
 
 回應為：
