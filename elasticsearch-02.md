@@ -82,7 +82,8 @@ Elasticsearch使用REST API，可以得之叢集狀態與進行管理
 
 預設通訊埠是9200 使用curl對本機9200發request即可
 命令：
-curl 'localhost:9200/_cat/health?v'
+
+    curl 'localhost:9200/_cat/health?v'
 
 應該會得到類似的回應：
 
