@@ -52,7 +52,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 #索引與查詢文件(Index and Query a Document)
 
-要跟ElasticSearch溝通的方法，都是透過REST API將語法或文件以JSON物件形式進行交換。
+要跟ElasticSearch溝通是透過REST API將語法或文件以JSON物件形式進行交換。
 
 接下來開始放一些東西到消費者(customer)的索引(index)吧!為了要索引一個文件, 我們必須告訴Elasticsearch使用哪一種型態的索引.
 
