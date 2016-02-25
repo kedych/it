@@ -82,7 +82,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 從Elasticsearch回應可以得知一個型態(type)為external的document已經成功建立在消費者(customer)索引(index)中。這個document也會有內部的唯一識別(_id)，此範例回應之唯一識別(_id)等於1, 這個內部id也是我們在建立index的時候指定的.
 
-有一點重要的是ElasticSearch並不要求在處理文件(document)前要先建立index，也就是說如果之前index不存在，Elasticsearch會自動建立一個命令提到的index.
+有一點重要的是ElasticSearch並不要求在處理文件(document)前要先建立index，也就是說如果之前index不存在，Elasticsearch會自動建立一個命令提到的index，再執行命令中的操作。
 
 
 剛剛已經完成建立document, 現在我們來探索剛才建立的document, 一樣使用curl, 使用XGET存取elasticresearch的REST API.
