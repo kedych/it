@@ -91,7 +91,7 @@ Elasticsearch使用REST API，可以得之叢集狀態與進行管理
     epoch      timestamp cluster   status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shar ds_percent
     1446545469 18:11:09  escluster green           1         1      0   0    0    0        0             0                  -                 100.0%
 
-##cluster狀態
+## 單一節點狀態
 命令：
 
     curl 'localhost:9200/_cat/nodes?v'
