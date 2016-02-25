@@ -9,7 +9,7 @@
 ##建立index
 先來建立第一個index, 叫消費者"customer", 然後再試試看列出index會是什麼樣子.
 
-命令：
+命令1：
 
     curl -XPUT 'localhost:9200/customer?pretty'
 
@@ -20,7 +20,7 @@
         "acknowledged" : true
     }
     
-命令：
+命令2：
 
     curl 'localhost:9200/_cat/indices?v'
 
