@@ -21,7 +21,7 @@ Cluster <ClusterName> node <NodeName> /force
 
 ##延伸
 
-然後，叢集節點cloud2退出後 無法重加回叢集中，碰到的錯誤訊息
+叢集節點cloud2退出後，卻無法重加回叢集中，碰到的錯誤訊息
 
     OpenService RemoteRegistry failed.
     
