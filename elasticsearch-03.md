@@ -19,11 +19,11 @@
         "acknowledged" : true
     }
     
-命令
+命令：
 
     curl 'localhost:9200/_cat/indices?v'
 
-接著看
+結果：
 
     [kedy@es1 ~]$ curl 'localhost:9200/_cat/indices?v'
     health status index    pri rep docs.count docs.deleted store.size pri.store.size
