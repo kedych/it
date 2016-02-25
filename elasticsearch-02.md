@@ -72,6 +72,10 @@ java -version
 
 就可以正常執行了
 
+而Elasticsearch叢集節點應給予獨立組態檔配置，才有較好使用結果。
+
+
+
 #叢集健康狀態
 
 Elasticsearch使用REST API，可以得之叢集狀態與進行管理
