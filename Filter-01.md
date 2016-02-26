@@ -2,10 +2,14 @@
 
 ##grok
 把非結構化的log資料做分析
+
 ex: 
-  log為55.3.244.1 GET /index.html 15824 0.043
-  pattern為
   
+  log為
+  
+  55.3.244.1 GET /index.html 15824 0.043
+  
+  pattern為
   %{IP:client} %{WORD:method} %{URIPATHPARAM:request} %{NUMBER:bytes} %{NUMBER:duration}
 結果是:
     {
