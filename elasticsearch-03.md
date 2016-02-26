@@ -101,8 +101,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     }
 
 
-沒有太特別的欄位，從回應可以看到，使用的索引(_index)、類型(_type)與唯一識別(_id)，而"found"欄位
-從這邊可以看到一個要求的"id"欄位1跟一個"_source"，也就是我們之前建索引的完整JSON document。
+沒有太特別的欄位，從回應可以看到，使用的索引(_index)、類型(_type)與唯一識別(_id)，而"found"欄位，顯示命令送出的結果為"true"，代表有順利取得資料，"_source"，也就是我們前一步驟中建立的完整JSON document。
 
 #刪除一個索引(Delete an index)
 
