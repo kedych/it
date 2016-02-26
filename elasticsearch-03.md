@@ -155,7 +155,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
     curl -XDELETE 'localhost:9200/customer'
 
-### REST API操作pattern
+### REST API操作模式
 
 最後歸納出來，簡單的操作模式為：
 
