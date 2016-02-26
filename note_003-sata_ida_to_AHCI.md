@@ -11,5 +11,5 @@
 下載點
 
 ## 延伸
-官方網頁 https://support.microsoft.com/zh-tw/kb/922976
+變更開機磁碟機的 SATA 模式之後，出現錯誤訊息 https://support.microsoft.com/zh-tw/kb/922976
 
