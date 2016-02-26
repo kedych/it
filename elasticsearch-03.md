@@ -160,8 +160,6 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
 
 
-
-
 #修改資料(Modifying Your Data)
 
 ##索引與取代documents
