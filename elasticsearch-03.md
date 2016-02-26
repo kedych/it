@@ -105,7 +105,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 #刪除一個索引(Delete an index)
 
-測試看看怎麼砍掉剛剛建立的index
+前面知道如何新增索引(index)、建立文件(document)、取回文件(document)，接著測試如何刪除一個索引(index)
 
 命令：
 
