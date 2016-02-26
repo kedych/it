@@ -90,7 +90,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
     curl -XGET 'localhost:9200/customer/external/1?pretty'
 
-回應為：
+回應：
 
     {
         "_index" : "customer",
@@ -105,12 +105,13 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 #刪除一個索引(Delete an index)
 
-前面知道如何新增索引(index)、建立文件(document)、取回文件(document)，接著測試如何刪除一個索引(index)
+前面知道如何新增索引(index)、建立文件(document)、取回文件(document)，接著測試如何刪除一個索引(index)。
+
+也是使用CURL透過REST API對叢集進行操作，帶的參數是 XDELETE，如下：
 
 命令：
 
     curl -XDELETE 'localhost:9200/customer?pretty'
-    curl 'localhost:9200/_cat/indices?v'
     
 回應：
 
@@ -118,6 +119,12 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     {
     "acknowledged" : true
     }
+
+命令：
+
+    curl 'localhost:9200/_cat/indices?v'
+
+回應：
 
     [kedy@es1 ~]$ curl -XGET 'localhost:9200/_cat/indices?v'
     health status index    pri rep docs.count docs.deleted store.size pri.store.size
