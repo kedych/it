@@ -1,5 +1,5 @@
 # Filter
-以下針對幾個常用的做解說:
+以下針對幾個實作碰到的做解說:
 * Grok
 * Date
 * Geoip
@@ -58,7 +58,7 @@ ex:
 ```
 
 ##Geoip
-是ip address歸類查詢庫，根據ip address對應地域訊息(包含國家、省分和經緯度等)。
+geoip是ip address歸類查詢庫，根據ip address對應地域訊息(包含國家、省分和經緯度等)。
 在一般情況下:
 
 ```
