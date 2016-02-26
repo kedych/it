@@ -154,7 +154,9 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 ###刪除customer　index
 
     curl -XDELETE 'localhost:9200/customer'
-    
+
+### REST API操作pattern
+
 最後歸納出來，簡單的操作模式為：
 
     curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
