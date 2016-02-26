@@ -19,7 +19,6 @@
     * [Installation](logstash-01.md)
     * [Getting Data](logstash-02.md)
     * [Filter](Filter-01.md) 
-
 * [Linux]
     * [Let's Encrypt](lets_encrypt.md)
 * [Windows]
