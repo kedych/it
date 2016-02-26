@@ -194,7 +194,7 @@ ex:
 
 透過mutate可以讓欄位改名稱、改內容、刪除欄位、增加欄位，在input與output之間的銜接，就少掉很多問題。
 
-##Multiline
+##Multiline(疑問....待補)
 合併多個事件
 ```
 ex:
@@ -209,5 +209,32 @@ ex:
 
 ```
 
-##Syslog_pri
-syslog的優先設定，如果沒有設定，則為預設。
+##Syslog_pri(疑問....待補)
+syslog的優先設定，接在message內容的欄位名稱，在針對此欄位做處理。如果沒有設定，則為預設。寫法如下:
+```
+    filter {
+        grok {
+            type => "syslog"
+            pattern => [ "<%{POSINT:syslog_pri}>%{SYSLOGTIMESTAMP:syslog_timestamp} %{SYSLOGHOST:syslog_hostname} %{DATA:syslog_program}(?:[%{POSINT:syslog_pid}])?: %{GREEDYDATA:syslog_message}" ]
+            add_field => [ "received_at", "%{@timestamp}" ]
+            add_field => [ "received_from","%{@source_host}"]
+        }
+        syslog_pri {
+            type => "syslog"
+        }
+        date {
+            type => "syslog"
+            match => [ "syslog_timestamp", "MMM  d HH:mm:ss", "MMM dd HH:mm:ss" ]
+        }
+        mutate {
+            type => "syslog"
+            exclude_tags => "_grokparsefailure"
+            replace => [ "@source_host", "%{syslog_hostname}" ]
+            replace => [ "@message", "%{syslog_message}" ]
+        }
+        mutate {
+            type => "syslog"
+            remove => [ "syslog_hostname", "syslog_message", "syslog_timestamp" ]
+        }
+    }
+```
