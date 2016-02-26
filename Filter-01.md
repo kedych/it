@@ -102,3 +102,71 @@ ex:
         }
     }
 ```
+##Mutate
+為基礎類型資料處理能力，包括類型轉換、字串處理和欄位處理等。
+
+(1)類型轉換
+* convert
+
+可轉換類型包含"integer"，"float" 和 "string"
+```
+    filter {
+        mutate {
+            convert => ["request_time", "float"]
+        }
+    }
+```
+
+
+(2)字串處理
+* gsub
+
+```
+gsub => ["urlparams", "[\?#]", "_"]
+```
+* split
+
+```
+    filter {
+        mutate {
+            split => ["message", "|"]
+        }
+    }
+```
+
+(3)欄位處理
+* rename
+
+重命名某個字段，如果已存在字段，則被覆蓋掉
+```
+    filter {
+        mutate {
+            rename => ["syslog_host", "host"]
+        }
+    }
+```
+
+
+簡單來說filter module 透過mutate可以讓欄位改名稱、改內容、刪除欄位、增加欄位，在input與output之間的銜接，就少掉很多問題。
+
+```
+ex: 
+    input {
+        syslog {
+            port => 514
+            type => syslog
+        }
+    }
+    
+    filter {
+        mutate {
+            rename => [ "timestamp", "timestamp1" ]
+        }
+    }
+    
+    output {
+        stdout { 
+            codec => rubydebug 
+        }
+    }
+```
