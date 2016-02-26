@@ -12,7 +12,7 @@ ex:
   pattern為
   %{IP:client} %{WORD:method} %{URIPATHPARAM:request} %{NUMBER:bytes} %{NUMBER:duration}
 結果是:
-    {
+```{
     "client": [
     "55.3.244.1"
     ],
@@ -28,7 +28,8 @@ ex:
     "duration": [
     "0.043"
     ]
-    }
+    }```
+    
 
 ##date
 date為事處理時間的函式，可以轉換日誌記錄中的時間字串
