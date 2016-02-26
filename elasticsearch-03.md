@@ -166,6 +166,8 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 * Type - 類型名稱
 * ID - 文件(Document)唯一識別
 
+
+
 #修改資料(Modifying Your Data)
 
 ##索引與取代documents
