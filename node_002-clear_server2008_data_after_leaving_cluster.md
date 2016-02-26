@@ -19,7 +19,7 @@
 
     Cluster <ClusterName> node <NodeName> /force
 
-接著就是一串把iscsi配置跟虛擬硬碟還原回去的工作...
+接著就是一串把iscsi配置跟虛擬硬碟還原回去的工作，打完收工。
 
 ##延伸
 
