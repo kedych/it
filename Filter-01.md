@@ -121,11 +121,19 @@ ex:
 (2)字串處理
 * gsub
 
+取代欄位中的字串內容，如下面範例。將urlparams欄位中，符合正規表示式的"[\?#]"取代成"_"。
+
 ```
 gsub => ["urlparams", "[\?#]", "_"]
 ```
 * split
 
+切割字串成為陣列，假設message為
+
+```
+Apple|Banana|Cat
+```
+我們用split以"|"做切割
 ```
     filter {
         mutate {
@@ -133,11 +141,31 @@ gsub => ["urlparams", "[\?#]", "_"]
         }
     }
 ```
+切割結果為陣列:
+```
+[0]Apple
+[1]Banana
+[2]Cat
+```
+* join
 
+把陣列中的字串合併，以gsub例子為例
+
+```
+    filter {
+        mutate {
+            split => ["message", ","]
+        }
+    }
+```
+合併結果為字串:
+```
+Apple,Banana,Cat
+```
 (3)欄位處理
 * rename
 
-重命名某個字段，如果已存在字段，則被覆蓋掉
+重命名某個欄位，如果已存在欄位，則被覆蓋掉
 ```
     filter {
         mutate {
@@ -145,28 +173,41 @@ gsub => ["urlparams", "[\?#]", "_"]
         }
     }
 ```
+* update
 
+更新某個字段的內容。如果字段不存在，不會新建
+簡單來說filter module
 
-簡單來說filter module 透過mutate可以讓欄位改名稱、改內容、刪除欄位、增加欄位，在input與output之間的銜接，就少掉很多問題。
+* replace
 
+作用和 update 類似，但是當欄位不存在的時候，它和 add_field 參數一樣的效果，自動添加新的欄位。
 ```
-ex: 
-    input {
-        syslog {
-            port => 514
-            type => syslog
-        }
-    }
-    
+ex:
+
     filter {
         mutate {
-            rename => [ "timestamp", "timestamp1" ]
+            replace => { "message" => "%{source_host}: My new message" }
         }
     }
-    
-    output {
-        stdout { 
-            codec => rubydebug 
-        }
-    }
+
 ```
+
+透過mutate可以讓欄位改名稱、改內容、刪除欄位、增加欄位，在input與output之間的銜接，就少掉很多問題。
+
+##Multiline
+合併多個事件
+```
+ex:
+    
+    filter {
+        multiline {
+            type => "somefiletype"
+            pattern => "^\s"
+            what => "previous"
+        }
+    }
+
+```
+
+##Syslog_pri
+syslog的優先設定，如果沒有設定，則為預設。
