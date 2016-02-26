@@ -84,7 +84,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 有一點重要的是ElasticSearch並不要求在處理文件(document)前要先建立index，也就是說如果之前index不存在，Elasticsearch會自動建立一個命令提到的index，再執行命令中的操作。
 
-剛剛已經完成建一個document, 接著來探索剛建立的document, 一樣使用curl命令, 透過XGET存取elasticresearch的REST API.
+剛剛已經完成建一個document, 接著來探索剛建立的document, 一樣使用curl命令, 透過XGET存取Elasticresearch的REST API.
 
 命令：
 
@@ -101,7 +101,8 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     }
 
 
-沒有什麼特別的欄位，"found"，從這邊可以看到一個要求的"id"欄位1跟一個"_source"，也就是我們之前建索引的完整JSON document。
+沒有太特別的欄位，從回應可以看到，使用的索引(_index)、類型(_type)與唯一識別(_id)，而"found"欄位
+從這邊可以看到一個要求的"id"欄位1跟一個"_source"，也就是我們之前建索引的完整JSON document。
 
 #刪除一個索引(Delete an index)
 
