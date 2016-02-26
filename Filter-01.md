@@ -15,7 +15,7 @@ log資料為
 ```
 55.3.244.1 GET /index.html 15824 0.043
 ```
-所以我們可以再grok內容寫到match的message中，有哪些欄位做對應
+所以我們可以在grok內容寫到match的message中，有哪些欄位做對應
 ```
     filter {
         grok { 
@@ -58,3 +58,47 @@ ex:
 ```
 
 ##Geoip
+是ip address歸類查詢庫，根據ip address對應地域訊息(包含國家、省分和經緯度等)。
+在一般情況下:
+
+```
+    filter {
+        geoip {
+            source => "message"
+        }
+    }
+```
+結果可能為
+```
+    {
+        "message" => "183.60.92.253",
+        "@version" => "1",
+        "@timestamp" => "2014-08-07T10:32:55.610Z",
+        "host" => "raochenlindeMacBook-Air.local",
+        "geoip" => {
+            "ip" => "183.60.92.253",
+            "country_code2" => "CN",
+            "country_code3" => "CHN",
+            "country_name" => "China",
+            "continent_code" => "AS",
+            "region_name" => "30",
+            "city_name" => "Guangzhou",
+            "latitude" => 23.11670000000001,
+            "longitude" => 113.25,
+            "timezone" => "Asia/Chongqing",
+            "real_region_name" => "Guangdong",
+            "location" => [
+                [0] 113.25,
+                [1] 23.11670000000001
+            ]
+        }
+    }
+```
+也能夠自己選擇想要顯示的欄位如下:
+```
+    filter {
+        geoip {
+            fields => ["city_name", "continent_code", "country_code2", "country_code3", "country_name", "dma_code", "ip", "latitude", "longitude", "postal_code", "region_name", "timezone"]
+        }
+    }
+```
