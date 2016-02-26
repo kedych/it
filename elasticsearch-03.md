@@ -120,6 +120,8 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     "acknowledged" : true
     }
 
+刪除完畢以後列出索引(index)。
+
 命令：
 
     curl 'localhost:9200/_cat/indices?v'
@@ -133,7 +135,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 就只剩下剛剛另外建立的kedytest index, 在前述命令指定刪除的customer index已經不見了
 
 
-這時候我們複習剛剛的建立index跟document還有刪除的命令，使用的命令如下：
+這時候複習剛剛的建立index跟document還有刪除的命令，使用的命令如下：
 
 建立"customer" index
 
