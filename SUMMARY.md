@@ -10,7 +10,7 @@
     * [Basic Concept](elasticsearch-01.md)
     * [Installation](elasticsearch-02.md)
     * [使用初探](elasticsearch-03.md)
-    * [ElasticSearch - 叢集組態](elasticsearch-04.md)
+    * [叢集組態](elasticsearch-04.md)
     * [ElasticSearch - 改變日誌層級](elasticsearch-05.md)
     * [ElasticSearch - 管理映射](elasticsearch-06.md)
 * [Logstash]
