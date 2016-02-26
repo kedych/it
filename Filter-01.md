@@ -1,9 +1,9 @@
 # Filter
 以下針對幾個常用的做解說:
 * Grok
+* Date
 * Geoip
 * Mutate
-* Date
 * Multiline
 * Syslog_pri
 
@@ -41,6 +41,20 @@ Note:
 教學網站:https://www.youtube.com/watch?v=YIKm6WUgFTY
 
 ##Date
-date為事處理時間的函式，可以轉換日誌記錄中的時間字串
+date為事處理時間的函式，可以轉換日誌記錄中的時間字串。
+日誌記錄中的時間字串，變成LogStash::Timestamp 對象，然後轉存到 @timestamp 欄位中。
 
-日誌記錄中的時間字串，變成LogStash::Timestamp 對象，然後轉存到 @timestamp 字段裡。
+```
+ex:
+   
+    filter {
+        grok {
+            match => ["message", "%{HTTPDATE:logdate}"]
+        }
+        date {
+            match => ["logdate", "dd/MMM/yyyy:HH:mm:ss Z"]
+        }
+    }
+```
+
+##Geoip
