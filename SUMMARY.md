@@ -7,8 +7,8 @@
 * [世界雲端大會紀實 The Internet of Thing篇](cloudcon2014-iot.md)
 * [行動通訊世代初探 - 行動通訊一點點](xing_dong_tong_xun_shi_dai_chu_tan_-_xing_dong_tong_xun_yi_dian_dian.md)
 * [Elasticsearch]
-    * [ElasticSearch - Basic Concept](elasticsearch-01.md)
-    * [ElasticSearch - Installation](elasticsearch-02.md)
+    * [Basic Concept](elasticsearch-01.md)
+    * [Installation](elasticsearch-02.md)
     * [ElasticSearch - 使用初探](elasticsearch-03.md)
     * [ElasticSearch - 叢集組態](elasticsearch-04.md)
     * [ElasticSearch - 改變日誌層級](elasticsearch-05.md)
