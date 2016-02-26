@@ -24,7 +24,7 @@
 * Linux
    * [Let's Encrypt](lets_encrypt.md)
 * Windows
-   * [SATA模擬IDE安裝Windows以後改為AHCI]  (note_003-sata_ida_to_AHCI.md)
+   * [[SATA模擬IDE安裝Windows以後改為AHCI]  (note_003-sata_ida_to_AHCI.md)](note_003-sata_ida_to_AHCI.md)
    * [Server 2008 Cluster 退出節點清除資料](node_002-clear_server2008_data_after_leaving_cluster.md)
    * [更換Windows 7 MAK為KMS版本](note_001-change_windows_7_mak_to_kms.md)
    * SATA模擬IDE安裝Windows以後改為AHCI
