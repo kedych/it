@@ -159,6 +159,12 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
     curl -X<REST Verb> <Node>:<Port>/<Index>/<Type>/<ID>
 
+* REST Verb - REST API動作參數，有XPUT、XGET、XDELETE。
+* Node - Elasticsearch節點或叢集名稱
+* Port - 連接埠
+* Index - 索引名稱
+* Type - 類型名稱
+* ID - 文件(Document)唯一識別
 
 #修改資料(Modifying Your Data)
 
