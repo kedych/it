@@ -189,8 +189,7 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
     }'
 
 
-這時候指定id之document裡面的name欄位, 就會從"kedy chang"被替換成"joe chen"
-再仔細觀察回應, 也可以看到版本編號有異動：
+這時候指定id之document裡面的name欄位，就會從"kedy chang"被替換成"joe chen" 再仔細觀察回應，也可以看到版本編號有異動：
 
     [kedy@es1 ~]$ curl -XGET 'localhost:9200/customer/external/1?pretty'
     {
