@@ -223,7 +223,7 @@ Elasticsearch就會新建立一個document
 
 #更新Documents (Updating Documents)
 
-為了要能夠索引跟取代documdents, 我們必須要能能夠更新documents 記得, 在Elasticsearch之中, 取代不是真的直接更新, 而是刪除舊的documents, 再重新索引新document進去.
+為了要能夠索引跟取代documdents，我們必須要能夠更新documents。記得， 在Elasticsearch之中，取代不是真的直接更新，而是刪除舊的documents， 再重新索引新document進去.
 
 以下範例顯示如何更新已存在且id為1的document之中的姓名欄位, 改成"Joe Chen"
 
@@ -232,18 +232,18 @@ Elasticsearch就會新建立一個document
         "doc": { "name": "Joe Chen" }
     }'
 
-以下範例顯示如何更新已存在且id為1的document之中的姓名欄位為"Joe Chen", 同時也增加年紀欄位
+以下範例顯示如何更新已存在且id為1的document之中的姓名欄位為"Joe Chen"， 同時也增加年紀欄位
 
     curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
     {
         "doc": { "name": "Joe Chen", "age": 30 }
     }'
 
-Update也可以使用簡單的script執行. 注意, 動態的script(如下範例)預設是將script的支援關閉的. 詳系可以參考 [scripting docs](https://www.elastic.co/guide/en/elasticsearch/reference/2.0/modules-scripting.html). 下面範例是將年紀增加5:
+Update也可以使用簡單的script執行。注意，動態script(如下範例)，預設script的支援關閉的，詳系可以參考 [scripting docs](https://www.elastic.co/guide/en/elasticsearch/reference/2.0/modules-scripting.html)。下面範例是將年紀增加5:
 
     curl -XPOST 'localhost:9200/customer/external/1/_update?pretty' -d '
     {
         "script" : "ctx._source.age += 5"
     }'
     
-上述範例中, ctx._source 參考文件還在等待Elastic官方更新. 在此文件撰寫的同時,  Elasticsearch的更新功能一次只能針對一個document進行, 未來Elasticsearch也許會提供針對多document的query condition的能力, 類似SQL的UPDATE-WHERE敘述一樣.
+上述範例中，ctx._source 參考文件還在等待Elastic官方更新。在此文件撰寫的同時，Elasticsearch的更新功能一次只能針對一個document進行，未來Elasticsearch也許會提供針對多document的query condition的能力，類似SQL的UPDATE-WHERE敘述一樣。
