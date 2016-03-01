@@ -247,3 +247,14 @@ Update也可以使用簡單的script執行。注意，動態script(如下範例)
     }'
     
 上述範例中，ctx._source 參考文件還在等待Elastic官方更新。在此文件撰寫的同時，Elasticsearch的更新功能一次只能針對一個document進行，未來Elasticsearch也許會提供針對多document的query condition的能力，類似SQL的UPDATE-WHERE敘述一樣。
+
+# 刪除Documents (Deleting Documents)
+
+在Elasticsearch中刪除Document還滿直覺的，以下範例顯示刪除index為消費者(customer)中類型(type)為external且ID為2的document。
+
+    curl -XDELETE 'localhost:9200/customer/external/2?pretty'
+    
+如果需要大量刪除符合特定query的document，可以使用名稱為 delete-by-query 的plugin。
+
+備註:此功能似乎被停用，待確認。
+
