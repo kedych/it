@@ -175,7 +175,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 * *size*沒有特別指定，預設就是10
 * *from*沒有指定，預設就是__第一筆__(也就是__0__)
 
-This example does a match_all and sorts the results by account balance in descending order and returns the top 10 (default size) documents.
+接下來的範例，除了使用*matsh_all*之外，再依照用戶的帳戶餘額進行遞減排序，也就是在request body之中，加入*sort*參數，告訴Elasticsearch要排序的欄位，以及排序的方式。
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
