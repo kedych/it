@@ -139,15 +139,15 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
-Elasticsearch provides a JSON-style domain-specific language that you can use to execute queries. [This is referred to as the Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/2.1/query-dsl.html). The query language is quite comprehensive and can be intimidating at first glance but the best way to actually learn it is to start with a few basic examples.
-
-Going back to our last example, we executed this query:
+Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來執行查詢，[關於Query DSL可參考本網頁](https://www.elastic.co/guide/en/elasticsearch/reference/2.1/query-dsl.html) 此查詢語言包含範圍相當全面，或許乍看很好理解，但最好的方法還是透過範例來實際操作。
+上個範例，執行以下搜尋：
 
     {
     "query": { "match_all": {} }
     }
 
-Dissecting the above, the query part tells us what our query definition is and the match_all part is simply the type of query that we want to run. The match_all query is simply a search for all documents in the specified index.
+
+詳細拆解上述搜尋語句，查詢部分顯示了我們查詢的定義(Query definition)為何，查詢定義內容為 match_all，就是我們想要執行的搜尋。而match_all查詢，是最簡單的，代表要查詢索引之中所有的documents。
 
 In addition to the query parameter, we also can pass other parameters to influence the search results. For example, the following does a match_all and returns only the first document:
 
