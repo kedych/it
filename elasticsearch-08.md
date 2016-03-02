@@ -58,3 +58,5 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
     green  open   bank                    5   1       1000            0    905.8kb        448.8kb
 
 依序看到index的健康 (health)、狀態 (status)、名稱 (index)、primary shard、replica、文件數量(docs.count)、刪除文件數 (docs.deleted)、儲存空間大小 (store.size)、主要儲存空間大小 (pri.store.size)
+
+可以看到將 accounts.json 以 --data-binary 形式透過 bulk API載入後，共有1000比document在名稱為bank的index內。
