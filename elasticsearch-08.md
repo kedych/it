@@ -95,9 +95,9 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 回傳結果的前端可以看到一些關於本搜尋回傳的結果，
 
-* took – time in milliseconds for Elasticsearch to execute the search
-* timed_out – tells us if the search timed out or not
-* _shards – tells us how many shards were searched, as well as a count of the successful/failed searched shards
+* took – 執行搜尋花多少時間，單位為毫秒。
+* timed_out – 搜尋有沒有超過最大容忍時間(timeout)。
+* _shards – 搜尋的shards數量，通常是成功/失效的shards數量總合。
 * hits – search results
 * hits.total – total number of documents matching our search criteria
 * hits.hits – actual array of search results (defaults to first 10 documents)
