@@ -63,12 +63,12 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 ## 搜尋API (The Search API)
 
-## Introducing the Query Language
+## 查詢語言簡介 (Introducing the Query Language)
 
-## Executing Searches
+## 執行搜尋 (Executing Searches)
 
-## Executing Filters
+## 執行過濾 (Executing Filters)
 
-## Executing Aggregations
+## 執行聚合 (Executing Aggregations)
 
 ## 小結
