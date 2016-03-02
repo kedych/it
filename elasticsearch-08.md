@@ -26,3 +26,5 @@ JSON隔式的虛擬消費者銀行帳戶資訊，資料架構如下：
 官方文件用的範例帳戶資料可以從以下兩個地方下載：
 
 https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
+
+把檔案解壓縮後會取得accounts.json，放到Elasticsearch主機上，
