@@ -50,7 +50,7 @@ Elasticsearch就會新建立一個document
 
 記得這種情況要使用的方法是 -XPOST 而不是 -XPUT
 
-#更新Documents (Updating Documents)
+##更新Documents (Updating Documents)
 
 為了要能夠索引跟取代documdents，我們必須要能夠更新documents。記得， 在Elasticsearch之中，取代不是真的直接更新，而是刪除舊的documents， 再重新索引新document進去.
 
@@ -77,7 +77,7 @@ Update也可以使用簡單的script執行。注意，動態script(如下範例)
     
 上述範例中，ctx._source 參考文件還在等待Elastic官方更新。在此文件撰寫的同時，Elasticsearch的更新功能一次只能針對一個document進行，未來Elasticsearch也許會提供針對多document的query condition的能力，類似SQL的UPDATE-WHERE敘述一樣。
 
-# 刪除Documents (Deleting Documents)
+## 刪除Documents (Deleting Documents)
 
 在Elasticsearch中刪除Document還滿直覺的，以下範例顯示刪除index為消費者(customer)中類型(type)為external且ID為2的document。
 
@@ -86,4 +86,6 @@ Update也可以使用簡單的script執行。注意，動態script(如下範例)
 如果需要大量刪除符合特定query的document，可以使用名稱為 delete-by-query 的plugin。
 
 備註:此功能似乎被停用，待確認。
+
+## 批次處理 (Batch Processing)
 
