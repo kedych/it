@@ -11,6 +11,7 @@
    * [Basic Concept](elasticsearch-01.md)
    * [Installation](elasticsearch-02.md)
    * [叢集初探](elasticsearch-03.md)
+   * [資料處理](elasticsearch-07.md)
    * [叢集組態](elasticsearch-04.md)
    * [改變日誌層級](elasticsearch-05.md)
    * [管理映射](elasticsearch-06.md)
