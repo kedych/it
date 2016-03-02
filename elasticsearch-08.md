@@ -65,6 +65,8 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 在ES之中有兩種搜尋的方法，一種是把搜尋參數透過REST request URI傳遞，直接把參數變成URI的一部分，另一種是把搜尋參數透過REST request body傳遞，把搜尋參數以JSON document形式傳入。
 
+以REST request body型式的搜尋，表示方式比較簡單具體、也比較好以JSON格式構建出較具閱讀性的搜尋語法。
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
