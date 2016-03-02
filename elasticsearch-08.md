@@ -73,7 +73,19 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
     
 上述範例表示搜尋索引名稱為bank的內容，查詢參數(q=*)為所有(星號)，表示回傳所有bank index中的document，以下是眾多搜尋結果中的一筆。
 
+
     {
+    "took" : 39,
+    "timed_out" : false,
+    "_shards" : {
+        "total" : 5,
+        "successful" : 5,
+        "failed" : 0
+    },
+    "hits" : {
+        "total" : 1000,
+        "max_score" : 1.0,
+        "hits" : [{
          "_index" : "bank",
         "_type" : "account",
         "_id" : "208",
