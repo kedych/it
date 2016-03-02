@@ -146,9 +146,10 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
     "query": { "match_all": {} }
     }
 
-詳細拆解上述搜尋語句，查詢部分顯示了我們查詢的定義(Query definition)為何，查詢定義內容為 match_all，就是我們想要執行的搜尋。而match_all查詢，是最簡單的，代表要查詢索引之中所有的documents。
+詳細拆解上述搜尋語句，查詢(*"query"*)部分顯示了我們查詢的定義(Query definition)為何，查詢定義內容為 *match_all*，就是我們想要執行的搜尋。而*match_all*查詢，是最簡單的，代表要查詢索引之中所有的documents。
 
-In addition to the query parameter, we also can pass other parameters to influence the search results. For example, the following does a match_all and returns only the first document:
+
+此外，關於*query*參數，可以傳遞其他參數來影響(調整)搜尋結果。例如，以下執行全部搜尋(*match_all*)，配合*size*的使用，只回傳一筆document：
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
@@ -156,9 +157,8 @@ In addition to the query parameter, we also can pass other parameters to influen
         "size": 1
     }'
 
-Note that if size is not specified, it defaults to 10.
-
-This example does a match_all and returns documents 11 through 20:
+一般搜尋中，如果*size*沒有特別指定，預設就是10，顯示10筆搜尋結果。
+接下來的範例也是搜尋全部符合(*match_all*)，但是回傳的結果我們想要第11到20筆。
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
@@ -167,7 +167,9 @@ This example does a match_all and returns documents 11 through 20:
         "size": 10
     }'
 
-The from parameter (0-based) specifies which document index to start from and the size parameter specifies how many documents to return starting at the from parameter. This feature is useful when implementing paging of search results. Note that if from is not specified, it defaults to 0.
+使用了*from*和*size*參數，告訴Elasticsearch，我們想要看的結果是第幾筆開始的多少筆。要注意的是如同多數程式語言，所謂的_第一筆_
+
+This feature is useful when implementing paging of search results. Note that if from is not specified, it defaults to 0.
 
 This example does a match_all and sorts the results by account balance in descending order and returns the top 10 (default size) documents.
 
