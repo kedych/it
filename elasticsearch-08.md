@@ -111,6 +111,8 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
         "query": { "match_all": {} }
     }'
 
+可以看到跟request URI的差別，在於URI之中帶搜尋條件的q=*參數，改成了附帶JSON query給_search API，得到的結果如下：
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
