@@ -5,6 +5,18 @@
 研讀與操作先前的官方手冊之後，對於Elasicsearch操作應該有些簡單的概念，接著來試試更真實的資料集合。官方網站文件中提及，有整理了一份
 JSON隔式的虛擬消費者銀行帳戶資訊，資料架構如下：
 
-
+    {
+        "account_number": 0,
+        "balance": 16623,
+        "firstname": "Bradshaw",
+        "lastname": "Mckenzie",
+        "age": 29,
+        "gender": "F",
+        "address": "244 Columbus Place",
+        "employer": "Euron",
+        "email": "bradshawmckenzie@euron.com",
+        "city": "Hobucken",
+        "state": "CO"
+    }
 
 ## 載入簡易資料集 (Loading the Sample Dataset)
