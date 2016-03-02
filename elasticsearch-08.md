@@ -132,6 +132,8 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
             "_source":{"account_number":25,"balance":40540,"firstname":"Virginia","lastname":"Ayala","age":39,"gender":"F","address":"171 Putnam Avenue","employer":"Filodyne","email":"virginiaayala@filodyne.com","city":"Nicholson","state":"PA"}
     }, 
 
+可以看到搜尋結果其實是一致的，差別只在於搜尋條件的傳遞方式，在於使用URI傳遞還是使用JSON query的格式傳遞。
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
