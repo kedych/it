@@ -60,3 +60,5 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 依序看到index的健康 (health)、狀態 (status)、名稱 (index)、primary shard、replica、文件數量(docs.count)、刪除文件數 (docs.deleted)、儲存空間大小 (store.size)、主要儲存空間大小 (pri.store.size)
 
 可以看到將 accounts.json 以 --data-binary 形式透過 bulk API載入後，共有1000筆type為account的document在bank index之中。
+
+## 搜尋API (The Search API)
