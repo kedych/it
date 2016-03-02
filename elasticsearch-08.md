@@ -67,6 +67,10 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 以REST request body型式的搜尋，表示方式比較簡單具體、也比較好以JSON格式構建出較具閱讀性的搜尋語法。
 
+範例示範一個REST request URI的搜尋方式，其餘部分則以requet body method為主。
+
+
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
