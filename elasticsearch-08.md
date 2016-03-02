@@ -130,7 +130,7 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
             "_id" : "25",
             "_score" : 1.0,
             "_source":{"account_number":25,"balance":40540,"firstname":"Virginia","lastname":"Ayala","age":39,"gender":"F","address":"171 Putnam Avenue","employer":"Filodyne","email":"virginiaayala@filodyne.com","city":"Nicholson","state":"PA"}
-        }, 
+    }, 
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
