@@ -139,7 +139,7 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
-Elasticsearch provides a JSON-style domain-specific language that you can use to execute queries. This is referred to as the Query DSL. The query language is quite comprehensive and can be intimidating at first glance but the best way to actually learn it is to start with a few basic examples.
+Elasticsearch provides a JSON-style domain-specific language that you can use to execute queries. [This is referred to as the Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/2.1/query-dsl.html). The query language is quite comprehensive and can be intimidating at first glance but the best way to actually learn it is to start with a few basic examples.
 
 Going back to our last example, we executed this query:
 
