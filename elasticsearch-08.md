@@ -71,7 +71,15 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
     curl 'localhost:9200/bank/_search?q=*&pretty'
     
-上述範例表示搜尋索引名稱為bank的內容，查詢參數(q=*)為所有(星號)，表示回傳所有bank index中的document。
+上述範例表示搜尋索引名稱為bank的內容，查詢參數(q=*)為所有(星號)，表示回傳所有bank index中的document，以下是眾多搜尋結果中的一筆。
+
+    {
+          "_index" : "bank",
+        "_type" : "account",
+        "_id" : "208",
+        "_score" : 1.0,
+        "_source":{"account_number":208,"balance":40760,"firstname":"Garcia","lastname":"Hess","age":26,"gender":"F","address":"810 Nostrand Avenue","employer":"Quiltigen","email":"garciahess@quiltigen.com","city":"Brooktrails","state":"GA"}
+        }
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
