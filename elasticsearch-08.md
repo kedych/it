@@ -98,9 +98,9 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 * took – 執行搜尋花多少時間，單位為毫秒。
 * timed_out – 搜尋有沒有超過最大容忍時間(timeout)。
 * _shards – 搜尋的shards數量，通常是成功/失效的shards數量總合。
-* hits – search results
-* hits.total – total number of documents matching our search criteria
-* hits.hits – actual array of search results (defaults to first 10 documents)
+* hits – 搜尋結果
+* hits.total – 符合搜尋條件的document數量。
+* hits.hits – 實際搜尋結果陣列，預設顯示前10個 documents。
 * _score and max_score - ignore these fields for now
 
 ## 查詢語言簡介 (Introducing the Query Language)
