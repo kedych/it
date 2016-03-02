@@ -169,7 +169,6 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 使用了*from*和*size*參數，告訴Elasticsearch，我們想要看的結果是第幾筆開始的多少筆。要注意的是如同多數程式語言，所謂的__第一筆__是從__0__開始計算，這兩個參數在我們需要製造分頁的時候非常方便。如果*from*沒有指定，預設就是從__第一筆__(也就是__0__)開始回傳。
 
-This feature is useful when implementing paging of search results. Note that if from is not specified, it defaults to 0.
 
 This example does a match_all and sorts the results by account balance in descending order and returns the top 10 (default size) documents.
 
