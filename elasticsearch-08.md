@@ -104,6 +104,13 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 * _score - 之後補充。
 * max_score - 之後補充。
 
+第二個範例使用REST request body方式進行搜尋，也找出全部的內容。
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match_all": {} }
+    }'
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
