@@ -27,4 +27,8 @@ JSON隔式的虛擬消費者銀行帳戶資訊，資料架構如下：
 
 https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
-把檔案解壓縮後會取得accounts.json，放到Elasticsearch主機上，
+把檔案解壓縮後會取得accounts.json，將之放到Elasticsearch主機，接著使用curl命令，將檔案傳入Elasticsearch，可以看到index為bank、type為account，並使用bulk:
+
+    curl -XPOST 'localhost:9200/bank/account/_bulk?pretty' --data-binary "@accounts.json"
+    
+輸入後可以看到如下的輸出，回應應都要是201或200。
