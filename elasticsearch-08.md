@@ -19,4 +19,6 @@ JSON隔式的虛擬消費者銀行帳戶資訊，資料架構如下：
         "state": "CO"
     }
 
+備註：上述資料與欄位是透過 http://www.json-generator.com/ 產生，如有雷同純屬巧合。
+
 ## 載入簡易資料集 (Loading the Sample Dataset)
