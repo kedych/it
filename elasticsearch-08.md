@@ -134,9 +134,9 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 可以看到搜尋結果其實是一致的，差別只在於搜尋條件的傳遞方式，在於使用URI傳遞還是使用JSON query的格式傳遞。
 
-有個很重要的觀念，當Elasticsearch回傳搜尋結果的時候，就已經完成搜尋request回應的工作，同時不保留任何server-side端的資源，
+有個很重要的觀念，當Elasticsearch回傳搜尋結果的時候，就已經完成搜尋request回應的工作，同時不保留任何server-side端的資源，也不會對搜尋的結果有任何的暫存、註記、記錄等，屬於stateless的形式。這點跟很多其他資料庫的使用上有明顯的不同，例如在SQL之中，搜尋結果可以繼續拆分搜尋子集合並進行近一步的工作 (諸如joint、fetch等)，如果有需要進行類似工作，則需要使用stateful的server-side cursor。
 
-It is important to understand that once you get your search results back, Elasticsearch is completely done with the request and does not maintain any kind of server-side resources or open cursors into your results. This is in stark contrast to many other platforms such as SQL wherein you may initially get a partial subset of your query results up-front and then you have to continuously go back to the server if you want to fetch (or page through) the rest of the results using some kind of stateful server-side cursor.
+ his is in stark contrast to many other platforms such as SQL wherein you may initially get a partial subset of your query results up-front and then you have to continuously go back to the server if you want to fetch (or page through) the rest of the results using some kind of stateful server-side cursor.
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
