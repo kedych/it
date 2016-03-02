@@ -31,4 +31,23 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
     curl -XPOST 'localhost:9200/bank/account/_bulk?pretty' --data-binary "@accounts.json"
     
-輸入後可以看到如下的輸出，回應應都要是201或200。
+輸入後可以看到如下的輸出，回應應是201或200。
+
+    {
+    "index" : {
+        "_index" : "bank",
+        "_type" : "account",
+        "_id" : "990",
+        "_version" : 4,
+        "_shards" : {
+            "total" : 2,
+            "successful" : 2,
+            "failed" : 0
+        },
+        "status" : 200
+        }
+    }
+    
+再使用 _cat API列出目前的index
+
+    curl 'localhost:9200/_cat/indices?v'
