@@ -108,3 +108,5 @@ Update也可以使用簡單的script執行。注意，動態script(如下範例)
     {"delete":{"_id":"2"}}
     '
     
+在上述運算中，刪除id為2的document之後，並不會有對應的原始document出現，只需要在delete運算命令傳入要刪除的document id即可。
+
