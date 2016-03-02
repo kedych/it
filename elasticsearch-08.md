@@ -101,7 +101,8 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 * hits – 搜尋結果
 * hits.total – 符合搜尋條件的document數量。
 * hits.hits – 實際搜尋結果陣列，預設顯示前10個 documents。
-* _score and max_score - ignore these fields for now
+* _score - 之後補充。
+* max_score - 之後補充。
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
