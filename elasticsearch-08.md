@@ -79,7 +79,7 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
         "_id" : "208",
         "_score" : 1.0,
         "_source":{"account_number":208,"balance":40760,"firstname":"Garcia","lastname":"Hess","age":26,"gender":"F","address":"810 Nostrand Avenue","employer":"Quiltigen","email":"garciahess@quiltigen.com","city":"Brooktrails","state":"GA"}
-        }
+    }
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
