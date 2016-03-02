@@ -93,6 +93,16 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
         "_source":{"account_number":208,"balance":40760,"firstname":"Garcia","lastname":"Hess","age":26,"gender":"F","address":"810 Nostrand Avenue","employer":"Quiltigen","email":"garciahess@quiltigen.com","city":"Brooktrails","state":"GA"}
     }
 
+回傳結果的前端可以看到一些關於本搜尋回傳的結果，
+
+* took – time in milliseconds for Elasticsearch to execute the search
+* timed_out – tells us if the search timed out or not
+* _shards – tells us how many shards were searched, as well as a count of the successful/failed searched shards
+* hits – search results
+* hits.total – total number of documents matching our search criteria
+* hits.hits – actual array of search results (defaults to first 10 documents)
+* _score and max_score - ignore these fields for now
+
 ## 查詢語言簡介 (Introducing the Query Language)
 
 ## 執行搜尋 (Executing Searches)
