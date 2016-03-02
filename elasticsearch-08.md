@@ -69,7 +69,9 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 
 範例示範一個REST request URI的搜尋方式，其餘部分則以requet body method為主。
 
-
+    curl 'localhost:9200/bank/_search?q=*&pretty'
+    
+上述範例表示搜尋索引名稱為bank的內容，查詢參數(q=*)為所有(星號)，表示回傳所有bank index中的document。
 
 ## 查詢語言簡介 (Introducing the Query Language)
 
