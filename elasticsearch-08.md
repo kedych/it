@@ -146,7 +146,6 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
     "query": { "match_all": {} }
     }
 
-
 詳細拆解上述搜尋語句，查詢部分顯示了我們查詢的定義(Query definition)為何，查詢定義內容為 match_all，就是我們想要執行的搜尋。而match_all查詢，是最簡單的，代表要查詢索引之中所有的documents。
 
 In addition to the query parameter, we also can pass other parameters to influence the search results. For example, the following does a match_all and returns only the first document:
