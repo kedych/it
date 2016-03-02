@@ -89,3 +89,22 @@ Update也可以使用簡單的script執行。注意，動態script(如下範例)
 
 ## 批次處理 (Batch Processing)
 
+如果有大量操作要進行，需要每個都個別使用一個curl命令操作的話，會花費不少overhead在網路來回 (Network Roundtrip) 之上，為了在ES之中能夠針對個別文件進行索引、更新、刪除，ES提供了批次操作的 _bulk API，透過_bulk能夠批次大量有效率的在一個curl命令中，傳入大量的運算操作命令，近可能的將Network Roundtrip降到最低。
+
+以下範例新增兩個document至消費者的external的type之中：
+
+    curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
+    {"index":{"_id":"1"}}
+    {"name": "Kedy Chang" }
+    {"index":{"_id":"2"}}
+    {"name": "Joe Chen" }
+    '
+    
+以下範例使用_bulk API更新id為1的document，並刪除id為2的documen：
+
+    curl -XPOST 'localhost:9200/customer/external/_bulk?pretty' -d '
+    {"update":{"_id":"1"}}
+    {"doc": { "name": "Kedy Chang becomes Joe Chen" } }
+    {"delete":{"_id":"2"}}
+    '
+    
