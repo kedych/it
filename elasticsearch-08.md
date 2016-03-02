@@ -62,3 +62,13 @@ https://github.com/bly2k/files/blob/master/accounts.zip?raw=true
 可以看到將 accounts.json 以 --data-binary 形式透過 bulk API載入後，共有1000筆type為account的document在bank index之中。
 
 ## 搜尋API (The Search API)
+
+## Introducing the Query Language
+
+## Executing Searches
+
+## Executing Filters
+
+## Executing Aggregations
+
+## 小結
