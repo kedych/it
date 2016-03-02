@@ -167,7 +167,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         "size": 10
     }'
 
-使用了*from*和*size*參數，告訴Elasticsearch，我們想要看的結果是第幾筆開始的多少筆。要注意的是如同多數程式語言，所謂的_第一筆_
+使用了*from*和*size*參數，告訴Elasticsearch，我們想要看的結果是第幾筆開始的多少筆。要注意的是如同多數程式語言，所謂的__第一筆__是從__0__開始計算，這兩個參數在我們需要製造分頁的時候非常方便。
 
 This feature is useful when implementing paging of search results. Note that if from is not specified, it defaults to 0.
 
