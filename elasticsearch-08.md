@@ -336,7 +336,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
     }'
 
 
-In SQL, the above aggregation is similar in concept to:
+在SQL之中，聚合的概念就像使用下列語法查詢：
 
     SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 
