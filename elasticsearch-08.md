@@ -293,6 +293,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 但是搜尋並沒不需要計算score，通常只在有使用過濾條件(filtering)的document集合才有必要計算score。Elasticsearch會偵測這些情況並且自動最佳化搜尋執行，避免去計算不重或者沒有用到的score。
 
+上一節
+
 ## 執行聚合 (Executing Aggregations)
 
 ## 小結
