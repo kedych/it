@@ -345,6 +345,50 @@ In SQL, the above aggregation is similar in concept to:
 
     SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 
+And the response (partially shown):
+
+    "hits" : {
+        "total" : 1000,
+        "max_score" : 0.0,
+        "hits" : [ ]
+    },
+    "aggregations" : {
+        "group_by_state" : {
+            "buckets" : [ {
+                "key" : "al",
+                "doc_count" : 21
+            }, {
+                "key" : "tx",
+                "doc_count" : 17
+            }, {
+                "key" : "id",
+                "doc_count" : 15
+            }, {
+                "key" : "ma",
+                "doc_count" : 15
+            }, {
+                "key" : "md",
+                "doc_count" : 15
+            }, {
+                "key" : "pa",
+                "doc_count" : 15
+            }, {
+                "key" : "dc",
+                "doc_count" : 14
+            }, {
+                "key" : "me",
+                "doc_count" : 14
+            }, {
+                "key" : "mo",
+                "doc_count" : 14
+            }, {
+                "key" : "nd",
+                "doc_count" : 14
+                } ]
+            }
+        }
+    }
+
 ## 小結
 
 Elasticsearch is both a simple and complex product. We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
