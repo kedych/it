@@ -34,6 +34,7 @@
 
 並且把beats-master改名為beats放入C:\Projects\windows\src\github.com\elastic資料夾內，
 在執行Building出現的錯誤，是因為缺少其它套件，需額外下載到對應資料夾。
+
 ![](winlogbeat04.jpg)
 ### 放入github.com資料夾內
 
@@ -71,11 +72,11 @@ winlogbeat.exe執行檔，是之後設定組態檔所需的檔案，而上圖Tes
 ![](winlogbeat07.jpg)
 ![](winlogbeat08.jpg)
 ###Step2
-* (二)Building產生的winlogbeat.exe、
-* 資料夾C:\Projects\windows\github.com\elastic\beats\winlogbeat\etc內的winlogbeat.template.json與winlogbeat.yml兩個文件
+* 將(二)Building產生的winlogbeat.exe與在C:\Projects\windows\github.com\elastic\beats\winlogbeat\etc內的winlogbeat.template.json與winlogbeat.yml兩個文件。
 ![](winlogbeat09.jpg)
-Step1與Step2資料一併放入C:\Program Files\winlogbeat資料夾目錄內。
+一併放入C:\Program Files\winlogbeat資料夾目錄內。
 ![](winlogbeat10.jpg)
+
 Note:
 在winlogbeat.yml中可以設定更改hosts位址、使用者帳號與密碼。
 ![](winlogbeat11.jpg)
