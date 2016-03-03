@@ -185,6 +185,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 執行搜尋 (Executing Searches)
 
+上一章節介紹簡單的搜尋參數，接著來挖掘更多有關查詢描述語言(Query DSL)。先看看搜尋回傳結果中帶有哪些欄位。
+
 ## 執行過濾 (Executing Filters)
 
 ## 執行聚合 (Executing Aggregations)
