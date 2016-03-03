@@ -325,7 +325,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
-        "size": 10,
+        "size": 0,
         "aggs": {
             "group_by_state": {
                 "terms": {
@@ -335,6 +335,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+注意：*size*設定0表示不顯示符合查詢的document結果。
 
 在SQL之中，聚合的概念就像使用下列語法查詢：
 
