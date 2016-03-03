@@ -220,7 +220,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         "query": { "match": { "address": "mill lane" } }
     }'
 
-如果需要查詢的項目是"mill lane"完整片語(phrase)，就需要改用*match_phrase*來下條件：
+如果需要搜尋的項目是包含"mill lane"完整片語(phrase)，就需要改用*match_phrase*來下條件：
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
