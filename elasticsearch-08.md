@@ -318,6 +318,14 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 執行聚合 (Executing Aggregations)
 
+Aggregations provide the ability to group and extract statistics from your data.
+
+The easiest way to think about aggregations is by roughly equating it to the SQL GROUP BY and the SQL aggregate functions. 
+
+In Elasticsearch, you have the ability to execute searches returning hits and at the same time return aggregated results separate from the hits all in one response. 
+
+This is very powerful and efficient in the sense that you can run queries and multiple aggregations and get the results back of both (or either) operations in one shot avoiding network roundtrips using a concise and simplified API.
+
 ## 小結
 
 Elasticsearch is both a simple and complex product. We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
