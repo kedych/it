@@ -17,11 +17,10 @@ Note:
 在程式碼第107更新Host位址相關資訊
 
 ![](nxlog02.jpg)
-之後在命令提示字元下
-Services nxlog.exe
+之後在命令提示字元下 Services nxlog.exe
 
 ![](nxlog03.jpg)
 
-在服務內啟動，即完成
+在服務內啟動，即完成。
 
 ![](nxlog04.jpg)
