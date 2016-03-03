@@ -229,7 +229,19 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 前面介紹簡單的欄位選擇與比對，可以使用*match*和*match_phrase*組合出想要搜尋的條件。在使用上還是不那麼全面，可以再配合布林查詢(*bool*ean query)，*bool*可以設定需要的邏輯來結合小搜尋到大搜尋之中。
 
-透過以下*bool*搜尋，
+透過以下*bool*搜尋，結合兩個*match*查詢，其中兩個match條件是必須同時滿足：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": {
+            "bool": {
+                "must": [
+                    { "match": { "address": "mill" } },
+                    { "match": { "address": "lane" } }
+                ]
+            }
+        }
+    }'
 
 ## 執行過濾 (Executing Filters)
 
