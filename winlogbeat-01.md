@@ -60,6 +60,7 @@ yaml.v2
 
 下載至對應資料夾後，再次執行make.bat後，winlogbeats資料夾會產生
 winlogbeat.exe執行檔，是之後設定組態檔所需的檔案，而上圖Testing有錯誤不需理會，因為檔案內的測試文件不完整，而我們也不需要用到測試檔。
+
 ![](winlogbeat05.jpg)
 ##(三)、組態檔設定
 
@@ -74,6 +75,7 @@ winlogbeat.exe執行檔，是之後設定組態檔所需的檔案，而上圖Tes
 ###Step2
 * 將(二)Building產生的winlogbeat.exe與在C:\Projects\windows\github.com\elastic\beats\winlogbeat\etc內的winlogbeat.template.json與winlogbeat.yml兩個文件。
 ![](winlogbeat09.jpg)
+
 一併放入C:\Program Files\winlogbeat資料夾目錄內。
 ![](winlogbeat10.jpg)
 
