@@ -289,6 +289,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 執行過濾 (Executing Filters)
 
+
+
 ## 執行聚合 (Executing Aggregations)
 
 ## 小結
