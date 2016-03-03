@@ -480,9 +480,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 小結
 
-Elasticsearch是個同時簡單與複雜的產品，端看你怎麼去運用。到目前為止，大概對Elasticsearch的基本觀念跟操作都有初步的說明，如果觀看叢集、操作
+Elasticsearch是個同時簡單與複雜的產品，端看你怎麼去運用。到目前為止，大概對Elasticsearch的基本觀念跟操作都有初步的說明，還有如何透過REST API進行叢集操作、索引操作、document操作等，透過這些說明應可以對Elasticsearch有初步的認識，最重要的是，之後如何在環境中實地應用運用Elasticsearch，才能發揮出它的價值。
 
-We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
 
 ## 參考文獻
 
