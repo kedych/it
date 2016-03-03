@@ -18,7 +18,7 @@
    * [管理映射](elasticsearch-06.md)
    * [Filebeat - Installation](filebeat-01.md)
    * [Winlogbeat - Installation](winlogbeat-01.md)
-   * Windows Event Log - Installation
+   * [Windows Event Log - Installation](windows_event_log-01.md)
 * Logstash
    * [Installation](logstash-01.md)
    * [Getting Data](logstash-02.md)
