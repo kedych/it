@@ -197,8 +197,21 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
     SELECT accrount number, balance FROM ...
     
-是很類似的概念。接著來看搜尋的部分，先前使用了 *match_all*來查詢所有的document，
+是很類似的概念。接著來看搜尋的部分，先前使用了 *match_all*來查詢所有的document，然後並不是每次的查詢只是列出所有的document，所以，可以使用*match*設定欄位符合的搜尋條件。
 
+這個範例回傳帳戶號碼為20的：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match": { "account_number": 20 } }
+    }'
+
+此範例顯示位置含有mill的：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match": { "address": "mill" } }
+    }'
 
 ## 執行過濾 (Executing Filters)
 
