@@ -291,11 +291,11 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 在之前的搜尋API(Search API)章節，搜尋結果回傳的*_score*被暫時跳過，其實*_score*代表的意義就是此筆document與搜尋條件相符程度的量化數值，*_score*數值越高表示此document與搜尋條件的相符、相關性越高；反之亦然。
 
-但搜尋並沒不是時時都需要計算score，通常只在有使用過濾條件(filtering)的document集合才有必要計算score。Elasticsearch會偵測這些情況並且自動最佳化搜尋執行，避免去計算不重或者沒有用到的score。
+但搜尋並沒不是時時都需要計算score，通常在有使用過濾條件(filtering)的document集合才有必要計算score。Elasticsearch會偵測這些情況並且自動最佳化搜尋執行，避免去計算不重或者沒有用到的score。
 
-上一節提及的布林(*bool*)查詢，也支援*filter*的用法，讓搜尋出來的結果可以被其它條件限制、過濾，而不因此影響相依性score的計算，也就是說，*score*計算只在搜尋時進行，搜尋之後針對結果的過濾(filtering)不會去改變此數值。
+上一節提及的布林(*bool*)查詢，也支援*filter*的用法，讓搜尋結果可以被其它條件限制、過濾，而不因此影響相依性score的計算，也就是說，*score*計算只在搜尋時進行，搜尋之後針對結果的過濾(filtering)不會去改變此數值。
 
-
+接著介紹一個filter－*range*，可以用在數值欄位的範圍過濾與選定。
 
 ## 執行聚合 (Executing Aggregations)
 
