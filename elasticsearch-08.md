@@ -226,3 +226,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 ## 執行聚合 (Executing Aggregations)
 
 ## 小結
+
+## 參考文獻
+
+https://www.elastic.co/guide/en/elasticsearch/reference/2.1/_executing_searches.html
