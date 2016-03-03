@@ -257,6 +257,19 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+前面介紹在*bool*查詢如何使用AND(*must*)與OR(*should*)的使用方式，聰明的讀者應想到還有一個布林運算NOT，在Elasticsearch之中，要使用NOT就是使用*must_not*即可，從前面的操作範例來看，要改成地址欄位不要有mill也不要有lane存在的查詢方式如下：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": {
+            "bool": {
+                "must_not": [
+                    { "match": { "address": "mill" } },
+                    { "match": { "address": "lane" } }
+                ]
+            }
+        }
+    }'
 
 ## 執行過濾 (Executing Filters)
 
