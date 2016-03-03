@@ -271,6 +271,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+目前說明了*bool*能搭配的用法，對應到AND、OR、NOT就是*must*、*should*、 *must_not*，這些布林運算是可以依照搜尋條件進行組合搭配，完成比較複雜的搜尋，範例如下：
+
 ## 執行過濾 (Executing Filters)
 
 ## 執行聚合 (Executing Aggregations)
