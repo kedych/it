@@ -1,24 +1,29 @@
 # Winlogbeat - Installation
 
 安裝winlogbeat需要透過Go程式來編譯
+
 (提醒:沒有的資料夾名稱自己創)
 
-(一)、Go程式安裝說明
+##(一)、Go程式安裝說明
 下載安裝檔: https://golang.org/doc/install?download=go1.5.2.windows-amd64.msi
 
 預設路徑C:\Go
 
 環境變數設定(設定完後記得重新開機)
-PATH:C:\Go\bin  		←設定執行檔go.exe路徑
-GOROOT:C:\Go\		←安裝路徑
-GOPATH:C:\Projects\windows	←編譯資料路徑，如我們要編譯的資料winlogbeat
 
+| 路徑| 說明|
+| -- | -- |
+| PATH:C:\Go\bin | 設定執行檔go.exe路徑|
+| GOROOT:C:\Go\ | 安裝路徑 |
+| GOPATH:C:\Projects\windows | 編譯資料路徑(如我們要編譯的資料winlogbeat) |
 打開命令提示字元
+
 輸入go，出現以下圖表示成功
 
 ![](winlogbeat01.jpg)
-(二)、winlogbeat安裝說明
+##(二)、winlogbeat安裝說明
 下載安裝檔: https://github.com/elastic/beats(winlogbeat是在beats資料夾內，編譯時也需用到其他資料內容)。
+
 因(一)環境變數設定為GOPATH:C:\Projects\windows把下載檔案beats-master放入windows資料夾。
 進入命令提示字元到winlogbeat資料夾執行make.bat
 ![](winlogbeat02.jpg)
@@ -51,7 +56,7 @@ yaml.v2
 下載至對應資料夾後，再次執行make.bat後，winlogbeats資料夾會產生
 winlogbeat.exe執行檔，是之後設定組態檔所需的檔案，而上圖Testing有錯誤不需理會，因為檔案內的測試文件不完整，而我們也不需要用到測試檔。
 ![](winlogbeat05.jpg)
-(三)、組態檔設定
+##(三)、組態檔設定
 
 Step1
 	因找不到相關檔案所以有技巧從Filebeat on Windows資料修改。
