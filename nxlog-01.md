@@ -1,5 +1,6 @@
 # NXLog - Installation
-Windows Event Log
+NXLog是專門收集Windows Event Log的一個套件
+
 參考: https://www.loggly.com/docs/logging-from-windows/
 
 NXLog & Logging From Windows
