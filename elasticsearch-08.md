@@ -385,7 +385,26 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }
 
-可以看到在不同州別的帳號數加總。
+可以看到在不同州別的帳號數加總。基於上述範例，再來計算每個州的平均餘額(balance)，查詢語法如下：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "size": 0,
+        "aggs": {
+            "group_by_state": {
+                "terms": {
+                    "field": "state"
+                },
+                "aggs": {
+                    "average_balance": {
+                    "avg": {
+                        "field": "balance"
+                        }
+                    }
+                }
+            }
+        }
+    }'
 
 ## 小結
 
