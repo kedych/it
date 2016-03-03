@@ -227,6 +227,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         "query": { "match_phrase": { "address": "mill lane" } }
     }'
 
+前面介紹簡單的欄位選擇與比對，可以使用*match*和*match_phrase*組合出想要搜尋的條件。這樣在使用上還是不那麼全面，
+
 ## 執行過濾 (Executing Filters)
 
 ## 執行聚合 (Executing Aggregations)
