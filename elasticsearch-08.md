@@ -289,7 +289,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 執行過濾 (Executing Filters)
 
-在之前的搜尋API(Search API)章節，搜尋結果回傳的*_score*被暫時跳過，其實*_score*代表的意義就是此筆document與搜尋條件相符程度的量化數值，*_score*越高表示此document與搜尋條件的相符、相關性越高；反之亦然。
+在之前的搜尋API(Search API)章節，搜尋結果回傳的*_score*被暫時跳過，其實*_score*代表的意義就是此筆document與搜尋條件相符程度的量化數值，*_score*數值越高表示此document與搜尋條件的相符、相關性越高；反之亦然。
 
 ## 執行聚合 (Executing Aggregations)
 
