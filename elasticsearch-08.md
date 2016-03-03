@@ -271,7 +271,21 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
-目前說明了*bool*能搭配的用法，對應到AND、OR、NOT就是*must*、*should*、 *must_not*，這些布林運算是可以依照搜尋條件進行組合搭配，完成比較複雜的搜尋，範例如下：
+目前說明了*bool*能搭配的用法，對應到AND、OR、NOT就是*must*、*should*、 *must_not*，這些布林運算是可以依照搜尋條件進行組合搭配，完成比較複雜的搜尋，透過範例尋找40歲但是不住在ID(一個州的簡寫)的人：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": {
+            "bool": {
+                "must": [
+                    { "match": { "age": "40" } }
+                ],
+                "must_not": [
+                    { "match": { "state": "ID" } }
+                ]
+            }
+        }
+    }'
 
 ## 執行過濾 (Executing Filters)
 
