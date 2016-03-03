@@ -340,7 +340,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
     SELECT state, COUNT(*) FROM bank GROUP BY state ORDER BY COUNT(*) DESC
 
-And the response (partially shown):
+接著是部分回應結果：
 
     "hits" : {
         "total" : 1000,
