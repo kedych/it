@@ -221,6 +221,11 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
     }'
 
 
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match_phrase": { "address": "mill lane" } }
+    }'
+
 ## 執行過濾 (Executing Filters)
 
 ## 執行聚合 (Executing Aggregations)
