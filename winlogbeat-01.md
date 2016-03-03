@@ -18,7 +18,7 @@
 | GOPATH:C:\Projects\windows | 編譯資料路徑(如我們要編譯的資料winlogbeat) |
 打開命令提示字元
 
-輸入go，出現以下圖表示成功
+輸入go，出現以下圖表示成功。
 
 ![](winlogbeat01.jpg)
 ##(二)、winlogbeat安裝說明
@@ -26,11 +26,10 @@
 
 (winlogbeat是在beats資料夾內，編譯時也需用到其他資料內容)。
 
-因(一)環境變數設定為GOPATH:C:\Projects\windows把下載檔案beats-master放入windows資料夾。
-進入命令提示字元到winlogbeat資料夾執行make.bat
+因(一)環境變數設定為GOPATH:C:\Projects\windows把下載檔案beats-master放入windows資料夾，進入命令提示字元到winlogbeat資料夾執行make.bat。
 ![](winlogbeat02.jpg)
 
-在Building過程中，先產生bin與src資料夾
+在Building過程中，先產生bin與src資料夾。
 ![](winlogbeat03.jpg)
 
 並且把beats-master改名為beats放入C:\Projects\windows\src\github.com\elastic資料夾內，
