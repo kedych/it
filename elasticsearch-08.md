@@ -476,7 +476,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
-關於聚合的使用與範例還有太多了，鑒於小弟也只是一個ELK初學著，沒辦法一次唸懂讀完，有興趣的朋友可以參考官方[聚合參考指引](https://www.elastic.co/guide/en/elasticsearch/reference/2.1/search-aggregations.html)，有更多進階的使用說明。
+關於聚合的使用與範例還有太多了，鑒於小也只是一個ELK初學者，沒辦法一次唸懂讀完，有興趣的朋友可以參考官方[聚合參考指引](https://www.elastic.co/guide/en/elasticsearch/reference/2.1/search-aggregations.html)，有更多進階的使用說明。
 
 ## 小結
 
