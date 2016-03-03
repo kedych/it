@@ -408,6 +408,30 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 上述查詢中，我們看到在*group_by_state*聚合之下，有一個名稱為*average_balance*的巢狀聚合。這是所有聚合的特徵，我們可以使用聚合中的聚合、巢狀聚合，來對資料進行類似樞紐加總的計算。
 
+基於前一個查詢，來排序平均餘額吧，查詢語法如下：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "size": 0,
+        "aggs": {
+            "group_by_state": {
+                "terms": {
+                    "field": "state",
+                    "order": {
+                        "average_balance": "desc"
+                    }
+                },
+                "aggs": {
+                    "average_balance": {
+                        "avg": {
+                            "field": "balance"
+                        }     
+                    }
+                }
+            }
+        }
+    }'
+
 ## 小結
 
 Elasticsearch is both a simple and complex product. We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
