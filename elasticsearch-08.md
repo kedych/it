@@ -432,6 +432,50 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+
+下個範例使用不同年齡層來進行分群，接著是性別，計算每個年齡層與性別的平均帳戶餘額。
+
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "size": 0,
+        "aggs": {
+            "group_by_age": {
+                "range": {
+                    "field": "age",
+                    "ranges": [
+                    {
+                        "from": 20,
+                        "to": 30
+                    },
+                    {
+                        "from": 30,
+                        "to": 40
+                    },
+                    {
+                        "from": 40,
+                        "to": 50
+                    }
+                ]
+            },
+            "aggs": {
+                "group_by_gender": {
+                    "terms": {
+                        "field": "gender"
+                    },
+                    "aggs": {
+                        "average_balance": {
+                            "avg": {
+                                "field": "balance"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }'
+
 ## 小結
 
 Elasticsearch is both a simple and complex product. We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
