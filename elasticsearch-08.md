@@ -444,29 +444,29 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
                 "range": {
                     "field": "age",
                     "ranges": [
-                    {
-                        "from": 20,
-                        "to": 30
-                    },
-                    {
-                        "from": 30,
-                        "to": 40
-                    },
-                    {
-                        "from": 40,
-                        "to": 50
-                    }
-                ]
-            },
-            "aggs": {
-                "group_by_gender": {
-                    "terms": {
-                        "field": "gender"
-                    },
-                    "aggs": {
-                        "average_balance": {
-                            "avg": {
-                                "field": "balance"
+                        {
+                            "from": 20,
+                            "to": 30
+                        },
+                        {
+                            "from": 30,
+                            "to": 40
+                        },
+                        {
+                            "from": 40,
+                            "to": 50
+                        }
+                    ]
+                },
+                "aggs": {
+                    "group_by_gender": {
+                        "terms": {
+                            "field": "gender"
+                        },
+                        "aggs": {
+                            "average_balance": {
+                                "avg": {
+                                    "field": "balance"
                                 }
                             }
                         }
