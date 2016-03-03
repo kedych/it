@@ -206,12 +206,20 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         "query": { "match": { "account_number": 20 } }
     }'
 
-此範例顯示位置含有mill的：
+此範例搜尋地址欄位含有mill的：
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
         "query": { "match": { "address": "mill" } }
     }'
+
+此範例搜尋地址欄位含有mill或lane的：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match": { "address": "mill lane" } }
+    }'
+
 
 ## 執行過濾 (Executing Filters)
 
