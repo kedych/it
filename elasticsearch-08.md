@@ -314,6 +314,8 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+整個概念可以看成先搜尋、再過濾的流程，關於詳細*match_all*、*match*、*bool*跟*range*查詢的使用，有需要的人可以再參考官房文件的解釋，這邊只透過範例進行簡單的介紹，先建立基本的概念。
+
 ## 執行聚合 (Executing Aggregations)
 
 ## 小結
