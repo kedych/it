@@ -243,6 +243,21 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         }
     }'
 
+如果要使用*bool*搜尋，但布林條件只要用OR，則需要怎麼調整呢？上述是的AND運算使用了*must*作為布林條件，要OR的話則使用*should*，也就是__應該__符合其中之一的*match*條件，範例如下：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": {
+            "bool": {
+                "should": [
+                    { "match": { "address": "mill" } },
+                    { "match": { "address": "lane" } }
+                ]
+            }
+        }
+    }'
+
+
 ## 執行過濾 (Executing Filters)
 
 ## 執行聚合 (Executing Aggregations)
