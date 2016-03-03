@@ -326,6 +326,20 @@ In Elasticsearch, you have the ability to execute searches returning hits and at
 
 This is very powerful and efficient in the sense that you can run queries and multiple aggregations and get the results back of both (or either) operations in one shot avoiding network roundtrips using a concise and simplified API.
 
+To start with, this example groups all the accounts by state, and then returns the top 10 (default) states sorted by count descending (also default):
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "size": 0,
+        "aggs": {
+            "group_by_state": {
+                "terms": {
+                    "field": "state"
+                }
+            }
+        }
+    }'
+
 ## 小結
 
 Elasticsearch is both a simple and complex product. We’ve so far learned the basics of what it is, how to look inside of it, and how to work with it using some of the REST APIs. I hope that this tutorial has given you a better understanding of what Elasticsearch is and more importantly, inspired you to further experiment with the rest of its great features!
