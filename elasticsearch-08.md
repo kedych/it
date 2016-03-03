@@ -213,7 +213,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
         "query": { "match": { "address": "mill" } }
     }'
 
-此範例搜尋地址欄位含有mill或lane的：
+此範例搜尋地址欄位含有mill或lane的，注意直接空白就是OR運算的意思：
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
