@@ -185,7 +185,20 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 ## 執行搜尋 (Executing Searches)
 
-上一章節介紹簡單的搜尋參數，接著來挖掘更多有關查詢描述語言(Query DSL)。先看看搜尋回傳結果中帶有哪些欄位。
+上一章節介紹簡單的搜尋參數，接著來挖掘更多有關查詢描述語言(Query DSL)。先看看搜尋回傳結果，可以看到會帶所有欄位。也就是在 *_source* 欄位沒有進行任何描述時的情況。如果我們不需要所有的欄位，可以在搜尋的request body中進行需要的欄位描述，例如指需要回傳source中的帳號(*account_number*)與餘額(*balance*)，可以透過以下搜尋語法，在*_source*之中指定：
+
+    curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
+    {
+        "query": { "match_all": {} },
+        "_source": ["account_number", "balance"]
+    }'
+
+上述搜尋語法減少*_source*欄位中的內容，搜尋結果一樣回傳*_source*欄位，但裡面只帶有*account number*跟*balance*的結果。如果有用過SQL，可以發現概念跟SQL中的
+
+    SELECT accrount number, balance FROM ...
+    
+是很類似的概念。接著來看搜尋的部分，先前使用了 *match_all*來查詢所有的document，
+
 
 ## 執行過濾 (Executing Filters)
 
