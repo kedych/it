@@ -295,7 +295,7 @@ Elasticsearch提供一個JSON風格的特定領域專用語言，讓我們用來
 
 上一節提及的布林(*bool*)查詢，也支援*filter*的用法，讓搜尋結果可以被其它條件限制、過濾，而不因此影響相依性score的計算，也就是說，*score*計算只在搜尋時進行，搜尋之後針對結果的過濾(filtering)不會去改變此數值。
 
-接著介紹一個filter－*range*，可以用在數值欄位的範圍過濾與選定。在此搜尋中結合*bool*，找尋索引中的所有欄位(*must*、*match_all*)，並使用*filter*針對結果進行過濾，要過濾的欄位是*balance*，要找出大於等於(*gte* greater than or equal)20000也小於(*lte* less than or equal)30000的結果。
+接著介紹一個filter－*range*，可以用在數值欄位的範圍過濾與選定。在此搜尋中結合*bool*，找尋索引中的所有欄位(*must*、*match_all*)，並使用*filter*針對結果進行範圍(*range*)過濾，要過濾的欄位是*balance*，要找出大於等於(*gte* greater than or equal)20000也小於(*lte* less than or equal)30000的結果。
 
     curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
     {
