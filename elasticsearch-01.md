@@ -23,7 +23,7 @@
 * 可以scale out搜尋效能與吞吐量，特別是可以在所有的replicas進行平行搜尋的時候。
 
 ## Why Cluster
-當一個叢集有多節點存在時，如果master node失效，接著master-eligible結點就會被挑選出來當作新的master node，這目的是要在叢集之中可以達到自動failover。
+當一個叢集有多節點存在時，如果master node失效，接著master-eligible節點就會被挑選出來當作新的master node，這目的是要在叢集之中可以達到自動failover。
 
 在大型叢集架構中，配至一些具有大容量記憶體、不儲存資料的仲裁節點，可以減少其他資料節點的資源需求，讓仲裁節點可以更充分的使用記憶體快取可以增加整體叢集在搜尋的效能。
 
