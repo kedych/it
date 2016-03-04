@@ -25,7 +25,7 @@ Replicas理由：
 Cluster理由：
 當一個叢集有多節點存在時，如果master node失效，接著master-eligible結點就會被挑選出來當作新的master node，這目的是要在叢集之中可以達到自動failover。
 
-In big cluster architectures, having some nodes as simple arbiters with a lot of RAM, with no data, reduces the resources required by data nodes and improves performance in searches using the local memory cache of arbiters.
+在大型叢集架構中，配至一些具有大容量記憶體、不儲存資料的仲裁節點，可以減少其他資料節點的資源需求，讓仲裁節點可以更充分的使用記憶體快取可以增加整體叢集在搜尋的效能。
 
 總結，index可以被切分成多個shards，index也可以被複製0份或多份。一但使用replica，每個index都會有primary shards(原始replicat來源shard)與replica shards(被複製的primary shard)。當index建立以後，replica的數量可以動態調整，但是shard數量無法變動。
 
