@@ -7,11 +7,6 @@
    * [世界雲端大會紀實 Cloud Computing篇](cloudcon2014-cloud.md)
    * [世界雲端大會紀實 The Internet of Thing篇](cloudcon2014-iot.md)
    * [行動通訊世代初探 - 行動通訊一點點](xing_dong_tong_xun_shi_dai_chu_tan_-_xing_dong_tong_xun_yi_dian_dian.md)
-* Logstash
-   * [Installation](logstash-01.md)
-   * [Getting Data](logstash-02.md)
-   * [Filter](Filter-01.md)
-       * [應用分析](Filter-02.md)
 * Kinana
    * [Installation](kinana-01.md)
    * [基本搜尋](kinana-02.md)
