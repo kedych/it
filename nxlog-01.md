@@ -16,9 +16,32 @@ community-edition/download
 下載更新組態檔並取代: https://gist.github.com/mrlesmithjr/cf212836b9ce162373ed#file-nxlog-conf
 
 Note:
-在程式碼第107更新Host位址相關資訊
 
-![](nxlog02.jpg)
+1.更新Host位址相關資訊
+
+![](nxlog05.jpg)
+
+2.Windows Event Log設定
+![](nxlog06.jpg)
+因為我們要取得Windows Event Log相關資訊，而在ElasticSearch平台訊息對應不上欄位，所以我們在Windows Event Log用以下程式碼取代。
+```
+# Windows Event Log
+<Input eventlog>
+# Uncomment im_msvistalog for Windows Vista/2008 and later
+    Module      im_msvistalog
+    ReadFromLast FALSE
+    SavePos     FALSE
+    Query       <QueryList>\
+                    <Query Id="0">\
+                        <Select Path="Application">*</Select>\
+                        <Select Path="System">*</Select>\
+                        <Select Path="Security">*</Select>\
+                    </Query>\
+                </QueryList>
+# Uncomment im_mseventlog for Windows XP/2000/2003
+#   Module im_mseventlog
+```
+
 之後在命令提示字元下 Services nxlog.exe
 
 ![](nxlog03.jpg)
