@@ -26,6 +26,7 @@
        * [應用分析](Filter-02.md)
 * Kinana
    * [Installation](kinana-01.md)
+   * [基本搜尋](kinana-02.md)
 * Linux
    * [Let's Encrypt](lets_encrypt.md)
 * Windows
