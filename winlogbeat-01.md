@@ -80,9 +80,9 @@ winlogbeat.exe執行檔，是之後設定組態檔所需的檔案，而上圖Tes
 ![](winlogbeat10.jpg)
 
 Note:
-在winlogbeat.yml中可以設定更改hosts位址、使用者帳號與密碼。
+在winlogbeat.yml中可以設定是哪一種情況的event logs，也更改hosts位址、使用者帳號與密碼。
+![](winlogbeat14.jpg)
 ![](winlogbeat11.jpg)
-
 ###Step3
 首先，在Windows的powershell，將winlogbeat安裝成服務。第一次使用的時候，會有簽章問題而無法執行，所以先在powershell中，不限制。
 ```
