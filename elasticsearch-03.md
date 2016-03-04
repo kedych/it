@@ -134,23 +134,23 @@ Elasticsearch安裝好以後，要知道如何跟叢集溝通。使用的方法�
 
 回應中可以看到剩下另外建立的kedytest　index，在前述命令指定刪除的customer index已經不見了。複習剛剛的建立index跟document還有刪除的命令，使用的命令如下：
 
-###建立"customer" index
+### 建立"customer" index
 
     curl -XPUT 'localhost:9200/customer'
 
 
-###建立id 1的document, 欄位為name: kedy chang, type為external
+### 建立id 1的document, 欄位為name: kedy chang, type為external
 
     curl -XPUT 'localhost:9200/customer/external/1' -d '
     {
     "name": "kedy chang"
     }'
     
-###瀏覽index為customer, type為external, id為1的document
+### 瀏覽index為customer, type為external, id為1的document
     
     curl 'localhost:9200/customer/external/1'
     
-###刪除customer　index
+### 刪除customer index
 
     curl -XDELETE 'localhost:9200/customer'
 
