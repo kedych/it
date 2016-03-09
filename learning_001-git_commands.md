@@ -93,3 +93,7 @@
 ####git commit
 ####git ls-files
 
+#參考資料
+
+* [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days)
+* [Echo's Note](http://bdottn.github.io/tags/Git/)
