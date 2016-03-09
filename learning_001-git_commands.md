@@ -90,9 +90,8 @@
 
 從master取回[filename]檔案 (如果把[filename]改壞了)
 
-
-####git commit
 ####git ls-files
+
 列出所有已經儲存在index中的檔案路徑
 
 #參考資料
