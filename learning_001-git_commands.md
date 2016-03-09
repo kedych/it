@@ -7,7 +7,7 @@
 * staged (等待被 commit 的，代表下次執行 git commit 會將這些檔案全部送入版本庫)
 
 
-# 常用命令
+## 常用命令
 
 
 ####git cat-file -p [hash ID or master]
