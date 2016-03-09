@@ -66,7 +66,13 @@ git mv 'oldname' 'newname'
 更改檔案名稱
 
 git reset
+
+重新設定git index
+
 git reset --hard
+
+重新設定git index與所有檔案
+
 git checkout master 'filename'
 git add
 git mv
