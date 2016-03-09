@@ -3,7 +3,7 @@
 ## 檔案狀態週期
 * untracked (未追蹤，未加入 Git 儲存庫的檔案)
 * unmodified (未修改，檔案第一次被加入，或檔案內容與 HEAD 指標內容一致狀態、也可以說是commit後未修改的狀態)
-* modified (已修改，檔案已經被編輯過，或是檔案內容與 HEAD 指標內容不一致的狀態，而且還沒被標示成可以commit)
+* modified (已修改，檔案已經被編輯過，或是檔案內容與 HEAD 指標內容不一致的狀態，而且還沒被標示成可以commit、與not staged同意思)
 * staged (等待被commit，代表下次執行 git commit 會將這些檔案全部送入版本庫)
 
 
