@@ -1,5 +1,6 @@
 # Git常用命令
 
+
 git cat-file -p [hash ID or master]
 顯示tree or blob物件
 
