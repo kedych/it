@@ -67,11 +67,11 @@ git mv 'oldname' 'newname'
 
 git reset
 
-重新設定git index
+重設git工作目錄
 
 git reset --hard
 
-重新設定git index與所有檔案
+重設git工作目錄 index與所有檔案
 
 git checkout master 'filename'
 git add
