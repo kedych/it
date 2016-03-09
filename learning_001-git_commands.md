@@ -1,4 +1,13 @@
-# Git常用命令
+# Git簡易觀念
+
+## 檔案狀態週期
+* untracked (未追蹤，未加入 Git 儲存庫的檔案)
+* unmodified (未修改，檔案第一次被加入，或檔案內容與 HEAD 指標內容一致狀態、也可以說是commit後未修改的狀態)
+* modified (已修改，檔案已經被編輯過，或是檔案內容與 HEAD 指標內容不一致的狀態，而且還沒被標示成可以commit、與not staged同意思)
+* staged (等待被commit，代表下次執行 git commit 會將這些檔案全部送入版本庫)
+
+
+## 常用命令
 
 
 ####git cat-file -p [hash ID or master]
@@ -25,9 +34,13 @@
 
 加入所有.txt檔案到git index
 
+####git add -u
+
+只把「更新」或「刪除」的檔案變更寫入index。
+
 ####git status
 
-顯示目前git狀態
+顯示目前最新版與index之間差異
 
 ####git status -s
 
@@ -79,3 +92,9 @@
 
 ####git ls-files
 
+列出所有已經儲存在index中的檔案路徑
+
+#參考資料
+
+* [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days)
+* [Echo's Note](http://bdottn.github.io/tags/Git/)
