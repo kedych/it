@@ -34,6 +34,10 @@
 
 加入所有.txt檔案到git index
 
+####git add -u
+
+只把「更新」或「刪除」的檔案變更寫入index。
+
 ####git status
 
 顯示目前最新版與index之間差異
