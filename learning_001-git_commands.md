@@ -1,9 +1,9 @@
 # Git常用命令
 
 
-git cat-file -p [hash ID or master]
+* git cat-file -p [hash ID or master]
 
-顯示tree or blob物件
+    顯示tree or blob物件
 
 git hash-object [filename]
 
