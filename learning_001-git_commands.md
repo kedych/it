@@ -71,6 +71,8 @@ git reset
 
 git reset --hard
 
+重設git index也把工作目錄還原到目前最新版
+
 重設git工作目錄 index與所有檔案
 
 git checkout master 'filename'
