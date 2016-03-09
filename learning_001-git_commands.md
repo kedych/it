@@ -36,7 +36,7 @@
 
 ####git status
 
-顯示目前git狀態
+顯示目前最新版與index之間差異
 
 ####git status -s
 
