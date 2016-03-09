@@ -77,10 +77,5 @@
 
 從master取回[filename]檔案 (如果把[filename]改壞了)
 
-####git add
-####git mv
-####git rm
-####git status
-####git commit
 ####git ls-files
 
