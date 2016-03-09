@@ -75,7 +75,7 @@ git reset --hard
 
 重設git工作目錄 index與所有檔案
 
-git checkout master 'filename'
+git checkout master [filename]
 
 從master取回[filename]檔案 (如果把[filename]改壞了)
 
