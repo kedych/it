@@ -67,7 +67,7 @@ git mv 'oldname' 'newname'
 
 git reset
 
-重設git工作目錄
+重設git工作目錄的
 
 git reset --hard
 
