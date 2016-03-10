@@ -106,6 +106,9 @@
 ####git diff --cached
 => 索引     vs HEAD
 
+####git diff --staged
+同上
+
 ####git diff HEAD^ HEAD
 => HEAD^   vs HEAD
 
