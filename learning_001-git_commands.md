@@ -94,6 +94,22 @@
 
 列出所有已經儲存在index中的檔案路徑
 
+####git diff
+=> 工作目錄 vs 索引
+
+####git diff HEAD
+=> 工作目錄 vs HEAD
+
+####git diff --cached HEAD
+=> 索引     vs HEAD
+
+####git diff --cached
+=> 索引     vs HEAD
+
+####git diff HEAD^ HEAD
+=> HEAD^   vs HEAD
+
+
 #參考資料
 
 * [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days)
