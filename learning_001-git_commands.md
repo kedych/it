@@ -68,7 +68,7 @@
 
 ####git log --pretty=oneline abbrev-commit
 
-把git log用一行輸出，並只輸出部分絕對名稱。
+把git log用一行輸出，並只輸出部分絕對名稱
 
 ####git rm '*.txt'
 
@@ -120,8 +120,8 @@
 ####git diff HEAD^ HEAD
 => HEAD^   vs HEAD
 
-####git cat-file -p commitid
-顯示特定commitid物件資料
+####git cat-file -p [object_id]
+顯示特定[object_id]物件資料
 
 #參考資料
 
