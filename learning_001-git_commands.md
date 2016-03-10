@@ -62,6 +62,10 @@
 
 顯示最近10筆git commit日誌
 
+####git log --pretty=oneline
+
+把git log用一行輸出
+
 ####git rm '*.txt'
 
 從index移除所有.txt檔案、實體檔案也會移除
