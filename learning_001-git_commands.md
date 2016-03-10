@@ -66,6 +66,10 @@
 
 把git log用一行輸出
 
+####git log --pretty=oneline abbrev-commit
+
+把git log用一行輸出，並只輸出部分絕對名稱。
+
 ####git rm '*.txt'
 
 從index移除所有.txt檔案、實體檔案也會移除
