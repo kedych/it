@@ -113,7 +113,7 @@
 => HEAD^   vs HEAD
 
 ####git cat-file -p commitid
-顯示特定commitid的資料
+顯示特定commitid物件資料
 
 #參考資料
 
