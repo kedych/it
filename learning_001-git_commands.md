@@ -147,8 +147,8 @@
 ###git status
 顯示目前修訂狀況
 
-git ls-files -u
-git diff [filepath]
+####git ls-files -u
+####git diff [filepath]
 
 #參考資料
 
