@@ -144,7 +144,9 @@
 ####git reset --hard ORIG_HEAD
 回覆到上一版
 
-git status
+###git status
+顯示目前修訂狀況
+
 git ls-files -u
 git diff [filepath]
 
