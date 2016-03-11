@@ -141,7 +141,9 @@
 ####git branch [branchname] [SHA1]
 撿回絕對名稱[SHA1]並命名為[branchname]分支
 
-git reset --hard ORIG_HEAD
+####git reset --hard ORIG_HEAD
+回覆到上一版
+
 git status
 git ls-files -u
 git diff [filepath]
