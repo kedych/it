@@ -129,7 +129,9 @@
 ####git checkout -b [new_branchname]
 建立並切換working directory到[new_branchname]
 
-git reflog
+###git reflog
+顯示版本動作與註解
+
 git branch -d [branchname]
 git branch -D [branchname]
 git branch feature
