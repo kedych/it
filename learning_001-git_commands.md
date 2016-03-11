@@ -138,7 +138,9 @@
 ####git branch -D [branchname]
 刪除[branchname]分支(還沒被merge的分支使用 -D刪除)
 
-git branch feature
+####git branch [branchname] [SHA1]
+撿回絕對名稱[SHA1]並命名為[branchname]分支
+
 git reset --hard ORIG_HEAD
 git status
 git ls-files -u
