@@ -1,4 +1,4 @@
-# Git簡易觀念
+# Git# Git簡易觀念
 
 ## 檔案狀態週期
 * untracked (未追蹤，未加入 Git 儲存庫的檔案)
@@ -62,6 +62,14 @@
 
 顯示最近10筆git commit日誌
 
+####git log --pretty=oneline
+
+把git log用一行輸出
+
+####git log --pretty=oneline abbrev-commit
+
+把git log用一行輸出，並只輸出部分絕對名稱
+
 ####git rm '*.txt'
 
 從index移除所有.txt檔案、實體檔案也會移除
@@ -93,6 +101,57 @@
 ####git ls-files
 
 列出所有已經儲存在index中的檔案路徑
+
+####git diff
+=> 工作目錄 vs 索引
+
+####git diff HEAD
+=> 工作目錄 vs HEAD
+
+####git diff --cached HEAD
+=> 索引     vs HEAD
+
+####git diff --cached
+=> 索引     vs HEAD
+
+####git diff --staged
+同上
+
+####git diff HEAD^ HEAD
+=> HEAD^   vs HEAD
+
+####git cat-file -p [object_id]
+顯示特定[object_id]物件資料
+
+###git merge [other_branchname]
+把[other_branchname]合併到現在的版本
+
+####git checkout -b [new_branchname]
+建立並切換working directory到[new_branchname]
+
+###git reflog
+顯示版本動作與註解(merge, commit, checkout...)
+
+####git branch -d [branchname]
+刪除[branchname]分支(要已經merge過才能使用-d刪除)
+
+####git branch -D [branchname]
+刪除[branchname]分支(還沒被merge的分支使用 -D刪除)
+
+####git branch [branchname] [SHA1]
+撿回絕對名稱[SHA1]並命名為[branchname]分支
+
+####git reset --hard ORIG_HEAD
+回覆到上一版
+
+###git status
+顯示目前修訂狀況
+
+####git ls-files -u
+顯示沒有成功merge的檔案
+
+####git diff [filepath]
+比較[filepath]檔案差異
 
 #參考資料
 
