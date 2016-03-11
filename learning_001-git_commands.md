@@ -1,4 +1,5 @@
-# Git簡易觀念
+
+# Git# Git簡易觀念
 
 ## 檔案狀態週期
 * untracked (未追蹤，未加入 Git 儲存庫的檔案)
@@ -149,6 +150,7 @@
 
 ####git ls-files -u
 ####git diff [filepath]
+比較
 
 #參考資料
 
