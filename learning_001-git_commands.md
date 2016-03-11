@@ -153,6 +153,10 @@
 ####git diff [filepath]
 比較[filepath]檔案差異
 
+####git revert [commitid]
+該版本異動反轉
+
+
 #參考資料
 
 * [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days)
