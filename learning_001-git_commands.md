@@ -151,7 +151,7 @@
 顯示沒有成功merge的檔案
 
 ####git diff [filepath]
-比較
+比較[filepath]檔案差異
 
 #參考資料
 
