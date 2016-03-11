@@ -132,8 +132,12 @@
 ###git reflog
 顯示版本動作與註解(merge, commit, checkout...)
 
-git branch -d [branchname]
-git branch -D [branchname]
+####git branch -d [branchname]
+刪除[branchname]分支(要已經merge過才能使用-d刪除)
+
+####git branch -D [branchname]
+刪除[branchname]分支(還沒被merge的分支使用 -D刪除)
+
 git branch feature
 git reset --hard ORIG_HEAD
 git status
