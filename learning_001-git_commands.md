@@ -148,6 +148,8 @@
 顯示目前修訂狀況
 
 ####git ls-files -u
+顯示沒有成功merge的檔案
+
 ####git diff [filepath]
 比較
 
