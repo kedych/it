@@ -130,7 +130,7 @@
 建立並切換working directory到[new_branchname]
 
 ###git reflog
-顯示版本動作與註解
+顯示版本動作與註解(merge, commit, checkout...)
 
 git branch -d [branchname]
 git branch -D [branchname]
