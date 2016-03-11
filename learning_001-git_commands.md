@@ -123,6 +123,21 @@
 ####git cat-file -p [object_id]
 顯示特定[object_id]物件資料
 
+###git merge [other_branchname]
+把[other_branchname]合併到現在的版本
+
+####git checkout -b [new_branchname]
+建立並切換working directory到[new_branchname]
+
+git reflog
+git branch -d [branchname]
+git branch -D [branchname]
+git branch feature
+git reset --hard ORIG_HEAD
+git status
+git ls-files -u
+git diff [filepath]
+
 #參考資料
 
 * [30 天精通 Git 版本控管](https://github.com/doggy8088/Learn-Git-in-30-days)
