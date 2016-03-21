@@ -36,6 +36,12 @@ CCR平台中攻擊的工具是open source工具跟商業產品混合使用
 ASA Web Email
 更多內部攻擊細節演練 在五天的workshop會有更多介紹
 
+Splunk有App: Cisco Security Suite (有很多領域的log分析)
+
+分析的資料可能從SIEM來也有可能是各種設備
+
+使用者netflow的監控或許可以考慮進行
+
 ##CSIRT best practice introcudtion
 
 ##SIEM ovew and introduction
