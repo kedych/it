@@ -23,6 +23,11 @@ technoqal support
 
 網路中藥有很多監控的裝置才能看到 可能的威脅 訂出正常異常的baseline
 
+CCR平台在雪梨
+
+CCR service pageages
+三到五天的workshop
+可以租用平台
 
 
 
