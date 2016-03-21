@@ -87,7 +87,10 @@ Lancope - Host quick view
 
 
 ##SIEM ovew and introduction
-splunk?
+
+Wei Wang
+
+
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
 
 #D2
