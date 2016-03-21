@@ -89,6 +89,8 @@ Lancope - Host quick view
 ##SIEM ovew and introduction
 
 Wei Wang
+Network Consultant Engineer
+
 
 
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
