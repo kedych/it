@@ -13,7 +13,7 @@ technoqal support
 每天4 session
 #D1
 ##cyber range architecture and demo
-介紹cyber range平台
+介紹cyber range平台 三年前建置CCR 理由是 很多人有很多產品 有很多裝置 但是只有警告 但是不知道怎麼用 不知道怎麼正確使用 我們有很多log但是部知道怎麼看怎麼用
 
 
 ##CSIRT best practice introcudtion
