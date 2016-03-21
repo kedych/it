@@ -86,7 +86,7 @@ Lancope - Host quick view
 簡報有CSIRT response流程的例子
 
 
-##SIEM ovew and introduction
+###SIEM ovew and introduction
 
 Wei Wang
 Network Consultant Engineer
@@ -110,6 +110,27 @@ Cisco開發整合以上工具 可以看看OpenSOC 是一個open source project
 OpenSOC是Cisco自己內部在用, 後來open出來
 
 ###Splunk
+原本Cisco想買splunk, 但是後來沒下文, 現在要買就很難買得起了...
+
+###部署考慮
+####data input
+Logging level / verbosity 看要收到多少層級(Information or other? debug太多錢了..xD)
+Cisco的firewall log level只收到level 5 (warning), 反正就依照狀況再去調...
+####index tier
+raw log vs cooked data
+
+####indexers
+###admin
+
+###SANS Top 6 categories of Critical Log information
+一個SOC應該要注意的六類重大日誌資訊, 包含
+1. 授權認證(authentication and authorization)
+2. 系統與日期改變(system and date changes)
+3. 網路調整(network activity)
+4. 資源存取(resource access)
+5. 惡意程式活動(malware activity)
+6. 失效與重大錯誤(Failure and Critical Errors)
+
 
 ###整合
 
