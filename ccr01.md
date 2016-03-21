@@ -78,7 +78,13 @@ Lancope - Host quick view
 
    ps auxww | grep -i zUser
 
-ISC DNSDB 反解隨機產生的hostname
+實用資訊:
+
+* ISC DNSDB 反解隨機產生的hostname
+* Virustotal
+
+簡報有CSIRT response流程的例子
+
 
 ##SIEM ovew and introduction
 splunk?
