@@ -33,6 +33,8 @@ CCR service pageages
 CCR平台中攻擊的工具是open source工具跟商業產品混合使用
 
 平台介紹完以後有Live demo...
+ASA Web Email
+更多內部攻擊細節演練 在五天的workshop會有更多介紹
 
 ##CSIRT best practice introcudtion
 
