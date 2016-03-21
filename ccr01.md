@@ -70,7 +70,7 @@ Lancope - Host quick view
 其實是最少用的 因為ACL已經寫好 人家也攻進來了 所以沒差 而且從操作跟流程來說 防火牆在可操作性來說最低
 
 * BGP blackhole
-最自動化的阻擋方式 直接把該IP traffic資訊丟掉
+最自動化的阻擋方式 直接把該IP traffic資訊丟掉 <- is being to used most.
 
 * DNS RPZ sinkhole
 
