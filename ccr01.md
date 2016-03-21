@@ -78,7 +78,7 @@ Lancope - Host quick view
 
    ps auxww | grep -i zUser
 
-
+ISC DNSDB 反解隨機產生的hostname
 
 ##SIEM ovew and introduction
 splunk?
