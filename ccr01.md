@@ -54,6 +54,7 @@ Splunk有App: Cisco Security Suite (有很多領域的log分析)
   MAC木馬
   
 用網頁廣告插入攻擊  malwaretizing (marlware+advertisement)
+新興的攻擊方式 不是XSS
 
 
 ##SIEM ovew and introduction
