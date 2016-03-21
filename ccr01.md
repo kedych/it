@@ -66,7 +66,7 @@ Lancope - Host quick view
 
 減輕症狀
 防火牆其實是最少用的 因為ACL已經寫好 人家也攻進來了 所以沒差 而且從操作跟流程來說 防火牆在可操作性來說最低
-
+BGP blackhole是最自動化的阻擋方式 直接把該IP traffic資訊丟掉
 ##SIEM ovew and introduction
 splunk?
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
