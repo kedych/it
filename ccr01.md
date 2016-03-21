@@ -133,10 +133,13 @@ raw log vs cooked data
 簡單來說就是不該進來的人做了不該做的事情, 以上這六大類可以發現約九成以上的網路安全問題
 
 ####Splunk CIM (common information model)
+####我們要看什麼？透過歷史紀錄建立baseline, 之後很好查abnormal
 
 
 ###整合
-
+###如何開始觀察
+其實完全看自己 沒有一個標準 自己找方法 沒有一定
+open mind, anything is possible
 
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
 
