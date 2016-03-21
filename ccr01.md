@@ -18,7 +18,7 @@ technoqal support
 
 透過資安認知 讓攻擊很難進來 進來卻很快被發現
 攻擊不只在外部 因為BYOD 無法知道裝置是否安全有木馬 還有資料外洩問題 這是我們要面對網路資安變化
-惡意晚體 社交工程等 我們必須要用更有效率的方法發現這些問題
+malware 社交工程等 我們必須要用更有效率的方法發現這些問題
 我們必須要確保最小損壞 假設大家都已經被hack了
 
 網路中藥有很多監控的裝置才能看到 可能的威脅 訂出正常異常的baseline
@@ -42,7 +42,19 @@ Splunk有App: Cisco Security Suite (有很多領域的log分析)
 
 使用者netflow的監控或許可以考慮進行
 
-##CSIRT best practice introcudtion
+從client/server上下傳比例的flow判斷是否可能有data loss情況
+
+看到使用者的流量 內容 來做更多的分析組合和判斷
+
+##CSIRT best practice introduction
+
+介紹如何運作
+範例事件
+  惡意程式下載
+  MAC木馬
+  
+用網頁廣告插入攻擊  malwaretizing (marlware+advertisement)
+
 
 ##SIEM ovew and introduction
 splunk?
