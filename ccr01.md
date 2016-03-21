@@ -30,6 +30,9 @@ CCR service pageages
 可以租用平台
 
 
+CCR平台中攻擊的工具是open source工具跟商業產品混合使用
+
+平台介紹完以後有Live demo...
 
 ##CSIRT best practice introcudtion
 
