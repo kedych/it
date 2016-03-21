@@ -75,7 +75,10 @@ Lancope - Host quick view
 * DNS RPZ sinkhole
 
 簡報有看到的命令
+
    ps auxww | grep -i zUser
+
+
 
 ##SIEM ovew and introduction
 splunk?
