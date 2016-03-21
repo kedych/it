@@ -91,6 +91,26 @@ Lancope - Host quick view
 Wei Wang
 Network Consultant Engineer
 
+###What is a SIEM
+
+
+###OpenSOC
+Big data platform
+  hadoop
+  storm
+  kafka
+  elasticsearch
+Cisco開發整合以上工具 可以看看OpenSOC 是一個open source project
+
+###conceptual architecture
+1. 首先蒐集secutiry event (Log, syslog, raw network steam)
+2. 解析、格式、加值賦予意義(ex: MAC查是誰)
+3. 應用+分析
+
+
+###Splunk
+
+###整合
 
 
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
