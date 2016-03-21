@@ -56,6 +56,16 @@ Splunk有App: Cisco Security Suite (有很多領域的log分析)
 用網頁廣告插入攻擊  malwaretizing (marlware+advertisement)
 新興的攻擊方式 不是XSS
 
+Netfolw for incident detection -> at 端口
+
+Email URL check, attachment MD5 check
+
+Lancope - Host quick view
+
+監控site reputation連線狀況
+
+減輕症狀
+防火牆其實是最少用的 因為ACL已經寫好 人家也攻進來了 所以沒差
 
 ##SIEM ovew and introduction
 splunk?
