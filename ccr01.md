@@ -107,6 +107,7 @@ Cisco開發整合以上工具 可以看看OpenSOC 是一個open source project
 2. 解析、格式、加值賦予意義(ex: MAC查是誰)
 3. 應用+分析
 
+OpenSOC是Cisco自己內部在用, 後來改open
 
 ###Splunk
 
