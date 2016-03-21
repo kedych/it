@@ -130,6 +130,7 @@ raw log vs cooked data
 4. 資源存取(resource access)
 5. 惡意程式活動(malware activity)
 6. 失效與重大錯誤(Failure and Critical Errors)
+簡單來說就是不該進來的人做了不該做的事情, 以上這六大類可以發現約九成以上的網路安全問題
 
 
 ###整合

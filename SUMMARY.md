@@ -17,4 +17,5 @@
    * [Git](learning_001-git_commands.md)
 * Cisco Cyber Range
    * [Day 1](ccr01.md)
+       * Day 2
 
