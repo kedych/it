@@ -141,6 +141,8 @@ raw log vs cooked data
 其實完全看自己 沒有一個標準 自己找方法 沒有一定
 open mind, anything is possible
 
+量大的時候其實出一個search report可能要很久好幾天, ex: 銀行內部查內部web存取紀錄
+
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
 
 #D2
