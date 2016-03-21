@@ -67,6 +67,7 @@ Lancope - Host quick view
 減輕症狀
 防火牆其實是最少用的 因為ACL已經寫好 人家也攻進來了 所以沒差
 
+
 ##SIEM ovew and introduction
 splunk?
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
