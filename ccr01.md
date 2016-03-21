@@ -120,7 +120,7 @@ Cisco的firewall log level只收到level 5 (warning), 反正就依照狀況再�
 raw log vs cooked data
 
 ####indexers
-###admin
+###admin 
 
 ###SANS Top 6 categories of Critical Log information
 一個SOC應該要注意的六類重大日誌資訊, 包含
@@ -131,6 +131,8 @@ raw log vs cooked data
 5. 惡意程式活動(malware activity)
 6. 失效與重大錯誤(Failure and Critical Errors)
 簡單來說就是不該進來的人做了不該做的事情, 以上這六大類可以發現約九成以上的網路安全問題
+
+####Splunk CIM (common information model)
 
 
 ###整合
