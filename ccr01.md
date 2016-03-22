@@ -145,6 +145,20 @@ open mind, anything is possible
 
 ##分組 測試平台 工具介紹 攻防演練混合攻擊
 
+開了五個tool
+splunk 看LOG
+sourcefire estreamer
+asa device manager - firewall
+lancope steahlwatch - netfolow
+ciscowireless prime - Wireless
+
+攻防演練 
+發腳本 內容向下 之後再一起打開
+
+Netflow結合lancope + RSE 
+
+看到一個eventlog不代表實際上的source and dest. 例如: SSL heartbleed的攻擊 其實是回應 需要詳細讀內容才知道真正的source and dest是誰
+
 #D2
 ##Firewall
 ##5 attack cased

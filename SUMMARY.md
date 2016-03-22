@@ -18,4 +18,5 @@
 * Cisco Cyber Range
    * [Day 1](ccr01.md)
        * Day 2
+   * Day 2
 
