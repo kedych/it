@@ -77,5 +77,9 @@ NetFlow=網路流量的帳單
 
 是從Flow Change狀態開始紀錄
 
+syslog vs flow看要收哪個 收兩個或收一個都可 依照自己的狀況判斷
+
+
+
 
 
