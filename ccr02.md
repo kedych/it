@@ -21,4 +21,13 @@ page 4點出各個不同階段需要具備的能力和功能 是一個新的安�
 Advanced Malware Protection 在after階段
 
 ###ASA Overview
-NG下一代防火牆的意義 跟現在最大的區別 在於 "應用程式"
+NG下一代防火牆的意義 跟現在最大的區別 在於 "應用程式" (多看了payload)的感知 包含了web應用 IDentity以及各式各樣的應用, 把ID跟application結合做策略
+
+Cisco Talos 思科的安全部門 蒐集攻擊資訊 IPS規則更新等 ex: ASA有C&C server list
+
+對flow或connection的偵測與控制
+
+防火牆部署模式
+Routed Mode
+Transparent Mode - 類似switch的應用
+Multi-context - 虛擬化之後的應用
