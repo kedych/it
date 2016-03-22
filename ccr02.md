@@ -100,6 +100,15 @@ http://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index
 ###indicators Of Compromise, IOC
 各種活動與單獨的事件組成綜合評分 判斷是否有危害的可能
 
+###Introduction to eStreamer
+這是一個中間軟體 是documented API
+把原始log進行資訊加值以及統一標準
+讓訊息經過處理以後傳給SIEM, 也就是說
+log -> eStreamer -> Splunk
+
+###Sensor Placement
+IPS or IDS mode, 看需求決定
+
 
 
 
