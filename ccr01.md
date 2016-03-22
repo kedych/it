@@ -159,6 +159,7 @@ Netflow結合lancope + RSE
 
 看到一個eventlog不代表實際上的source and dest. 例如: SSL heartbleed的攻擊 其實是回應 需要詳細讀內容才知道真正的source and dest是誰
 
+MAC address可以造假 但是login name不行 他一直在try...
 #D2
 ##Firewall
 ##5 attack cased
