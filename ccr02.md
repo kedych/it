@@ -73,7 +73,9 @@ service-policy global_policy global
 
 
 ###NetFlow Secure Event Loggin (NSEL)
+NetFlow=網路流量的帳單
 
+是從Flow Change狀態開始紀錄
 
 
 
