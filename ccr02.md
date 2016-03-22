@@ -83,6 +83,22 @@ syslog vs flow看要收哪個 收兩個或收一個都可 依照自己的狀況�
 防火牆應該都要有的功能 直接擷取封包 
 
 ##SourceFire (NGIPS)
+基於snort開發的硬體, 有以下capability:
+snort - 偵測snort rule - 雲端:規則更新
+FireSIGHT- 探索event, 包含hosts, user, os, services, vulnerabilityes等, 偵測設備版本與弱點特徵符合會告警, 雲端:弱點更新 作業系統定義
+AppID - 傳統client server架構的事件, web apps等, 雲端:應用app定義 偵測
+Files - 文件類型與檔案傳輸做處理, 雲端:malware cloud lookups (AMP), sandbox, Trajectories
+L2/L3 -  connection logs, flows, 雲端:安全智慧IP聲譽, URL分類與更新等.
+
+###Advanced Malware Protection, AMP
+http://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index.html
+類似malware的virus total, 由Cisco主導, 已知文件會告訴你分數, 如果是新的malware, 會送到sandbox (AMP Threat Grid)針對行為進行判斷給分.
+
+檔案會穿過的地方都可以考慮使用AMP - AMP everywhere
+
+###Context through FireSIGHT
+###indicators Of Compromise, IOC
+各種活動與單獨的事件組成綜合評分 判斷是否有危害的可能
 
 
 
