@@ -107,8 +107,34 @@ http://www.cisco.com/c/en/us/products/security/advanced-malware-protection/index
 log -> eStreamer -> Splunk
 
 ###Sensor Placement
-IPS or IDS mode, 看需求決定
+IPS or IDS mode, 看需求決定.（醫院不能丟任何封包 國防不能有任何機會)
+
+IPS要放Firewall前還是後? 其實沒有一定.. 也是看預算跟需求
+
+###Splunk的KV觀念 可以看看ELK怎麼操作
 
 
+##Afternoon Lab1:
+ZIP又分片以後 無法直接掃描SHA 所以IPS WSA也檢測不到.
+下午透過source fire展示AMP功能
+電腦裝sourcefire client, 配合雲端帳號檢測可疑檔案
+
+Cisco Sandbox is called ThreatGrid, and tightly combined with AMP.
+
+##Web Security
+能看到什麼東西 重要的也是能見度
+Log需要校調一些東西
+
+思科每年都會出一份年度安全報告 說明對比與趨勢
+
+Web page的任何一個地方都有可能是threat, 所以, 我們只好從以下角度開始:
+Acceptable Use Control, Malrware Prevention, DLP, Security Control as A Service
+
+Web Security Pipeline, page 15
+Unknown traffic in -> Web (Cisco WSA-Web Security Appliance) -> Clean Traffic Out
+解密HTTPS流量要特別注意法律遵循問題
+
+從哪裡看Log?
+SIEM, Splunk...
 
 
