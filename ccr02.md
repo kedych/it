@@ -31,3 +31,49 @@ Cisco Talos 思科的安全部門 蒐集攻擊資訊 IPS規則更新等 ex: ASA�
 Routed Mode
 Transparent Mode - 類似switch的應用
 Multi-context - 虛擬化之後的應用
+
+未來也要支援 Global ACL (聽說是為了吸引某家廠商的客戶)
+
+connection table
+at ASA, use 
+  show conn
+ 
+###下一代防火牆如果連接數很多需要大量記憶體, 
+因為要紀錄連接狀態
+
+另一塊是NAT , Xlate table stores active NAP mappings
+靜態NAT 比較省記憶體
+動態NAT 比較花費記憶體跟更多資源 因為要紀錄多對一的狀態
+
+###Layer 7 inspection
+ASA也可以針對各種應用和規則進行配置(ex: SMTP附加檔案, HTTP傳檔..)
+
+###用正規表示做URI&host match
+regex BAD_URI ".*verybadscript.*"
+regex BAD_HOST "verybadsite\.com"
+
+class-map type inspect http match-all BLOCK_URL
+match request uri regex BAD_URI
+match request header host regex BAD_HOST
+
+policy-map global_policy
+ class inspection_default
+   inspect http URL_POLICY
+service-policy global_policy global   
+
+如果沒做好 可能會吃很多的CPU使用量或者不小心阻擋全部流量... 所以為了達成目的怎麼選擇工具就是需要自己評斷
+
+###Threat Detection
+很多NGFW都有, 但是大家都沒什麼在用...
+
+封包如果被丟掉, 但後續有沒有繼續folow up, 例如drop rate忽然很高, 是不是要去細看原因?
+當drop rate達到一個數量的時候發出SNMP告警.
+
+如果有人做port scans 也要可以封鎖並且告警, 但是打開偵測scan activatiy會很吃CPU跟記憶體, 對防火牆來說是一個很大的負擔, 平常如果防火牆很忙碌, 不要開比較好.... Orz 
+
+
+###NetFlow Secure Event Loggin (NSEL)
+
+
+
+
