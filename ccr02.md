@@ -79,6 +79,10 @@ NetFlow=網路流量的帳單
 
 syslog vs flow看要收哪個 收兩個或收一個都可 依照自己的狀況判斷
 
+###Inline Packet Capture
+防火牆應該都要有的功能 直接擷取封包 
+
+##SourceFire (NGIPS)
 
 
 
