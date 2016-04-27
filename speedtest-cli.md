@@ -72,3 +72,7 @@ For RHEL 6.x and CentOS 6.x (i386)
     5660) NCIC Telcom (New Taipei, Taiwan) [9.41 km]
     5334) Taiwan Star Telecom Co., Ltd. (New Taipei, Taiwan) [9.41 km]
 
+可以看到個人習慣的Taipei Fiber編號是5056。
+
+##針對特定伺服器測試
+前步驟我們知道Taipei FIber編號是5056，指定給speedtest cli的方法為掛上--server參數
