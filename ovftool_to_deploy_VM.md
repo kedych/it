@@ -43,7 +43,7 @@ Linux
 實際硬碟大小1TB(用1024為基底算起來為932GB)，配置給VM大小是900GB (thin provision)
 使用ovftool佈署以後的大小回到900GB，有點肥大，空間炸裂後VM無法啟動，剩下的空間不夠硬碟+VMware的swap分區使用，所以在本地使用vmkfstooks重新clone檔案
 
-##使用vmkstools進行vhdk複製
+##使用vmkstools複製vmdk
 使用SSH登入VMware ESXi主機，使用以下命令進行vmdk複製，讓他空間先不要占到900GB
 
 以下是我的環境，請依照實際管理習慣與狀況調整
