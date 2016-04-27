@@ -75,8 +75,7 @@ vim /etc/httpd/conf/httpd.conf
 
     systemctl restart httpd.service
 
-開個瀏覽器看看吧! 搞定:)
-
+開個瀏覽器看看吧! 以上，打完收工。
 
 ##參考來源
 https://letsencrypt.readthedocs.org/en/latest/
