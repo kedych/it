@@ -6,7 +6,7 @@
 
 ## 做法
 
-微軟已經做了一個安裝檔，只要在 [Compatible IDE]的情況下安裝好該修正檔，應是驅動程式，不用等到開進入Windows 進行硬體裝置搜尋才安裝驅動，所以裝好就可以直接到BIOS改成AHCI，就順利進入Windows，打完收工。
+微軟已經做了一個安裝檔，只要在 [Compatible IDE]的情況下安裝好該修正檔，應是驅動程式，不用等到開進入Windows 進行硬體裝置搜尋才安裝驅動，所以裝好就可以直接到BIOS改成AHCI，就順利進入Windows。以上，打完收工。
 
 下載點 http://go.microsoft.com/?linkid=9741862
 
