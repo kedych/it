@@ -9,6 +9,7 @@
    * [行動通訊世代初探 - 行動通訊一點點](xing_dong_tong_xun_shi_dai_chu_tan_-_xing_dong_tong_xun_yi_dian_dian.md)
 * Linux
    * [Let's Encrypt](lets_encrypt.md)
+   * [SpeedTest CLI](speedtest-cli.md)
 * Windows
    * [SATA模擬IDE安裝Windows以後改為AHCI](note_003-sata_ida_to_AHCI.md)
    * [Server 2008 Cluster 退出節點清除資料](node_002-clear_server2008_data_after_leaving_cluster.md)
