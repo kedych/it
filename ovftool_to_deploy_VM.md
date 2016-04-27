@@ -41,8 +41,7 @@ Linux
 以上就完成了使用ovftool進行跨VMware ESXi主機VM複製的過程，因為複製完畢之後，原採用ThinProvision配置的大小會占用配置的磁碟空間(變成Thick)，所以有此困擾的人，再繼續往下參考。
 
 ##vmdk空間問題
-實際硬碟大小1TB(用1024為基底算起來為932GB)，配置給VM大小是900GB (thin provision)
-使用ovftool佈署以後的大小回到900GB，有點肥大，空間炸裂後VM無法啟動，剩下的空間不夠硬碟+VMware的swap分區使用，所以在本地使用vmkfstooks重新clone檔案
+環境中，實際硬碟大小1TB(用1024為基底算起來為932GB)，配置給VM大小是900GB (thin provision)，使用ovftool佈署以後的大小回到900GB，有點肥大，空間炸裂後VM無法啟動，剩下的空間不夠硬碟+VMware的swap分區使用，所以在本地使用vmkfstooks重新clone檔案
 
 ##使用vmkstools複製vmdk
 使用SSH登入VMware ESXi主機，使用以下命令進行vmdk複製，讓他空間先不要占到900GB
