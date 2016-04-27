@@ -86,4 +86,6 @@ For RHEL 6.x and CentOS 6.x (i386)
     Download: 71.01 Mbit/s
     Testing upload speed..................................................
     Upload: 76.55 Mbit/s
+    
+以上，打完收工。
 
