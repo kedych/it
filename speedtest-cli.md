@@ -28,7 +28,11 @@ For RHEL 6.x and CentOS 6.x (i386)
 
     sudo pip install speedtest-cli 
 
-這樣就裝好了，可以使用文字命令的Speedtest測速，在terminal輸入命令speedtest-cli即可，不帶參數、自動選擇測試伺服器，執行結果如下：
+
+這樣就裝好了，可以使用文字命令的Speedtest測速
+
+##執行speedtest
+在terminal輸入命令speedtest-cli即可，不帶參數、自動選擇測試伺服器，執行結果如下：
 
     [kedy@elkapp01 ~]$speedtest-cli
 	
