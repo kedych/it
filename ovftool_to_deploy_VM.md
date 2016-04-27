@@ -8,7 +8,7 @@ https://www.vmware.com/support/developer/ovf/
 
 ##確定來源與目的
 
-來源描述格式
+###來源描述格式
 
     username@hostname/vm-name
 
@@ -16,7 +16,7 @@ https://www.vmware.com/support/developer/ovf/
 
     root@10.20.51.150/ELKAPP-CentOS7
 
-目的描述格式
+###目的描述格式
 
     username@hostname
 
@@ -24,11 +24,13 @@ https://www.vmware.com/support/developer/ovf/
 
     root@10.20.51.141
 
-Windows命令格式
+###Windows命令格式
 
     ovftool.exe vi://root@10.20.51.150/ELKAPP-CentOS7 vi://root@10.20.51.141/
 
-Linux命令格式
+![](2016-04-07_150916.png)
+
+##Linux命令格式
 
     ovftool.exe vi://root@10.20.51.150/ELKAPP-CentOS7 vi://root@10.20.51.141/
 
@@ -38,7 +40,13 @@ Linux命令格式
 
     C:\Program Files\VMware\VMware OVF Tool>ovftool.exe vi://username@hostname/vm-namevi://username@hostname/
 
-輸入會提示該host的密碼，接著從vmware vsphere會看到正在使用OVA佈署
+![](2016-04-07_150956.png)
+輸入會提示該host的密碼
+
+![](2016-04-07_151007.png)
+從vmware vsphere會看到正在使用OVA佈署
+
+![](2016-04-07_151020.png)
 完成以後就可以看到目的端的VM多長了一台出來。
 
 以上就完成了使用ovftool進行跨VMware ESXi主機VM複製的過程，因為複製完畢之後，原採用ThinProvision配置的大小會占用配置的磁碟空間(變成Thick)，所以有此困擾的人，再繼續往下參考。
@@ -56,3 +64,14 @@ Linux命令格式
 刪除OVA佈署以後肥大的VM，最後重新建立VM組態資料，我們環境是給1 socket，8 cores，32GB RAM，就可以開機囉！
 
 以上，打完收工。
+
+
+![](2016-04-07_160248.png)
+![](2016-04-07_160145.png)
+![](2016-04-07_155921.png)
+![](2016-04-07_151839.png)
+![](2016-04-07_151829.png)
+![](2016-04-07_151820.png)
+![](2016-04-07_151726.png)
+![](2016-04-07_151720.png)
+![](2016-04-07_151056.png)
