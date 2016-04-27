@@ -38,6 +38,7 @@ Linux
 輸入會提示該host的密碼，接著從vmware vsphere會看到正在使用OVA佈署
 完成以後就可以看到目的端的VM多長了一台出來。
 
+以上就完成了使用ovftool進行跨VMware ESXi主機VM複製的過程，因為複製完畢之後，原採用ThinProvision配置的大小會占用配置的磁碟空間(變成Thick)，所以有此困擾的人，再繼續往下參考。
 
 ##vmdk空間問題
 實際硬碟大小1TB(用1024為基底算起來為932GB)，配置給VM大小是900GB (thin provision)
