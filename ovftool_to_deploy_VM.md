@@ -44,11 +44,12 @@ Linux
 環境中，實際硬碟大小1TB(用1024為基底算起來為932GB)，配置給VM大小是900GB (thin provision)，使用ovftool佈署以後的大小回到配置的900GB，有點肥大，碰到磁碟空間炸裂後VM無法啟動，因為剩下的空間不夠硬碟+VMware的swap分區使用，就不能直接啟動虛擬機器，因此，在本地使用vmkfstooks重新clone檔案。
 
 ##使用vmkstools複製vmdk
-使用SSH登入VMware ESXi主機，使用以下命令進行vmdk複製，讓他空間先不要占到900GB，以下是我的環境，請依照實際管理習慣與狀況調整
+使用SSH登入VMware ESXi主機，使用以下命令進行vmdk複製，讓他空間先不要占到900GB，以下是我的環境，請依照實際管理習慣與狀況調整：
 
-mkdir /vmfs/volumes/datastore1/ELKAPP01-CentOS7
+    mkdir /vmfs/volumes/datastore1/ELKAPP01-CentOS7
 
-vmkfstools -i "/vmfs/volumes/datastore1/ELKAPP10-CentOS7/ELKAPP10-CentOS7.vmdk" "/vmfs/volumes/datastore1/ELKAPP01-CentOS7/ELKAPP01-CentOS7.vmdk" -d thin
+    vmkfstools -i "/vmfs/volumes/datastore1/ELKAPP10-CentOS7/ELKAPP10-CentOS7.vmdk" "/vmfs/volumes/datastore1/ELKAPP01-CentOS7/ELKAPP01-CentOS7.vmdk" -d thin
 
-6.刪除OVA佈署以後肥大的VM
-7.重新建立VM組態資料，我們環境是給1 socket，8 cores，32GB RAM
+刪除OVA佈署以後肥大的VM，最後重新建立VM組態資料，我們環境是給1 socket，8 cores，32GB RAM，就可以開機囉！
+
+以上，打完收工。
