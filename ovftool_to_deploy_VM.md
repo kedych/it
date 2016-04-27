@@ -46,6 +46,7 @@ https://www.vmware.com/support/developer/ovf/
 ![](2016-04-07_151007.png)
 從vmware vsphere會看到正在使用OVA佈署
 
+![](2016-04-07_151839.png)
 完成以後就可以看到目的端的VM多長了一台出來。
 
 以上就完成了使用ovftool進行跨VMware ESXi主機VM複製的過程，因為複製完畢之後，原採用ThinProvision配置的大小會占用配置的磁碟空間(變成Thick)，所以有此困擾的人，再繼續往下參考。
