@@ -1,8 +1,10 @@
 # SpeedTest CLI
 
-習慣在Server上把GUI都砍光，但偶而有要使用speedtest的需求，找了一下SpeedTest是否有命令列的版本，結果是有的。
+習慣在Server上把GUI都砍光，但而有使用speedtest的需求，找了一下SpeedTest是否有命令列的版本，結果是有的。
 
-CentOS 命令列版本speedtest安裝過程如下：
+使用環境在CentOS 7 64位元版本，Kernel為3.10.0-327.13.1.el7.x86_64
+
+CentOS 命令列版本speedtest安裝過程如下
 
 ##更新epel-release
 有兩種更新方式，看要使用 yum　還是取得 rpm回系統安裝。
