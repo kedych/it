@@ -10,7 +10,7 @@
 
     slmgr.vbs -ipk  FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 
-搞定，然後就用合法的KMS啟動，打完收工。
+搞定，然後就用合法的KMS啟動。以上，打完收工。
 
 
 ## 延伸
