@@ -3,6 +3,9 @@
 ##從VMware官方網站取得ovftool
 https://www.vmware.com/support/developer/ovf/
 
+![OVF Tool Documentation](2016-04-07_150006.png)
+![OVF Tool Download](2016-04-07_145947.png)
+
 ##確定來源與目的
 
 來源描述格式
@@ -25,7 +28,7 @@ Windows命令格式
 
     ovftool.exe vi://root@10.20.51.150/ELKAPP-CentOS7 vi://root@10.20.51.141/
 
-Linux
+Linux命令格式
 
     ovftool.exe vi://root@10.20.51.150/ELKAPP-CentOS7 vi://root@10.20.51.141/
 
