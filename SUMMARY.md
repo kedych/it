@@ -15,6 +15,4 @@
    * [更換Windows 7 MAK為KMS版本](note_001-change_windows_7_mak_to_kms.md)
 * Learning
    * [Git](learning_001-git_commands.md)
-* [Learning](learning-01.md)
-   * Cisco Cyber Range
 
