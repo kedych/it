@@ -69,9 +69,11 @@ https://www.vmware.com/support/developer/ovf/
     vmkfstools -i "/vmfs/volumes/datastore1/ELKAPP10-CentOS7/ELKAPP10-CentOS7.vmdk" "/vmfs/volumes/datastore1/ELKAPP01-CentOS7/ELKAPP01-CentOS7.vmdk" -d thin
 
 ![](2016-04-07_160145.png)
+
 vmkfstools執行完畢。
 
 ![](2016-04-07_160248.png)
-刪除OVA佈署以後肥大的VM，上圖可以看到是ELKAPP-CentOS7很肥大，最後重新建立VM組態資料，我們環境是給1 socket，8 cores，32GB RAM，就可以開機囉！
+
+最後是刪除OVA佈署以後肥大的VM，上圖可以看到是ELKAPP-CentOS7很肥大，只要刪除之後，重新建立VM組態資料，選擇Thin Provision之後的vmdk，我們環境是給1 socket，8 cores，32GB RAM，就可以開機囉！
 
 以上，打完收工。
