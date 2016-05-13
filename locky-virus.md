@@ -2,6 +2,7 @@
 黃慰民、張凱迪、張珈語
 
 本文由黃慰民主任進行分析，張凱迪主筆撰寫，張珈語協同作業。
+
 ##一、前言：
 
 如果看到題目，覺得檔案被加密保護是一件「很好」的事情，那您應該是還沒搭上勒索病毒的熱潮，資管部於20160505發佈公告：
@@ -201,11 +202,11 @@
 
 ##參考資料
 
-停用Windows Script Host組態檔
-啟用Windows Script Host服務
-F-Secure, “How to disable windows script host,” 2016.[Online]. Available: https://labsblog.f-secure.com/2016/04/19/how-to-disable-windows-script-host/ [Accessed:10-May-2016]
-綠色工廠,“勒索軟體預防針，停用 Windows Script Host 功能，不要放棄治療,”[Online]. Available:http://portable.easylife.tw/5016 [Accessed: 10-May-2016]
-趨勢科技,“世界備份日( World Backup Day)：三二一原則,”2016.[Online].Available: http://blog.trendmicro.com.tw/?p=4707 [Accessed:10-May-2016]
-趨勢科技,“《奪魂鋸》殺人魔化身勒索軟體 JIGSAW:重新開機,刪除 1,000 個檔案;未在72小時內付款,刪除所有加密檔案,”2016.[Online]. Available: http://blog.trendmicro.com.tw/?p=17619 [Accessed: 10-May-2016]
-趨勢科技,“2016勒索軟體白皮書,”2016.[Online].Available:http://blog.trendmicro.com.tw/wp-content/uploads/2016/04/2016-ransomware-white-paper.pdf [Accessed:10-May-2016]
-Virustotal,https://virustotal.com/ [Accessed:10-May-2016]
+1. 停用Windows Script Host組態檔
+1. 啟用Windows Script Host服務
+1. F-Secure, “How to disable windows script host,” 2016.[Online]. Available: https://labsblog.f-secure.com/2016/04/19/how-to-disable-windows-script-host/ [Accessed:10-May-2016]
+1. 綠色工廠,“勒索軟體預防針，停用 Windows Script Host 功能，不要放棄治療,”[Online]. Available:http://portable.easylife.tw/5016 [Accessed: 10-May-2016]
+1. 趨勢科技,“世界備份日( World Backup Day)：三二一原則,”2016.[Online].Available: http://blog.trendmicro.com.tw/?p=4707 [Accessed:10-May-2016]
+1. 趨勢科技,“《奪魂鋸》殺人魔化身勒索軟體 JIGSAW:重新開機,刪除 1,000 個檔案;未在72小時內付款,刪除所有加密檔案,”2016.[Online]. Available: http://blog.trendmicro.com.tw/?p=17619 [Accessed: 10-May-2016]
+1. 趨勢科技,“2016勒索軟體白皮書,”2016.[Online].Available:http://blog.trendmicro.com.tw/wp-content/uploads/2016/04/2016-ransomware-white-paper.pdf [Accessed:10-May-2016]
+1. Virustotal,https://virustotal.com/ [Accessed:10-May-2016]
