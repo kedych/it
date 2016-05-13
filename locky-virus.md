@@ -110,8 +110,8 @@
 
 ##參考資料
 
-1. 停用Windows Script Host組態檔
-1. 啟用Windows Script Host服務
+1. 停用Windows Script Host服務組態檔
+1. 啟用Windows Script Host服務組態檔
 1. F-Secure, “How to disable windows script host,” 2016.[Online]. Available: https://labsblog.f-secure.com/2016/04/19/how-to-disable-windows-script-host/ [Accessed:10-May-2016]
 1. 綠色工廠,“勒索軟體預防針，停用 Windows Script Host 功能，不要放棄治療,”[Online]. Available:http://portable.easylife.tw/5016 [Accessed: 10-May-2016]
 1. 趨勢科技,“世界備份日( World Backup Day)：三二一原則,”2016.[Online].Available: http://blog.trendmicro.com.tw/?p=4707 [Accessed:10-May-2016]
