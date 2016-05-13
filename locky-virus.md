@@ -22,7 +22,9 @@
 
 ###2.1 停用Windows Script Host服務
 
-幾起勒索軟體常見的入侵到電腦的方法，都是誘拐使用者執行壓縮檔案中附帶的Java Script檔案(副檔名為.js)，這些JS會偷偷呼叫Windows作業系統的Windows Script Host服務，連線到存放惡意加密程式的網站，下載惡意程式的檔案回來執行。因此，在不影響生產作業以及日常辦公的前提下，建議停用Windows Script Host服務，能夠減少被勒索軟體入侵的管道。停用Windows Script Host組態檔[1]，下載解壓縮後點兩下"1停用WSH.reg"匯入即可。如果同仁執行日常業務需要啟用Windows Script Host服務[2]，可以下載點解壓縮點選"2啟用WSH.reg"檔案執行恢復服務，背後的原理參考F-Secure[3]或綠色工廠[4]的網誌。
+幾起勒索軟體常見的入侵到電腦的方法，都是誘拐使用者執行壓縮檔案中附帶的Java Script檔案(副檔名為.js)，這些JS會偷偷呼叫Windows作業系統的Windows Script Host服務，連線到存放惡意加密程式的網站，下載惡意程式的檔案回來執行。因此，在不影響生產作業以及日常辦公的前提下，建議停用Windows Script Host服務，能夠減少被勒索軟體入侵的管道。[停用Windows Script Host組態檔[1]](https://goo.gl/svQF88)，下載解壓縮後點兩下"1停用WSH.reg"匯入即可。如果同仁執行日常業務需要[啟用Windows Script Host服務[2]](https://goo.gl/TTzli0)，可以下載點解壓縮點選"2啟用WSH.reg"檔案執行恢復服務，背後的原理參考F-Secure[3]或綠色工廠[4]的網誌。
+
+
 
 ###2.2 備份重要文件
 
