@@ -1,4 +1,4 @@
-# Elastic Event 簡記心得
+# Elastic Event 心得
 
 2016-05
 
