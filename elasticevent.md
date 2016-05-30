@@ -1,2 +1,34 @@
-# ElasticEvent
+# Elastic Event
 
+Elasticsearch 為全世界最火熱即時搜索和分析資料引擎領導者
+May 27, 2016　|　華山文創・台北
+
+去年底因為一些機緣，開啟了Elasticsearch、Logstash、Kibana的學習過程，也碰巧開始關注ELK的發展，忽然發現有一場研討會在台北，速速點選報名，希望能有更伸更多的瞭解。
+
+很快的來到活動這一天，接觸ELK的時間也大約有半年，
+
+##議程
+###Elastic 市場策略及業務發展
+主講人：何致偉Elastic 亞太區銷售總監
+
+###Elastic Stack + X-Pack
+說明並窺視即將上市 Xpack，針對企業完整從日誌或檔案取得至分析呈現一鍵操作和管理，為企業創造最佳效率。
+
+主講人：曾勇Elastic 技術顧問
+
+###HTC宏達電Use Case
+HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管理、行為分析及研發生產自動化資訊架構與維運。
+
+主講人：周鉦琪HTC 資深副理
+
+###整合Hadoop及Elasticsearch，加速大數據應用
+大數據平台組件是很複雜且多元的，以 Hadoop 為 Data Lake 的中心，看看 ElasticStack 如何串接及應用。
+主講人：陳進賢歐立威技術協理
+
+###ELK-統一資訊(PIC)日常系統維運的好幫手
+統一資訊(PIC)如何運用 ELK於內部應用系統及對外營運系統的管理工作
+主講人：劉祖弘統一資訊平台技術 TEAM 工程師
+
+###Log Analytics在金融與IOT的成功案例
+分享銀行業如何利用 Log Analytics 成功收集銀行重要資訊，帶動銀行業務。以及在金融業機器如何藉由 Log Analytics 升級成高效智能的金融物聯網服務。
+主講人：陳文裕數位無限軟體總經理
