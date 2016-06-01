@@ -44,8 +44,36 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ###三、與會過程
 只貼議程救太敷衍了，有很大部分是不同領域的專家，不同領域和專業的內容，不甚瞭解也無法全吸收，就盡量看有記得什麼，中間穿插一些照片，請大家簡單配合心得服用囉！
 
-(p.s. 不是我手殘發抖就是hTC M9的拍照真的不行，該換支手機了)
+(p.s. 不是我手殘發抖就是hTC M9的拍照不行，該換支手機了)
 
 ####Elastic 市場策略及業務發展
 
-先由亞太地區銷售總監介紹主要使用Elasticsearch的公司關鍵評語作為開場，
+
+2.jpg
+亞太地區銷售總監何致偉介紹主要使用Elasticsearch的公司關鍵評語作為開場，用Elastic Stack架構的人其實很多，以下是ㄧ些知名企業使用的簡單評語，這些知名企業包含：
+
+1. Facebook - 處理六千萬的搜尋
+2. theguardian - 處理超過四千萬個文件
+3. WikiPedia
+4. verizon
+5. TomTom
+6. Mozilla
+7. NASA
+8. eBay
+9. E\*TRADE
+10. Tango
+
+16.jpg
+應用領域包含：安全、日誌分析、分析、搜尋
+
+17.jpg
+整個產品線以前大家俗稱為ELK，現在要正名為Elastic Stack囉！而除了開放原始碼的Kibana、Elasticsearch、Logstash、Beats之外，加強ELK Stack的X-Pack，也就是需要付費訂閱的外掛套件，包含了Security by Shield、Alerting by Watch、Monitoring by Marvel、Graph by [???]。除此之外，還有提供雲端服務，也就是Elastic Cloud，直接訂閱服務就不用自己架設備跟服務，就整套可以拿來用囉！
+
+
+####Introduction to Elastic Stack and X-Pack
+
+19.jpg
+接著由Elastic亞太區技術顧問曾勇，
+
+23.jpg
+第一次來台灣，另外想說，M9拍照真的很糟糕XD
