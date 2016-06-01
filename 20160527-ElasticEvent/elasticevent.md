@@ -1,7 +1,6 @@
-# Elastic Event 心得
+# Elastic Event
 
 2016-05
-![](20160527-ElasticEvent (29).jpg)
 
 ##一、前言
 Elasticsearch 為全世界最火熱即時搜索和分析資料引擎領導者
