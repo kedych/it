@@ -57,7 +57,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 
 1. Facebook - 處理六千萬的搜尋
 2. theguardian - 處理超過四千萬個文件
-3. WikiPedia
+3. WikiMedia
 4. verizon
 5. TomTom
 6. Mozilla
@@ -66,8 +66,21 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 9. E\*TRADE
 10. Tango
 
+內容直接看圖。
+
+![Facebook](20160527-ElasticEvent6.jpg)
+![theguardian](20160527-ElasticEvent7.jpg)
+![WikiMedia](20160527-ElasticEvent8.jpg)
+![verizon](20160527-ElasticEvent9.jpg)
+![TomTom](20160527-ElasticEvent10.jpg)
+![Mozilla](20160527-ElasticEvent11.jpg)
+![NASA](20160527-ElasticEvent12.jpg)
+![eBay](20160527-ElasticEvent13.jpg)
+![E*TRADE](20160527-ElasticEvent14.jpg)
+![Tango](20160527-ElasticEvent15.jpg)
+
 ![](20160527-ElasticEvent16.jpg)
-應用領域包含：安全、日誌分析、分析、搜尋
+整體應用領域包含：安全、日誌分析、分析、搜尋
 
 ![](20160527-ElasticEvent17.jpg)
 整個產品線以前大家俗稱為ELK，現在要正名為Elastic Stack囉！而除了開放原始碼的Kibana、Elasticsearch、Logstash、Beats之外，加強ELK Stack的X-Pack，也就是需要付費訂閱的外掛套件，包含了Security by Shield、Alerting by Watch、Monitoring by Marvel、Graph by [???]。除此之外，還有提供雲端服務，也就是Elastic Cloud，直接訂閱服務就不用自己架設備跟服務，就整套可以拿來用囉！
