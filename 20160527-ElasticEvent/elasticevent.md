@@ -111,3 +111,5 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ![](20160527-ElasticEvent28.jpg)
 還有以前常常讓人疑惑的ELK到底版本之間要怎麼搭配，因為不同的Elasticsearch、Logstash、Kibana是有相依性問題，不能隨意混搭的。
 
+![](20160527-ElasticEvent29.jpg)
+以前有一張Release Bonanza表格，可以看到該如何搭配。
