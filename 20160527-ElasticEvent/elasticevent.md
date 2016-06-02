@@ -2,11 +2,12 @@
 
 2016-05
 
-![Banner 1](20160527-ElasticEvent00.jpg)
-![Banner 2](20160527-ElasticEvent01.jpg)
 ##一、前言
 Elasticsearch 為全世界最火熱即時搜索和分析資料引擎領導者
 May 27, 2016　|　華山文創・台北
+
+![Banner 1](20160527-ElasticEvent00.jpg)
+![Banner 2](20160527-ElasticEvent01.jpg)
 
 這麼強悍有霸氣的標語，能喊出來的應該沒幾個，而我相信Elastic真真切切有資格稱為即時搜尋和分析資料引擎的領導者。去年底因一些機緣，開啟了Elasticsearch、Logstash、Kibana的學習與使用過程，也開始關注ELK發展，上週某天忽然發現Elastic有場研討會在台北，速速點選報名，希望能有更伸更多的瞭解。
 
