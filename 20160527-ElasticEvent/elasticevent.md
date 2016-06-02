@@ -94,7 +94,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ####Introduction to Elastic Stack and X-Pack
 
 ![](20160527-ElasticEvent19.jpg)
-第一個議程接著由Elastic亞太區技術顧問曾勇主講，介紹整個Elastic Stack和X-Pack
+第一個議程接著由Elastic亞太區技術顧問曾勇主講，介紹整個Elastic Stack和X-Pack。
 
 ![](20160527-ElasticEvent23.jpg)
 曾顧問第一次來台灣，另外想說，M9拍照真的很糟糕XD
