@@ -59,7 +59,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 1. Facebook - 一天處理超過6000萬個查詢，舉凡在Facebook的白色搜尋欄位中，找尋的項目都是透過Elasticsearch來進行的。
 
 ![theguardian](20160527-ElasticEvent7.jpg)
-2. theguardian - 處理超過四千萬個文件
+2. theguardian - 一天處理超過4000萬個文件，在全球的Web資訊進行即時分析。
 
 ![WikiMedia](20160527-ElasticEvent8.jpg)
 3. WikiMedia
