@@ -80,7 +80,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ![Tango](20160527-ElasticEvent15.jpg)
 
 ![](20160527-ElasticEvent16.jpg)
-整體應用領域包含：安全、日誌分析、分析、搜尋
+整體應用領域包含：安全、日誌分析、分析、搜尋等。
 
 ![](20160527-ElasticEvent17.jpg)
 整個產品線以前大家俗稱為ELK，現在要正名為Elastic Stack囉！而除了開放原始碼的Kibana、Elasticsearch、Logstash、Beats之外，加強ELK Stack的X-Pack，也就是需要付費訂閱的外掛套件，包含了Security by Shield、Alerting by Watch、Monitoring by Marvel、Graph by [???]。除此之外，還有提供雲端服務，也就是Elastic Cloud，直接訂閱服務就不用自己架設備跟服務，就整套可以拿來用囉！
