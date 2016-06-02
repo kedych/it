@@ -118,7 +118,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就統一版本號，未來的Release版本都會使用相同的版本號碼進行發佈，就不會有哪個E搭哪個L或者K的問題了。
 
 ![](20160527-ElasticEvent32.jpg)
-曾勇展示了5.0的一個新功能，就是建立關聯分析圖，細節可能等使用過才知道。
+曾勇展示了Elastic 5.0的一個新功能，就是建立關聯分析圖，細節可能等使用過才知道。
 
 ![](20160527-ElasticEvent34.jpg)
 有花一些時間介紹Beats，也就是用來安裝在主機上蒐集資料傳送到Elastic Stack的小agent，以前都是用Logstash或者Logstash Forwarder，但是這樣環境就需要JAVA會有點肥大，所以他們開發了Beats，也就是適用於不同環境的輕量化資料代理轉發程式。
@@ -134,4 +134,4 @@ Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就�
 * MangoDB
 * DNS
 * Memcache
-等，實用性相當高，在Elastic官方網站也有Live Demo，可以直接連過去參考。
+等，實用性相當高，在Elastic官方網站也有Live Demo，可以直接連過去參考 http://demo.elastic.co 。
