@@ -68,7 +68,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 4. verizon - 即時日誌與分析索引超過5兆筆記錄，用來完成極重要的應用。
 
 ![TomTom](20160527-ElasticEvent10.jpg)
-5. TomTom
+5. TomTom - 有了Elastic Stack之後，Tomtom能夠處理監控每秒超過6500的訊息，獲得更深層維運訊息，來調整分散在全球的應用、網站跟伺服器。
 
 ![Mozilla](20160527-ElasticEvent11.jpg)
 6. Mozilla
