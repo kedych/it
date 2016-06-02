@@ -49,8 +49,8 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 
 (p.s. 不是我手殘發抖就是hTC M9的拍照不行，該換支手機了)
 
-####Elastic 市場策略及業務發展
 
+####Elastic 市場策略及業務發展
 
 ![](20160527-ElasticEvent.jpg)
 亞太地區銷售總監何致偉介紹主要使用Elasticsearch的公司關鍵評語作為開場，用Elastic Stack架構的人其實很多，以下是ㄧ些知名企業使用的簡單評語，這些知名企業與短評如下：
@@ -144,3 +144,6 @@ Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。�
 
 ![](20160527-ElasticEvent3９.jpg)
 這類技巧跟方法可以用在關連性辨別、詐騙偵測、商品推薦等。
+
+
+####Get visibility form our application & user
