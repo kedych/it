@@ -1,4 +1,4 @@
-# Elastic Event
+# Elastic Even# Elastic Event
 
 2016-05
 
@@ -179,4 +179,4 @@ M9碰到主管可能比較正常，這是周副理。
 所以，想要解決上述議題，最理想的方法就是可以簡單做到，然後不要花太多的力氣。（這當然，誰不希望這樣）
 
 ![](20160527-ElasticEvent53.jpg)
-所以HTC也是透過Elastic Stack再加上docker的應用，來解決上述議題。
+所以HTC也是透過Elastic Stack再加上docker的應用，來解決上述議題，並且用來收容應用程式記數(application counter)、軟體日誌(Software Logs)跟環境日誌(Environment Logs)
