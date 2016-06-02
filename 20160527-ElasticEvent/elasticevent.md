@@ -180,3 +180,6 @@ M9碰到主管可能比較正常，這是周副理。
 
 ![](20160527-ElasticEvent53.jpg)
 所以HTC也是透過Elastic Stack再加上docker的應用，來解決上述議題，並且用來收容應用程式記數(application counter)、軟體日誌(Software Logs)跟環境日誌(Environment Logs)。
+
+![](20160527-ElasticEvent54.jpg)
+這是HTC的實做流程，大致是三個階段，參考圖就好。
