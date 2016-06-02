@@ -145,7 +145,7 @@ Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。�
 前面提到的新功能，Elastic Stack關聯繪圖，結合搜尋跟繪圖的技術，提供簡單的graph-walking API，讓使用者能夠透過完整的Elasticsearch搜尋建立關聯性圖形。
 
 ![](20160527-ElasticEvent39.jpg)
-這類技巧跟方法可以用在關連性辨別、詐騙偵測、商品推薦等。
+這類技巧跟方法可以用在關聯性辨別、詐騙偵測、商品推薦等。
 
 
 ####Get visibility form our application & user
