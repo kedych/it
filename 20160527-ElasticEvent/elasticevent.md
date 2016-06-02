@@ -140,4 +140,7 @@ Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就�
 Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。也提到一條好萊屋守則　- Don't call us, we will call you!
 
 ![](20160527-ElasticEvent38.jpg)
-前面提到的新功能，Elastic Stack關聯繪圖，結合搜尋跟繪圖的技術，提供簡單的graph-walking API，讓使用者能夠透過完整的Elasticsearch搜尋建立關連性圖形。
+前面提到的新功能，Elastic Stack關聯繪圖，結合搜尋跟繪圖的技術，提供簡單的graph-walking API，讓使用者能夠透過完整的Elasticsearch搜尋建立關聯性圖形。
+
+![](20160527-ElasticEvent3９.jpg)
+這類技巧跟方法可以用在關連性辨別、詐騙偵測、商品推薦等。
