@@ -80,7 +80,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 8. eBay - 透過Elasticsearch的幫忙，在全球的14個事業體服務2.5億位不同的使用者，購買5千萬個商品，處理每秒產生的15萬個查詢。
 
 ![E*TRADE](20160527-ElasticEvent14.jpg)
-9. E\*TRADE - 使用Elastic產品和解決方案，幫助消費者改善投資。(照片糊了)
+9. E\*TRADE - 使用Elastic產品和解決方案，幫助消費者改善投資。(照片糊了，請見諒)
 
 ![Tango](20160527-ElasticEvent15.jpg)
 10. Tango
