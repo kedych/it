@@ -92,9 +92,10 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 整個產品線以前大家俗稱為ELK，現在要正名為Elastic Stack囉！而除了開放原始碼的Kibana、Elasticsearch、Logstash、Beats之外，加強ELK Stack的X-Pack，也就是需要付費訂閱的外掛套件，包含了Security by Shield、Alerting by Watch、Monitoring by Marvel、Graph by [???]。除此之外，還有提供雲端服務，也就是Elastic Cloud，直接訂閱服務就不用自己架設備跟服務，就整套可以拿來用囉！
 
 ####Introduction to Elastic Stack and X-Pack
-主講人：曾勇　Elastic 技術顧問
 
 ![](20160527-ElasticEvent19.jpg)
+主講人：曾勇　Elastic 技術顧問
+
 第一個議程接著由Elastic亞太區技術顧問曾勇(Medcl)主講，介紹整個Elastic Stack和X-Pack，照片裡還是亞太地區銷售總監何致偉。
 
 ![](20160527-ElasticEvent23.jpg)
@@ -143,9 +144,13 @@ Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。�
 ![](20160527-ElasticEvent38.jpg)
 前面提到的新功能，Elastic Stack關聯繪圖，結合搜尋跟繪圖的技術，提供簡單的graph-walking API，讓使用者能夠透過完整的Elasticsearch搜尋建立關聯性圖形。
 
-![](20160527-ElasticEvent3９.jpg)
+![](20160527-ElasticEvent39.jpg)
 這類技巧跟方法可以用在關連性辨別、詐騙偵測、商品推薦等。
 
 
 ####Get visibility form our application & user
+
+![](20160527-ElasticEvent41.jpg)
 主講人：周鉦琪　HTC 資深副理
+
+![](20160527-ElasticEvent42.jpg)
