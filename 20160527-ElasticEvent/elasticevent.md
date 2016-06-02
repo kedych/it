@@ -55,29 +55,35 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ![](20160527-ElasticEvent.jpg)
 亞太地區銷售總監何致偉介紹主要使用Elasticsearch的公司關鍵評語作為開場，用Elastic Stack架構的人其實很多，以下是ㄧ些知名企業使用的簡單評語，這些知名企業與短評如下：
 
-1. Facebook - 處理六千萬的搜尋
-2. theguardian - 處理超過四千萬個文件
-3. WikiMedia
-4. verizon
-5. TomTom
-6. Mozilla
-7. NASA
-8. eBay
-9. E\*TRADE
-10. Tango
-
-
-
 ![Facebook](20160527-ElasticEvent6.jpg)
+1. Facebook
+
 ![theguardian](20160527-ElasticEvent7.jpg)
+2. theguardian - 處理超過四千萬個文件
+
 ![WikiMedia](20160527-ElasticEvent8.jpg)
+3. WikiMedia
+
 ![verizon](20160527-ElasticEvent9.jpg)
+4. verizon
+
 ![TomTom](20160527-ElasticEvent10.jpg)
+5. TomTom
+
 ![Mozilla](20160527-ElasticEvent11.jpg)
+6. Mozilla
+
 ![NASA](20160527-ElasticEvent12.jpg)
+7. NASA
+
 ![eBay](20160527-ElasticEvent13.jpg)
+8. eBay
+
 ![E*TRADE](20160527-ElasticEvent14.jpg)
+9. E\*TRADE
+
 ![Tango](20160527-ElasticEvent15.jpg)
+10. Tango
 
 ![](20160527-ElasticEvent16.jpg)
 整體應用領域包含：安全、日誌分析、分析、搜尋等。
