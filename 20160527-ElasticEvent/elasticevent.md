@@ -53,7 +53,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 
 
 ![](20160527-ElasticEvent.jpg)
-亞太地區銷售總監何致偉介紹主要使用Elasticsearch的公司關鍵評語作為開場，用Elastic Stack架構的人其實很多，以下是ㄧ些知名企業使用的簡單評語，這些知名企業包含：
+亞太地區銷售總監何致偉介紹主要使用Elasticsearch的公司關鍵評語作為開場，用Elastic Stack架構的人其實很多，以下是ㄧ些知名企業使用的簡單評語，這些知名企業與短評如下：
 
 1. Facebook - 處理六千萬的搜尋
 2. theguardian - 處理超過四千萬個文件
@@ -66,7 +66,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 9. E\*TRADE
 10. Tango
 
-內容直接看圖。
+
 
 ![Facebook](20160527-ElasticEvent6.jpg)
 ![theguardian](20160527-ElasticEvent7.jpg)
