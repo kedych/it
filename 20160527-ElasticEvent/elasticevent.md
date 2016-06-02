@@ -65,7 +65,7 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 3. WikiMedia - 提供靈活彈性的搜尋。
 
 ![verizon](20160527-ElasticEvent9.jpg)
-4. verizon
+4. verizon - 即時日誌與分析索引超過5兆筆記錄，用來完成極重要的應用。
 
 ![TomTom](20160527-ElasticEvent10.jpg)
 5. TomTom
