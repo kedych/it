@@ -101,3 +101,6 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 
 ![](20160527-ElasticEvent25.jpg)
 非常活躍的開發者，先前在資策會參與Elasticsearch的課程，就有發覺到Elasticsearch RTF，原來作者就是曾勇！有興趣的朋友可以到曾勇的Github看看 http://github.com/medcl
+
+![](20160527-ElasticEvent26.jpg)
+我不是故意拍成這樣的，我沒有要牽拖是手機的問題...
