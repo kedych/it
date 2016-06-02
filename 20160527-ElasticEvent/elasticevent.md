@@ -121,6 +121,6 @@ Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就�
 曾勇展示了5.0的一個新功能，就是建立關聯分析圖，細節可能等使用過才知道。
 
 ![](20160527-ElasticEvent34.jpg)
-有花一些時間介紹Beats，也就是用來安裝在主機上蒐集資料傳送到Elastic Stack的小agent，以前都是用Logstash或者Logstash Forwarder，但是這樣環境就需要JAVA會有點肥大，所以他們開發了Beats，也就是適用於不同環境(Windows
+有花一些時間介紹Beats，也就是用來安裝在主機上蒐集資料傳送到Elastic Stack的小agent，以前都是用Logstash或者Logstash Forwarder，但是這樣環境就需要JAVA會有點肥大，所以他們開發了Beats，也就是適用於不同環境的輕量化資料代理轉發程式。
 
 ![](20160527-ElasticEvent35.jpg)
