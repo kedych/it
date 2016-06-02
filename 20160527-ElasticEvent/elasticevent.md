@@ -124,3 +124,14 @@ Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就�
 有花一些時間介紹Beats，也就是用來安裝在主機上蒐集資料傳送到Elastic Stack的小agent，以前都是用Logstash或者Logstash Forwarder，但是這樣環境就需要JAVA會有點肥大，所以他們開發了Beats，也就是適用於不同環境的輕量化資料代理轉發程式。
 
 ![](20160527-ElasticEvent35.jpg)
+在beats之中有一個特別的產品叫做Packetbeat，直接安裝在伺服器上面，即時解析應用層的協定，目前支援的應用程式有：
+
+* http
+* MySQL
+* PostgresSQL
+* Redis
+* Thrift-RPC
+* MangoDB
+* DNS
+* Memcache
+等，實用性相當高，在Elastic官方網站也有Live Demo，可以直接連過去參考。
