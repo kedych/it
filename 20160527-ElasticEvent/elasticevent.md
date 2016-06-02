@@ -94,7 +94,10 @@ HTC 宏達電將現身說法，分享行動裝置線上軟體更新、裝置管�
 ####Introduction to Elastic Stack and X-Pack
 
 ![](20160527-ElasticEvent19.jpg)
-第一個議程接著由Elastic亞太區技術顧問曾勇主講，介紹整個Elastic Stack和X-Pack。
+第一個議程接著由Elastic亞太區技術顧問曾勇(Medcl)主講，介紹整個Elastic Stack和X-Pack，照片裡還是亞太地區銷售總監何致偉。
 
 ![](20160527-ElasticEvent23.jpg)
 曾顧問提到是第一次來台灣，另外想說，M9拍照真的很糟糕XD
+
+![](20160527-ElasticEvent25.jpg)
+非常活躍的開發者，先前在資策會參與Elasticsearch的課程，就有發覺到Elasticsearch RTF，原來作者就是曾勇！有興趣的朋友可以到曾勇的Github看看 http://github.com/medcl
