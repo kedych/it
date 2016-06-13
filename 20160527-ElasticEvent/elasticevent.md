@@ -201,4 +201,16 @@ M9碰到主管可能比較正常，這是周副理。
 先說明現代資料架構(Modern Data Architecture, MDA)以及Hadoop生態系在MDA中扮演的角色，主要串起了各式不同的資料來源(現有的CRM, ERP, Clickstream, Logs以及新興的Sensor, Sentiment, Geolocation, Unstructured)、資料系統以及應用(Business Analytics, Custom Applications, Package Applications)，並且提供在資料系統以及應用程式之間進行資料維運管理與開發的能力和彈性。
 
 ![](20160527-ElasticEvent64.jpg)
-接著是提到Data Warehouse如何進行最佳化，現有的環境之中，企業資料倉儲(Enterprise Data Warehouse)可能
+接著是提到Data Warehouse如何進行最佳化，現有的環境之中，企業資料倉儲(Enterprise Data Warehouse)可能有以下問題:
+
+1.有些時候都在處理低價值的工作流程
+2.現有探索或需要分析的時候，舊資料已經搬移、封存或找不到
+3.原始資料常被捨棄、找不到了。
+
+所以在現狀下，可能有50%的資源在處理維運、30%的資源花在處理ETL(Extract-Transform-Load，建置或更新資料倉儲內容，對於所需之數據進行資料擷取、轉換、載入的過程)，剩下少少的20%才能專注用在分析上。
+
+如果透過Hadoop來擴增:
+
+1.有機會讓企業資料倉儲從低價值工作中解放
+2.需要分析或探索的時候，保留完整的原始和歷史資料，不用花一堆時間在ETL
+3.載入後再探勘資料的價值，因為整個schema可以在讀取時決定
