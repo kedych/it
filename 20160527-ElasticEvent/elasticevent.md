@@ -183,7 +183,7 @@ M9碰到主管可能比較正常，這是周副理。
 這是HTC的實做流程，大致是三個階段，參考圖就好。
 
 ![](20160527-ElasticEvent56.jpg)
-副理有提到，軟體日誌最重要的就是要能夠清楚知道：什麼人，在什麼時間，對什麼東西，做什麼事情，做了多久，把握這個原則，透過這些因素設計資料欄位(在Elasticsearch中就是Type要定義好)。
+副理有提到，軟體日誌最重要的就是要能夠清楚知道：什麼人，在什麼時間，對什麼東西，做什麼事情，做了多久，把握這個原則，透過這些因素設計資料欄位(在Elasticsearch中就是Type要定義好的意思)。
 
 ![](20160527-ElasticEvent57.jpg)
 最後提到HTC導入Elastic Stack的好處，減少跟每個應用程式owner整合的功，因位都講好要看的東西是哪些了，也比較簡單能夠達到未來的分析和稽核，最重要的是，有個集中管理進入點，能夠很方便的檢查所有的應用程式日誌。
@@ -198,7 +198,7 @@ M9碰到主管可能比較正常，這是周副理。
 吃完點心以後，由Alex說明ES整合Hadoop的應用。在Elastic的產品線之中，有一塊是ES-Hadoop，也就是做為串連Elasticsearch跟Hadoop的中介專案。
 
 ![](20160527-ElasticEvent63.jpg)
-先說明了新興的資料架構(Modern Data Architecture, MDA)以及Hadoop扮演的角色。
+先說明現代資料架構(Modern Data Architecture, MDA)以及Hadoop生態系在MDA中扮演的角色。
 
 ![](20160527-ElasticEvent64.jpg)
 接著是提到Data Warehouse如何進行最佳化，
