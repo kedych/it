@@ -1,4 +1,4 @@
-# Elasti# Elasti c　Event
+# Elastic　Event
 
 2016-06
 
