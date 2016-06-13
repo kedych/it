@@ -224,3 +224,5 @@ M9碰到主管可能比較正常，這是周副理。
 4.grographic - 分析地理資訊，幫助維運者瞭解更多事情
 5.server logs - 研究伺服器日誌來診斷流程問題與失敗，並預防安全事件
 6.unstructured (text, video, picture, etc...) - 從成千上萬的檔案、網頁、文件等找出特徵
+
+![](20160527-ElasticEvent67.jpg)
