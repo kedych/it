@@ -139,7 +139,7 @@ Elastic公司自己也知道這問題，所以他們到了5.0版本以後，就�
 等，實用性相當高，在Elastic官方網站也有Live Demo，可以直接連過去參考 http://demo.elastic.co 。
 
 ![](20160527-ElasticEvent37.jpg)
-Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。也提到一條好萊屋守則　- Don't call us, we will call you!
+Elastic Stack的告警機制，預先定義好規則，讓程式來通知你。也提到一條好萊塢守則　- Don't call us, we will call you!
 
 ![](20160527-ElasticEvent38.jpg)
 前面提到的新功能，Elastic Stack關聯繪圖，結合搜尋跟繪圖的技術，提供簡單的graph-walking API，讓使用者能夠透過完整的Elasticsearch搜尋建立關聯性圖形。
