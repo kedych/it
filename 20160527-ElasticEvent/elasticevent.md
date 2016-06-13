@@ -221,6 +221,6 @@ M9碰到主管可能比較正常，這是周副理。
 1.sentiment - 立刻得知消費者對我們品牌與產品的感受
 2.clickstream - 截取和分析網站訪客的資料軌跡，並且用來最佳化網站
 3.sensor/machine - 自動從遠端的感測器和機器探勘串流資料的特徵
-4.grographic - 分析地理資訊
-5.server logs
-6.unstructured (text, video, picture, etc...)
+4.grographic - 分析地理資訊，幫助維運者瞭解更多事情
+5.server logs - 研究伺服器日誌來診斷流程問題與失敗，並預防安全事件
+6.unstructured (text, video, picture, etc...) - 從成千上萬的檔案、網頁、文件等找出特徵
