@@ -263,4 +263,6 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
 * free and easy real-time visualization and data exploration on data in hadoop
  * Kibana is an easy choice
  * Hadoop ecosystem choices are overwheling, not always real-time, and tend to come with a commercial expense.
- * 
+ 
+ ![](20160527-ElasticEvent73.jpg)
+ ELK-日常系統維運的好幫手
