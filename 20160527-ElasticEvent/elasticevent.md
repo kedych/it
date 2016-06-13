@@ -232,4 +232,11 @@ YARN Unlocks the Data Lake Vision
 在第一代的Hadoop，主要就是底層儲存在HDFS，需要運算和處理的部分交給MapReduce進行。到了第二代的Hadoop，底層一樣是HDFS，最上層則是各種不同的新應用，包含傳統的Hadoop(MapReduce)、靈活的資料處理(Hive, Pig)、線上資料處理(Hbase, Accumuio)、串流處理(Storm)等，在上層不同的新應用與底層的HDFS之間，則需要透過一個有效的叢集資源管理與分片服務(稱為YARN)，來把上層跟底層進行兩好的串接。
 
 ![](20160527-ElasticEvent68.jpg)
-ES在現代資料架構中扮演的角色，則是可以基於MDA的資料來源與資料系統之上，進行各式各樣的應用，
+ES在現代資料架構中扮演的角色，則是可以基於MDA的資料來源與資料系統之上，進行各式各樣的應用。
+
+![](20160527-ElasticEvent69.jpg)
+Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在的地方，就能夠找到資料的價值。
+* Hadoop是一個生態系，我們則是生存在生態系裡面的公民。
+* seamlessly把資料移入移出Hadoop
+* 在hadoop資料中解放幾乎即時的搜尋
+* Hadoop分散式跟版本agnostic
