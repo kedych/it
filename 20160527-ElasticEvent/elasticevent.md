@@ -1,4 +1,4 @@
- # Elastic Event
+# Elastic Eve # Elastic Event
 
 2016-06
 
@@ -267,4 +267,4 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  ![](20160527-ElasticEvent73.jpg)
  ELK-日常系統維運的好幫手
  統一資訊(PIC)如何運用ELK於內部應用系統及對外營運系統的管理工作
- 劉祖弘 Gary Liu
+ 統一資訊(PIC) 系統支援及技術研發部 劉祖弘 Gary Liu
