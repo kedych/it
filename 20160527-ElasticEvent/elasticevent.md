@@ -254,3 +254,13 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  * 日誌分析
  * 廣告投放目標與個人化  
  * 增強網站搜尋和推薦引擎能力
+ * 
+![](20160527-ElasticEvent72.jpg)
+* Single vendor for all your search needs - from ingestion to visualization
+* real-time search use cases on hadoop data like full-text, geo and temporal along with near real-time analysis through aggregations and metrics.
+* move data seamlesly across the two platforms with a constant feedback loop
+* repid growth and adoption of enterprise features like security, alerting, monitoring.
+* free and easy real-time visualization and data exploration on data in hadoop
+ * Kibana is an easy choice
+ * Haopp ecosystem choices are overwheling, not always real-time, and tend to come with a commercial expense.
+ * 
