@@ -262,5 +262,5 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
 * repid growth and adoption of enterprise features like security, alerting, monitoring.
 * free and easy real-time visualization and data exploration on data in hadoop
  * Kibana is an easy choice
- * Haopp ecosystem choices are overwheling, not always real-time, and tend to come with a commercial expense.
+ * Hadoop ecosystem choices are overwheling, not always real-time, and tend to come with a commercial expense.
  * 
