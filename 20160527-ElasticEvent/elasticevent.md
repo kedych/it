@@ -188,7 +188,6 @@ M9碰到主管可能比較正常，這是周副理。
 ![](20160527-ElasticEvent57.jpg)
 最後提到HTC導入Elastic Stack的好處，減少跟每個應用程式owner整合的功，因位都講好要看的東西是哪些了，也比較簡單能夠達到未來的分析和稽核，最重要的是，有個集中管理進入點，能夠很方便的檢查所有的應用程式日誌。
 
-
 ![](20160527-ElasticEvent59.jpg)
 中場點心時間，今天先下班，後面三個議程待續。
 
@@ -198,7 +197,7 @@ M9碰到主管可能比較正常，這是周副理。
 
 ![](20160527-ElasticEvent61.jpg)
 
-吃完點心以後，由Alex說明ES整合Hadoop的應用。在Elastic的產品線之中，有一塊是ES-Hadoop，也就是做為串連Elasticsearch跟Hadoop的一個中介。
+吃完點心以後，由Alex說明ES整合Hadoop的應用。在Elastic的產品線之中，有一塊是ES-Hadoop，也就是做為串連Elasticsearch跟Hadoop的中介專案。
 
 ![](20160527-ElasticEvent63.jpg)
 先說明了新興的資料架構(Modern Data Architecture, MDA)以及Hadoop扮演的角色。
