@@ -198,7 +198,7 @@ M9碰到主管可能比較正常，這是周副理。
 吃完點心以後，由Alex說明ES整合Hadoop的應用。在Elastic的產品線之中，有一塊是ES-Hadoop，也就是做為串連Elasticsearch跟Hadoop的中介專案。
 
 ![](20160527-ElasticEvent63.jpg)
-先說明現代資料架構(Modern Data Architecture, MDA)以及Hadoop生態系在MDA中扮演的角色，主要串起了各式不同的資料來源(CRM, ERP, Clickstream, Logs)、資料系統以及應用(Business Analytics, Custom Applications, Package Applications)，並且提供了在資料系統以及應用程式之間，維運管理與開發的能力和彈性。
+先說明現代資料架構(Modern Data Architecture, MDA)以及Hadoop生態系在MDA中扮演的角色，主要串起了各式不同的資料來源(現有的CRM, ERP, Clickstream, Logs以及新興的Sensor, Sentiment, Geolocation, Unstructured)、資料系統以及應用(Business Analytics, Custom Applications, Package Applications)，並且提供在資料系統以及應用程式之間進行資料維運管理與開發的能力和彈性。
 
 ![](20160527-ElasticEvent64.jpg)
-接著是提到Data Warehouse如何進行最佳化，
+接著是提到Data Warehouse如何進行最佳化，現有的環境之中，企業資料倉儲(Enterprise Data Warehouse)可能
