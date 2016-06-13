@@ -226,3 +226,9 @@ M9碰到主管可能比較正常，這是周副理。
 6.unstructured (text, video, picture, etc...) - 從成千上萬的檔案、網頁、文件等找出特徵
 
 ![](20160527-ElasticEvent67.jpg)
+YARN Unlocks the Data Lake Vision
+
+目標要做倒一個地方儲存所有的資料，可以是用多種方法對資料進行處理戶動。
+在第一代的Hadoop，主要就是底層儲存在HDFS，需要運算和處理的部分交給MapReduce進行。到了第二代的Hadoop，底層一樣是HDFS，最上層則是各種不同的新應用，包含傳統的Hadoop(MapReduce)、靈活的資料處理(Hive, Pig)、線上資料處理(Hbase, Accumuio)、串流處理(Storm)等，在上層不同的新應用與底層的HDFS之間，則需要透過一個有效的叢集資源管理與分片服務(稱為YARN)，來把上層跟底層進行兩好的串接。
+
+![](20160527-ElasticEvent68.jpg)
