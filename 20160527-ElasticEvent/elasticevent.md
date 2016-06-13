@@ -1,4 +1,4 @@
-# Elastic　Event
+# Elastic Event
 
 2016-06
 
