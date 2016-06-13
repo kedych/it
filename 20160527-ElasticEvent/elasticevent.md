@@ -241,4 +241,4 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
 * 在hadoop資料中解放幾乎即時的搜尋
 * Hadoop分散式跟版本agnostic
 
-![](20160527-ElasticEvent69.jpg)
+![](20160527-ElasticEvent71.jpg)
