@@ -243,3 +243,14 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
 
 ![](20160527-ElasticEvent71.jpg)
 結合ES跟Hadoop的使用案例:
+
+* 共用架構(Common Architectures)
+ * 進入兩個平台的資料流(Hadoop, Elasticsearch)
+ * 平台之間的回饋
+* Strengths
+ * Elasticsearch 即時分析與回答(answers)
+ * Hadoop 深層、客制、批次為主的分析
+* Example Use Cases
+ * 日誌分析
+ * 廣告投放目標與個人化  
+ * 增強網站搜尋和推薦引擎能力
