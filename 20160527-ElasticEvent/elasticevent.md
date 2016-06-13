@@ -218,9 +218,9 @@ M9碰到主管可能比較正常，這是周副理。
 ![](20160527-ElasticEvent66.jpg)
 該如何透過Hadoop解放新形態的資料價值呢?
 
-1.sentiment
-2.clickstream
-3.sensor/machine
+1.sentiment - 立刻得知消費者對我們品牌與產品的感受
+2.clickstream - 截取和分析網站訪客的資料軌跡，並且用來最佳化網站
+3.sensor/machine - 自動從遠端的感測器和機器探勘串流資料的特徵
 4.grographic
 5.server logs
 6.unstructured (text, video, picture, etc...)
