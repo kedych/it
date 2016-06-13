@@ -214,3 +214,13 @@ M9碰到主管可能比較正常，這是周副理。
 1.有機會讓企業資料倉儲從低價值工作中解放
 2.需要分析或探索的時候，保留完整的原始和歷史資料，不用花一堆時間在ETL
 3.載入後再探勘資料的價值，因為整個schema可以在讀取時決定
+
+![](20160527-ElasticEvent66.jpg)
+該如何透過Hadoop解放新形態的資料價值呢?
+
+1.sentiment
+2.clickstream
+3.sensor/machine
+4.grographic
+5.server logs
+6.unstructured (text, video, picture, etc...)
