@@ -192,11 +192,9 @@ M9碰到主管可能比較正常，這是周副理。
 中場點心時間，今天先下班，後面三個議程待續。
 
 ####整合Hadoop及Elasticsearch，加速大數據應用。
-![](20160527-ElasticEvent63.jpg)
-主講人：陳進賢　歐立威技術協理
-
 ![](20160527-ElasticEvent61.jpg)
-
+主講人：陳進賢　歐立威技術協理
+![](20160527-ElasticEvent63.jpg)
 吃完點心以後，由Alex說明ES整合Hadoop的應用。在Elastic的產品線之中，有一塊是ES-Hadoop，也就是做為串連Elasticsearch跟Hadoop的中介專案。
 
 ![](20160527-ElasticEvent63.jpg)
