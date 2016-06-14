@@ -277,6 +277,43 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  還有統一集團的版圖，相當的龐大。
  
  ![](20160527-ElasticEvent77.jpg)
- 透過故事的例子，把工作的情境帶出來給大家，先說有一天Gary違反AP Log管理規範。說都沒有按照要求把完整的Log寫在檔案，還問說能不能把Log寫在DB，James就說怕影響效能，要Gary
+ 透過故事的例子，把工作的情境帶出來給大家，Case 1: 先說有一天Gary違反AP Log管理規範。說都沒有按照要求把完整的Log寫在檔案，還問說能不能把Log寫在DB，James就說怕影響效能，要Gary
  
  ![](20160527-ElasticEvent78.jpg)
+ Case 2: 碰到問題的時候，以前都需要透過很多shell command進行log查找，這應該是網管人基本技能
+ 
+ ![](20160527-ElasticEvent79.jpg)
+ 所以就列出一些常用的命令囉!
+ 
+ ![](20160527-ElasticEvent80.jpg)
+ Gary就開始做他的筆記...
+ 
+ ![](20160527-ElasticEvent81.jpg)
+ Case 3: 網站全面異常，要查要看的好多，趕快開一堆ssh連線開始查log, debug...
+ 
+ ![](20160527-ElasticEvent82.jpg)
+ 順便分派了任務，要查的主機實在太多了，那就交給你查吧!
+ 
+ ![](20160527-ElasticEvent84.jpg)
+ 屋漏，當然一定要連夜雨的阿！不然要幹嘛，再加碼Apache Log、DB Log、網管Log，就通通交給你幫我連絡囉！所以大家都嚇死了~
+ 
+ ![](20160527-ElasticEvent85.jpg)
+ 所以這時候我們是不是要趕快調單位，哈哈。
+ 
+ ![](20160527-ElasticEvent86.jpg)
+ 當然不是，所以某一天Ruby看到了這個畫面...
+ 
+ ![](20160527-ElasticEvent87.jpg)
+ 主角ELK出現了
+ 
+ ![](20160527-ElasticEvent89.jpg)
+ 統一資訊的ELK架構大概是這樣，可能是比較早期開始建置，有Kafka Cluster跟Storm Cluster，在報系內我們很單純，就是純ELK架構，負載平衡給HAProxy做、高可用則是給Keepalive來完成。
+ 
+ ![](20160527-ElasticEvent90.jpg)
+ 所以有了ELK，配合Kibana就不用開一堆機器ssh到處看log了。
+ 
+ ![](20160527-ElasticEvent91.jpg)
+ Gary是在2014左右知道ELK，然後嚐試實做書中的ELK架構，可以看到前端是Logstash Agent(也就是Logstash Forwarder, 各種beats的前身)，給Redis List之後送到Storm Topology，接著才是進入Elasticsearch與Kibana。
+ 
+ ![](20160527-ElasticEvent92.jpg)
+ 接著說明導入ELK前後的差異。
