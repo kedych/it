@@ -317,3 +317,12 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  
  ![](20160527-ElasticEvent92.jpg)
  接著說明導入ELK前後的差異。
+ 
+ ![](20160527-ElasticEvent93.jpg)
+ 後續的計畫也可以參考
+ 
+ ![](20160527-ElasticEvent94.jpg)
+ 再來是廣編特輯，說明他們研究的資料探勘發現的現象。
+ 
+ ![](20160527-ElasticEvent95.jpg)
+ 以及Data Mining的經驗。
