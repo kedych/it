@@ -326,3 +326,7 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  
  ![](20160527-ElasticEvent95.jpg)
  以及Data Mining的經驗。
+ 
+ ![](20160527-ElasticEvent96.jpg)
+ LogLoop在金融與IoT成功案例
+ 來到最後一個session，
