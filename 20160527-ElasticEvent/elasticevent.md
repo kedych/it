@@ -256,13 +256,13 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  * 增強網站搜尋和推薦引擎能力
  * 
 ![](20160527-ElasticEvent72.jpg)
-* Single vendor for all your search needs - from ingestion to visualization
-* real-time search use cases on hadoop data like full-text, geo and temporal along with near real-time analysis through aggregations and metrics.
-* move data seamlesly across the two platforms with a constant feedback loop
-* repid growth and adoption of enterprise features like security, alerting, monitoring.
-* free and easy real-time visualization and data exploration on data in hadoop
- * Kibana is an easy choice
- * Hadoop ecosystem choices are overwheling, not always real-time, and tend to come with a commercial expense.
+* 一個服務商就可以完成搜尋的所有需求，從資料截取到視覺化分析
+* 在Hadoop資料中執行即時搜尋案例，包含了全文檢索、地理資訊、透過聚合與矩陣達到暫存資料的近即時分析
+* 在不斷回饋的框架中，可以將資料在兩個平台之間無縫搬移
+* 快速成長與各種企業特色的套用，例如安全、告警、監控
+* 免費而且簡單的在Hadopp裡進行即時視覺化跟跟資料瀏覽
+ * Kibana 是很簡單的選擇
+ * Hadoop 生態系選項過熱了，沒能總是即時分析，而且可能開始有一些商業費用的支出。
  
  ![](20160527-ElasticEvent73.jpg)
  ELK-日常系統維運的好幫手
@@ -277,4 +277,6 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
  還有統一集團的版圖，相當的龐大。
  
  ![](20160527-ElasticEvent77.jpg)
- Gary透過故事的例子，把工作的情境帶出來給大家，先說有一天他違反了AP Log管理規範。
+ 透過故事的例子，把工作的情境帶出來給大家，先說有一天Gary違反AP Log管理規範。說都沒有按照要求把完整的Log寫在檔案，還問說能不能把Log寫在DB，James就說怕影響效能，要Gary
+ 
+ ![](20160527-ElasticEvent78.jpg)
