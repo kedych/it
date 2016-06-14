@@ -1,4 +1,4 @@
-# Elastic Eve # Elastic Event
+# Elastic Event
 
 2016-06
 
@@ -350,3 +350,4 @@ Hadoop+Elastic的目標是想要帶來資料的價值，也就是有資料存在
 解決方案從內到外的概念上可以分成CloudFusion、AppBalloon跟LogLoop
 
 ![](20160527-ElasticEvent107.jpg)
+LogLoop內部與核心是Elasticsearch，開發了幾個角色：分別是LogLoop Gate、LogLoop Analyzer、Present、LogLoop　Repository，最左邊一樣是各式各樣的Log來源。LogLoop的特色與能力是：1分鐘至少分析50萬筆日誌事件、可以無限延伸(scale out)、視覺化分析等。這特性其實跟Elastic Stack中的角色都相同。
